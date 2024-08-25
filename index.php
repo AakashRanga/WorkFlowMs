@@ -1,272 +1,242 @@
 <?php include('header.php'); ?>
 <main>
-    <!-- banner section -->
-    <section class="bg-image-section position-relative">
-        <!-- Background Video -->
-        <video autoplay muted loop id="bg-video">
-            <source src="images/bannervideo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <section class="banner">
+        <div class="banner-section">
+            <div class="left-column">
+                <nav>
+                    <ol>
+                        <li data-content="content1" data-image="images/research-otpion-side.jpg" class="selected">1.
+                            Research
+                            your options</li>
+                        <li data-content="content2" data-image="images/draft-article-side.jpg">2. Draft your article
+                        </li>
+                        <li data-content="content3" data-image="images/authors-side.jpg">3. Instructions for authors
+                        </li>
+                        <li data-content="content4" data-image="images/submission-side.jpg">4. Make your submission</li>
+                        <li data-content="content5" data-image="images/peer-side.jpg">5. Peer review</li>
+                        <li data-content="content6" data-image="images/revision-side.jpg">6. Making revisions</li>
+                        <li data-content="content7" data-image="images/article-side.jpg">7. Your article is accepted
+                        </li>
+                        <li data-content="content8" data-image="images/promoting-side.jpg">8. Promoting your work</li>
+                    </ol>
+                </nav>
+            </div>
+            <section class="right-column">
+                <!-- Content for each step -->
+                <div class="container" id="content1">
+                    <div class="main-content">
+                        <div class="image-content">
+                            <img src="images/researchoption.jpeg" alt="Research your options">
+                        </div>
+                        <div class="text-content mt-3">
+                            <h2>Research your options</h2>
+                            <p class="mt-3">Take the time to explore the journals in your field, to choose the best fit
+                                for your
+                                research. Find a journal that serves the audience you’re trying to reach, and whose aims
+                                and scope match your approach. You might also have choices to make about different
+                                publishing options, including open access.</p>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Overlay -->
-        <div class="overlay"></div>
+                <div class="container" id="content2" style="display: none;">
+                    <div class="main-content">
+                        <div class="image-content">
+                            <img src="images/draft-article.avif" alt="Draft your article">
+                        </div>
+                        <div class="text-content mt-3">
+                            <h2>Draft your article</h2>
+                            <p class="mt-3">When you’ve chosen the journal you want to submit to, you’re ready to start
+                                drafting your paper. What should you be thinking about before you start writing and how
+                                can you maximize your chances of getting published?</p>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Content -->
-        <div class="container text-center text-white position-relative">
-            <h1 class="display-1 animate-fade-in">Streamline Your Workflow</h1>
-            <p class="lead animate-slide-up">Efficiently manage tasks, track progress, and optimize team collaboration.
-            </p>
+                <div class="container" id="content3" style="display: none;">
+                    <div class="main-content">
+                        <div class="image-content">
+                            <img src="images/instructions.avif" alt="Instructions for authors">
+                        </div>
+                        <div class="text-content mt-3">
+                            <h2>Instructions for authors</h2>
+                            <p class="mt-3">The instructions for authors include essential information on what you need
+                                to do to submit to your chosen journal. Follow these guidelines and you’ll know that the
+                                journal’s editorial team have everything they need to consider your article for
+                                publication.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" id="content4" style="display: none;">
+                    <div class="main-content">
+                        <div class="image-content">
+                            <img src="images/submission.avif" alt="Make your submission">
+                        </div>
+                        <div class="text-content mt-3">
+                            <h2>Make your submission</h2>
+                            <p class="mt-3">So, you’ve done your research, chosen your target journal, written your
+                                paper, and are about to submit. Time for one final check to make sure you’ve got
+                                everything ready before heading to the journal’s submission system.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" id="content5" style="display: none;">
+                    <div class="main-content">
+                        <div class="image-content">
+                            <img src="images/review.avif" alt="Peer review">
+                        </div>
+                        <div class="text-content mt-3">
+                            <h2>Peer review</h2>
+                            <p class="mt-3">So, you’ve done your research, chosen your target journal, written your
+                                paper, and are about to submit. Time for one final check to make sure you’ve got
+                                everything ready before heading to the journal’s submission system.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" id="content6" style="display: none;">
+                    <div class="main-content">
+                        <div class="image-content">
+                            <img src="images/revision.avif" alt="Making revisions">
+                        </div>
+                        <div class="text-content mt-3">
+                            <h2>Making revisions</h2>
+                            <p class="mt-3">Following peer review, you may be asked to make revisions to your article
+                                and resubmit.
+                                Take time to read through the editor and reviewers’ advice, and decide what changes
+                                you’ll make to your article. Taking their points on board will help to ensure your final
+                                article is as robust and impactful as possible.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" id="content7" style="display: none;">
+                    <div class="main-content">
+                        <div class="image-content">
+                            <img src="images/article-accept.avif" alt="Your article is accepted">
+                        </div>
+                        <div class="text-content mt-3">
+                            <h2>Your article is accepted</h2>
+                            <p class="mt-3">The next step is production. Copy editing begins, and we’ll contact you with
+                                your proofs. You’ll also sign a publishing agreement. If you submitted to an Open Select
+                                journal, now is the time to choose whether to publish your article open access.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" id="content8" style="display: none;">
+                    <div class="main-content">
+                        <div class="image-content">
+                            <img src="images/wordk-promoting.avif" alt="Promoting your work">
+                        </div>
+                        <div class="text-content mt-3">
+                            <h2>Promoting your work</h2>
+                            <p class="mt-3">Promoting your published article is a team effort. Taylor &amp; Francis
+                                works hard to
+                                maximize the discoverability of your work, and we’ve got lots of advice to help you
+                                share your work and amplify its impact.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dynamic image section (optional if needed) -->
+                <div class="image-container">
+                    <img src="images/research-otpion-side.jpeg" alt="Dynamic content image" class="content-image"
+                        id="dynamicImage">
+                </div>
+            </section>
         </div>
     </section>
 
-    <!-- about us section -->
-    <section class="about-us py-5">
-        <div class="container">
-
-            <div class="row align-items-center">
-
-                <div class="col-md-6">
-                    <h2 class="text-center text-white">About Us</h2>
-                    <p class="text-white">
-                        We are dedicated to revolutionizing the way organizations manage their
-                        workflows. Our Workflow Management System is designed to streamline and optimize business
-                        processes, ensuring efficiency, productivity, and seamless operations.
-                    </p>
-                    <p class="text-white">
-                        Our mission is to empower businesses with innovative solutions that enhance workflow efficiency.
-                        We strive to provide tools that simplify complex processes, foster collaboration, and drive
-                        operational excellence.
-                    </p>
-                    <p class="text-white">
-                        Our Workflow Management System is designed to automate, track, and optimize your business
-                        processes, enabling seamless collaboration across teams and departments. With a focus on
-                        flexibility, scalability, and ease of use, our system empowers you to manage complex workflows
-                        with simplicity and precision.
-                    </p>
+    <!-- trending topics -->
+    <section class="trending-topics">
+        <!-- First div with image and content -->
+        <h1 class="text-center">Trending Topics</h1>
+        <div class="container-topics">
+            <div class="trending-item">
+                <div class="trending-image">
+                    <img src="images/publishing.jpg" alt="Trending Topic 1">
                 </div>
-                <div class="col-md-6">
-                    <img src="images/about-us.png" alt="About Us" class="img-fluid">
+                <div class="trending-content">
+                    <p>Boost your research career by signing up to Research Insights and receive free expert guidance on
+                        the publishing process.</p>
+                    <a href="research-insights.php">Need help getting published? <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Second div with image and content -->
+            <div class="trending-item">
+                <div class="trending-image">
+                    <img src="images/journal.jpg" alt="Trending Topic 2">
+                </div>
+                <div class="trending-content">
+                    <p>Thinking about where to submit your paper? Our comprehensive guide to choosing a journal is here
+                        to help.</p>
+                    <a href="journal.php">Free guide to choosing a journal <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="service-section" id="servicesection">
-        <div class="container">
-            <h1 class="text-center mb-4 text-black">SERVICES</h1>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="images/banner.jpg" alt="Workflow Management System" class="service-image">
-                </div>
-                <div class="col-md-6 service-content">
-                    <h2>Our Workflow Management System</h2>
-                    <p>We are committed to delivering the complete implementation of our Workflow Management System
-                        within 15 days. Our team ensures that every aspect of the system is customized to your needs and
-                        thoroughly tested for optimal performance.</p>
-                    <p><strong>Key Features:</strong></p>
-                    <ul>
-                        <li>Automated Task Management</li>
-                        <li>Customizable Workflow Templates</li>
-                        <li>Real-Time Progress Tracking</li>
-                        <li>Integrated Communication Tools</li>
-                        <li>Comprehensive Reporting and Analytics</li>
-                    </ul>
-                    <p>Improve efficiency and productivity with a system designed to meet your specific needs. Contact
-                        us today to learn more about how we can help your business succeed.</p>
-                </div>
+
+    <section class="section-call">
+        <h2 class="text-center">Call for papers in your subject area</h2>
+
+        <div class="call-content">
+
+            <div class="call-image">
+                <img src="images/call-paper.png" alt="Descriptive Alt Text">
+            </div>
+            <div class="call-text">
+                <p>Journals regularly ‘call for papers’, asking for submissions within a particular field or topic.
+                    Answering these is a great way to get published, making sure your research fits the journal’s aims
+                    and scope. Simply select your subject area with our handy tool to get started.</p>
+                <a href="#" class="cta-button">Search Current Call for papers</a>
             </div>
         </div>
     </section>
 
 
-
-
-    <!-- Description service Section -->
-    <section class="courses-section">
-        <div class="container py-5">
-            <h1 class="text-center mb-4 text-black">OUR SERVICES</h1>
-            <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- First slide -->
-                    <div class="carousel-item active">
-                        <div class="courses d-flex ">
-                            <div class="card" style="width: 18rem;">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bold">Customizable Workflows</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Tailor to Your Needs</h6>
-                                    <p class="card-text">
-                                        Create and customize workflows to fit your specific business needs. Design
-                                        process
-                                        flows, assign tasks, and define roles to ensure that every step is handled
-                                        efficiently.
-                                        Adapt the system to your unique processes and requirements.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem;">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bold">User-Friendly Interface</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Easy to Use</h6>
-                                    <p class="card-text">
-                                        Experience an intuitive and user-friendly interface designed for ease of use.
-                                        Navigate through the system effortlessly, customize settings, and access key
-                                        features
-                                        without a steep learning curve.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem;">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bold">Real-Time Analytics</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Track Performance</h6>
-                                    <p class="card-text">
-                                        Gain insights into your workflow performance with real-time analytics. Monitor
-                                        key
-                                        metrics, identify bottlenecks, and make data-driven decisions to optimize your
-                                        operations.
-                                        Our system provides detailed reports.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Second slide -->
-                    <div class="carousel-item">
-                        <div class="courses d-flex ">
-                            <div class="card" style="width: 18rem;">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bold">Customizable Workflows</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Tailor to Your Needs</h6>
-                                    <p class="card-text">
-                                        Create and customize workflows to fit your specific business needs. Design
-                                        process
-                                        flows, assign tasks, and define roles to ensure that every step is handled
-                                        efficiently.
-                                        Adapt the system to your unique processes and requirements.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem;">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bold">User-Friendly Interface</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Easy to Use</h6>
-                                    <p class="card-text">
-                                        Experience an intuitive and user-friendly interface designed for ease of use.
-                                        Navigate through the system effortlessly, customize settings, and access key
-                                        features
-                                        without a steep learning curve.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem;">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-bold">Real-Time Analytics</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">Track Performance</h6>
-                                    <p class="card-text">
-                                        Gain insights into your workflow performance with real-time analytics. Monitor
-                                        key
-                                        metrics, identify bottlenecks, and make data-driven decisions to optimize your
-                                        operations.
-                                        Our system provides detailed reports.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- publication section -->
-    <section class="publication-section py-5">
-        <div class="container">
-            <h1 class="text-center mb-4 text-black">OUR PUBLICATION</h1>
-            <div class="row justify-content-center">
-                <div class="col-md-3 mb-4">
-                    <div class="card h-100">
-                        <img src="images/scopus.png" class="card-img-top" alt="scopus image">
-                        <div class="card-body">
-                            <h5 class="card-title">Scopus</h5>
-                            <p class="card-text">Scopus is a comprehensive abstract and citation database of
-                                peer-reviewed literature, including scientific journals, books, and conference
-                                proceedings.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card h-100">
-                        <img src="images/webofscience.png" class="card-img-top" alt="web-of-science image">
-                        <div class="card-body">
-                            <h5 class="card-title">Web Of Science</h5>
-                            <p class="card-text">Web of Science is a multidisciplinary research platform that provides
-                                access to multiple databases containing high-quality research data.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card h-100">
-                        <img src="images/image.png" class="card-img-top" alt="ugc-care image" style="height: 178px;
-    width: 304px;">
-                        <div class="card-body">
-                            <h5 class="card-title">UGC-CARE</h5>
-                            <p class="card-text">UGC-CARE (Consortium for Academic and Research Ethics) is an initiative
-                                by the University Grants Commission of India. </p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card h-100">
-                        <img src="images/pubmed.png" class="card-img-top" alt="pub-med image">
-                        <div class="card-body">
-                            <h5 class="card-title">PUBMED</h5>
-                            <p class="card-text">PUBMED is a free search engine accessing primarily the MEDLINE database
-                                of references and abstracts on life sciences and biomedical topics.</p>
-                             <a href="#" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Carousel Section -->
-    <!-- <section class="branding-section">
-        <div class="container mt-5">
-            <h1 class="text-center">BRANDINGS</h1>
-            < class="branding-images"> -->
-    <!-- <ul>
-                <li><img src="images/banner.jpg" alt="Branding Image 1"></li>
-                <li><img src="images/banner.jpg" alt="Branding Image 2"></li>
-
-            </ul> -->
-    <!-- <div class="mt-3 d-flex ">
-                <img src="images/banner.jpg" alt="" style="width:50%;height:50%">
-                <img src="images/banner.jpg" alt="" style="width:50%;height:50%">
-
-            </div> -->
-    <!-- </div>
-        </div>
-    </section> -->
 </main>
 <?php include('footer.php'); ?>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const listItems = document.querySelectorAll('.left-column ol li');
+        const containers = document.querySelectorAll('.right-column .container');
+        const dynamicImage = document.getElementById('dynamicImage');
+
+        function showContent(contentId, imageUrl) {
+            listItems.forEach(li => li.classList.remove('selected'));
+            containers.forEach(container => container.style.display = 'none');
+
+            const listItem = document.querySelector(`.left-column ol li[data-content="${contentId}"]`);
+            if (listItem) {
+                listItem.classList.add('selected');
+            }
+
+            const contentToShow = document.getElementById(contentId);
+            if (contentToShow) {
+                contentToShow.style.display = 'block';
+            }
+
+            dynamicImage.src = imageUrl; // Change the image source
+        }
+
+        // Show the default content (content1)
+        showContent('content1', 'images/research-otpion-side.jpg');
+
+        listItems.forEach(item => {
+            item.addEventListener('click', function () {
+                const contentId = this.getAttribute('data-content');
+                const imageUrl = this.getAttribute('data-image');
+                showContent(contentId, imageUrl);
+            });
+        });
+    });
+</script>

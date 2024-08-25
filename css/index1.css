@@ -1,0 +1,1470 @@
+/* Apply a universal box-sizing and font to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Basic styles for body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+/* Anchor tag styles */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* navbar */
+
+/* Banner styling */
+.banner {
+    background-color: #050C9C;
+    display: flex;
+    justify-content: space-evenly;
+    height: 580px;
+}
+
+/* Navbar styling */
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar>.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sticky-top {
+    background-color: #fff;
+}
+
+/* Ordered list (ol) default styles */
+ol {
+    border: none;
+}
+
+/* List item (li) styles */
+ol li {
+    padding: 10px;
+    color: #fff;
+    text-align: right;
+}
+
+/* Left column styling */
+.left-column {
+    width: 25%;
+    background-color: #3572EF;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    /* Aligns text to the right */
+}
+
+/* Left column ordered list styles */
+.left-column ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* Remove default list styling */
+}
+
+.left-column ol li {
+    /* background-color: #96c9fd; */
+    margin-right: -1.2rem;
+    color: white;
+    position: relative;
+    padding: 16px 20px;
+    /* Add padding for better spacing */
+    box-sizing: border-box;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.left-column ol li::before {
+    display: none;
+}
+
+
+
+.left-column ol li::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    /* Position the pseudo-element to the right side */
+    /* transform: translateY(-50%);
+    border-top: 24px solid rgba(0, 0, 0, 0);
+    border-bottom: 24px solid rgba(0, 0, 0, 0);
+    border-left: 24px solid #96c9fd; */
+}
+
+.left-column ol li.selected {
+    background-color: #4a90e2;
+    /* Change color for selected item */
+}
+
+.left-column ol li.selected::after {
+    border-left: 24px solid #4a90e2;
+    transform: translateY(-50%);
+    border-top: 24px solid rgba(0, 0, 0, 0);
+    border-bottom: 24px solid rgba(0, 0, 0, 0);
+    border-left: 24px solid #4a90e2;
+    /* Change color of the arrow for selected item */
+}
+
+/* Hover effect for list items */
+/* .left-column ol li:hover {
+    background-color: burlywood;
+} */
+
+/* Nav ordered list styles */
+nav ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Banner section styling */
+.banner-section {
+    display: flex;
+    justify-content: center;
+    /* padding: 30px; */
+    padding: 2rem 0;
+    height: 580px;
+    width: 1520px;
+}
+
+/* Right column styling */
+.right-column {
+    background-color: #fff;
+    width: 65%;
+    padding: 21px 13px;
+    display: flex;
+}
+
+
+.content {
+    display: none;
+    /* Hide by default, shown by JavaScript */
+    padding: 20px;
+    /* Adjust padding as needed */
+    /* Optional border for better visibility */
+    border-radius: 8px;
+    /* Optional rounded corners */
+}
+
+.content-image {
+    /* max-width: 300px; */
+    height: 170px;
+    /* display: block; */
+    margin-bottom: 15px;
+    width: 300px;
+    position: relative;
+    left: 30%;
+}
+
+
+figure img {
+    width: 300px;
+    height: 400px;
+}
+
+h2 {
+    margin-top: 0;
+    /* Remove top margin from h2 */
+    margin-bottom: 10px;
+    /* Space between heading and paragraph */
+}
+
+p {
+    margin: 0;
+    /* Remove margin from paragraphs for consistent spacing */
+}
+
+.dropdown-menu {
+    border-radius: 0px;
+}
+
+/* Hide all content sections by default */
+.right-column .content {
+    display: none;
+}
+
+/* Show the selected content */
+.right-column .content.active {
+    display: block;
+}
+
+/* Style for selected list item */
+.left-column ol li.selected {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    /* Customize as needed */
+}
+
+/* Image container styling */
+
+
+.image-container img {
+    /* max-width: 100%; */
+    height: 470px;
+    position: absolute;
+    left: 76%;
+    width: 269px !important;
+
+}
+
+article {
+    display: flex;
+}
+
+.content-text p {
+    width: 100%;
+}
+
+
+figure img {
+    width: 200px;
+    height: 150px;
+}
+
+/* Grid layout for research impact section */
+.research-impact {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 columns */
+    gap: 5px;
+    padding: 16px;
+    max-height: 600px;
+    /* Adjust based on content */
+}
+
+.dropdown-menu.show {
+    display: inline-block;
+    width: 1527px !important;
+    /* height: 96%; */
+    position: absolute;
+    top: 114%;
+    left: -425%;
+    /* transform: translateX(-50%); */
+    height: 582px;
+}
+
+ul.dropdown-menu.custom-dropdown-menu.show {
+    position: absolute;
+    width: 200px;
+    /* Adjust width as needed */
+    left: 80%;
+    /* Adjust the left position to align as desired */
+    padding: 15px;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+    background: #fff;
+    /* Background color */
+    border: 1px solid #ddd;
+    /* Border color */
+    border-radius: 0.25rem;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow for better visibility */
+    top: 119%;
+    height: 200px !important;
+}
+
+ul.dropdown-menu.custom-dropdown-menus.show {
+    position: absolute;
+    width: 400px;
+    /* Adjust width as needed */
+    left: 80%;
+    /* Adjust the left position to align as desired */
+    padding: 15px;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+    background: #fff;
+    /* Background color */
+    border: 1px solid #ddd;
+    /* Border color */
+    border-radius: 0.25rem;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow for better visibility */
+    height: 200px !important;
+
+}
+
+
+ul.dropdown-menu.custom-dropdown-menu-policies.show {
+    position: absolute;
+    width: 480px;
+    left: 80%;
+    padding: 15px;
+    margin: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    height: 366px !important;
+
+
+}
+
+
+ul.dropdown-menu.custom-dropdown-menu.events {
+    width: 206px !important;
+    height: 100px !important;
+    position: absolute;
+    min-width: 200px !important;
+}
+
+ul.dropdown-menu.custom-dropdown-menu.show li {
+    margin-bottom: 10px;
+}
+
+ul.dropdown-menu.custom-dropdown-menus.show li {
+    margin-bottom: 10px;
+}
+
+ul.dropdown-menu.custom-dropdown-menu-policies.show li {
+    margin-bottom: 10px;
+}
+
+
+.sidebar {
+    width: 25%;
+    background-color: #0044cc;
+    padding: 20px;
+    color: white;
+}
+
+.main-content {
+    width: 75%;
+    /* display: flex; */
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.image-content img {
+    width: 344px;
+    height: 220px;
+    /* position: absolute; */
+    left: 23%;
+    position: relative;
+}
+
+
+
+/* trending topics section css */
+
+/* General styles for the trending topics section */
+.trending-topics {
+    padding: 40px 0px;
+    /* Adds padding around the section */
+    background-color: #f0f0f0;
+    /* Optional: Background color for the section */
+    height: 540px;
+}
+
+/* Center align the section heading */
+.trending-topics h1.text-center {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    /* Adds space below the heading */
+    color: #333;
+    /* Optional: Color for the heading */
+}
+
+/* Container for the trending items to control layout */
+.container-topics {
+    display: flex;
+    /* Flexbox for horizontal layout */
+    gap: 20px;
+    /* Space between each trending item */
+    justify-content: space-evenly;
+    /* Distribute space between items */
+    flex-wrap: wrap;
+    /* Allows items to wrap onto new lines on smaller screens */
+    position: relative;
+    top: 10%;
+}
+
+/* Styles for each trending item */
+.trending-item {
+    width: 600px;
+}
+
+/* Styling for the image */
+.trending-image img {
+    width: 650px;
+    /* Full width of the image container */
+    height: 230px;
+    /* Maintains aspect ratio */
+    display: block;
+    /* Removes any bottom spacing */
+    border-bottom: 1px solid #ddd;
+    /* Adds a border below the image */
+}
+
+
+/* Styling for the content heading */
+.trending-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    /* Space below the heading */
+    color: #333;
+    /* Text color */
+}
+
+/* Styling for the content paragraph */
+.trending-content p {
+    font-size: 1em;
+    color: #555;
+    /* Optional: Slightly lighter text color */
+    line-height: 1.6;
+    /* Increases readability */
+}
+
+
+/* call section  css*/
+/* General styles for section */
+.section-call {
+    padding: 35px 0px;
+    background-color: #f9f9f9;
+    /* Adjust background color as needed */
+}
+
+/* Container for image and text */
+.call-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* Allows content to stack on smaller screens */
+}
+
+
+
+.call-image img {
+    width: 530px;
+    height: 230px;
+}
+
+
+
+/* Heading styling */
+.call-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.call-text p {
+    width: 860px;
+}
+
+/* Button styling */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    /* Button background color */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    /* Darker button color on hover */
+}
+
+/* reseacrh insights */
+
+
+
+/* General styles for the research section */
+.research-section {
+    background-color: #050C9C;
+    /* Light background color */
+    padding: 40px 20px;
+    /* Spacing around the section */
+    text-align: center;
+    /* Center align text */
+    height: 300px;
+}
+
+
+
+/* Style for the heading */
+.container-research h1 {
+    font-size: 54px;
+    /* Font size for heading */
+    color: #fff;
+    /* Dark text color */
+    margin-bottom: 15px;
+    /* Space below the heading */
+}
+
+/* Style for the paragraph text */
+.container-research p {
+    font-size: 16px;
+    /* Font size for paragraph */
+    color: #fff;
+    /* Lighter text color for paragraph */
+    line-height: 1.6;
+    /* Line height for readability */
+    margin: 0;
+    /* Remove default margin */
+}
+
+
+.container-research {
+    position: relative;
+    top: 20%;
+}
+
+
+
+/* General styles for the section */
+.image-text-section {
+    display: flex;
+    /* Use flexbox for side-by-side layout */
+    align-items: center;
+    /* Align items vertically in the center */
+    justify-content: center;
+    /* Center content horizontally */
+    padding: 20px;
+    /* Add some padding */
+    gap: 20px;
+    /* Space between image and text */
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
+}
+
+/* Styles for the image container */
+.image-container {
+    flex: 1;
+    /* Allow the container to grow */
+    max-width: 50%;
+    /* Max width of the image container */
+}
+
+/* Styles for the image */
+.image-container img {
+    width: 100%;
+    /* Make the image responsive */
+    height: auto;
+    /* Maintain image aspect ratio */
+    border-radius: 8px;
+    /* Optional: rounded corners */
+}
+
+/* Styles for the text container */
+.text-container {
+    flex: 1;
+    /* Allow the container to grow */
+    max-width: 50%;
+    /* Max width of the text container */
+}
+
+.image-section img {
+    width: 480px;
+    height: 480px;
+}
+
+section.image-text-insights {
+    display: flex;
+    justify-content: space-evenly;
+    /* position: relative; */
+    padding: 40px 0px;
+}
+
+
+
+.text-container ul {
+    padding-left: 0 !important;
+}
+
+
+.text-container p {
+    padding: 10px 0px
+}
+
+.text-insights li {
+    padding: 12px 0px;
+}
+
+
+.container-form {
+    /* max-width: 600px; */
+    margin: 0 auto;
+    /* Center the form horizontally */
+    background-color: #f8f9fa;
+    /* Light background color for the form container */
+    padding: 20px;
+    border-radius: 8px;
+    /* Rounded corners for the form container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    position: relative;
+    top: 40px;
+}
+
+form {
+    position: relative;
+    top: 22px;
+}
+
+.research {
+    background: #c1a2a229;
+}
+
+.register {
+    background-color: #f0f0f0;
+    height: 725px;
+}
+
+.text-red {
+    color: red;
+    font-size: 10px;
+    position: relative;
+    bottom: 8px;
+    left: 2px;
+}
+
+
+
+
+
+
+section.image-text-insights {
+    display: flex;
+    justify-content: space-evenly;
+    /* position: relative; */
+    padding: 40px 0px;
+}
+
+
+
+
+.text-container ul {
+    padding-left: 0 !important;
+}
+
+
+.text-container p {
+    padding: 10px 0px
+}
+
+
+
+
+.container-form {
+    /* max-width: 600px; */
+    margin: 0 auto;
+    /* Center the form horizontally */
+    background-color: #f8f9fa;
+    /* Light background color for the form container */
+    padding: 20px;
+    border-radius: 8px;
+    /* Rounded corners for the form container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    position: relative;
+    top: 40px;
+}
+
+form {
+    position: relative;
+    top: 22px;
+}
+
+.research {
+    background: #c1a2a229;
+}
+
+.register {
+    background-color: #f0f0f0;
+    height: 725px;
+}
+
+
+.text-red {
+    color: red;
+    font-size: 10px;
+    position: relative;
+    bottom: 8px;
+    left: 2px;
+}
+
+
+/* journal section */
+/* Styling for the journal section */
+.journal-section {
+    background-color: #050C9C;
+    /* Light gray background for contrast */
+    padding: 40px 0;
+    /* Padding for top and bottom */
+    text-align: center;
+    /* Center-align text */
+    height: 300px;
+}
+
+.container-journal {
+    position: relative;
+    top: 20%;
+}
+
+.journal-section h1 {
+    font-size: 54px;
+    /* Larger font size for heading */
+    color: #fff;
+    /* Dark gray color for the heading */
+    margin-bottom: 20px;
+    /* Space below the heading */
+}
+
+.journal-section p {
+    font-size: 1.2rem;
+    /* Slightly larger font size for paragraph */
+    color: #fff;
+    /* Medium gray color for the text */
+    line-height: 1.6;
+    /* Improve line spacing for readability */
+    margin: 0;
+    /* Remove default margin */
+}
+
+
+.content-section {
+    background-color: #f8f9fa;
+    height: 170px;
+    /* Light background color for the section */
+}
+
+.content-section p {
+    font-size: 1rem;
+    /* Adjust paragraph font size */
+    color: #333;
+    /* Dark color for text */
+    line-height: 1.6;
+    /* Line height for better readability */
+}
+
+.img-fluid {
+    height: 320px;
+    width: 372px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    /* Bootstrap primary button color */
+    border: none;
+    /* Remove button border */
+    padding: 10px 20px;
+    /* Adjust button padding */
+}
+
+.text-contents {
+    flex: 1;
+    /* min-width: 200px; */
+    margin-right: 20px;
+    /* text-align: center; */
+    width: 940px;
+}
+
+button.btn.btn-primary {
+    width: 260px;
+    height: 50px;
+}
+
+
+.journal-row {
+    background: lightgray;
+    height: 380px;
+    padding: 31px 12px;
+    border-radius: 20px 0px 20px 0px;
+    ;
+}
+
+
+
+.form-section {
+    background-color: #f8f9fa;
+    /* Light background color for the section */
+}
+
+.form-label {
+    font-weight: bold;
+    /* Make labels bold */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    /* Bootstrap primary button color */
+    border: none;
+    /* Remove button border */
+    padding: 10px 20px;
+    /* Adjust button padding */
+}
+
+.journal-section,
+.content-section,
+.form-section {
+    clear: both;
+    margin: 0 auto;
+}
+
+
+section.form-section.py-5 {
+    position: relative;
+    top: 360px;
+    padding: 40px 20px;
+}
+
+
+.row.text-journal {
+    background: #dedede;
+    height: 375px;
+    position: relative;
+    padding: 20px;
+    border-radius: 20px 0px 20px 0px;
+}
+
+
+.row.text-journal i{
+    color: red;
+}
+
+
+.contnet{
+    font-weight: bold;
+}
+
+button.btn.btn-primary.browse-guides {
+    position: relative;
+    left: 21%;
+    top: 9%;
+    background-color: cadetblue;
+    /* background-color: #007bff; Original background color */
+    color: white; /* Original text color */
+    /* border: 1px solid #007bff; Original border color */
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; /* Animation transition */
+}
+
+button.btn.btn-primary.browse-guides:hover{
+    background-color: #fff; /* New background color on hover */
+    color: black; /* New text color on hover */
+    border: 1px solid grey;
+}
+
+.container.guides{
+    width: 710px;
+}
+
+
+
+.enquiry {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff; /* Optional: background color for better contrast */
+}
+
+/* Box shadow for individual form controls */
+.form-control {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* footer section */
+.contact-section {
+    padding: 50px 0;
+    /* background: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+    background: #f0f0f0;
+
+}
+
+.text-side {
+    padding: 30px;
+}
+
+.form-side {
+    padding: 30px;
+}
+
+.form-side form {
+    padding: 20px;
+}
+
+.form-control {
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 4px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+footer .container a {
+    color: #000000;
+}
+
+.social-media {
+    display: flex;
+    /* Use Flexbox for layout */
+
+    gap: 20px;
+    /* Adjust gap as needed for spacing */
+
+}
+.text-side p{
+    padding: 10px 0px;
+}
+
+/* Style for social media icons */
+.social-icon {
+    display: inline-flex;
+    /* Ensure icons are aligned properly */
+    align-items: center;
+    /* Center icons vertically */
+    width: 40px;
+    /* Set width for icons */
+    height: 40px;
+    /* Set height for icons */
+    font-size: 24px;
+    /* Adjust icon size * /* Icon color */
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.3s, background-color 0.3s;
+    /* Smooth transitions */
+    border-radius: 50%;
+    /* Rounded corners for circular icons */
+    /* Background color for icons */
+}
+
+
+/* For devices with a maximum width of 768px (tablets and small screens) */
+@media (max-width: 768px) {
+    .left-column {
+        width: 100%;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .right-column {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .image-container {
+        width: 100%;
+        height: auto;
+        position: static;
+        display: block;
+        margin-top: 20px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-content {
+        margin-right: 0;
+        text-align: left;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        background-color: #0033cc;
+    }
+
+    .content-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .research-impact {
+        display: block;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .research-impact h2 {
+        font-size: 22px;
+    }
+
+    .research-impact p {
+        font-size: 16px;
+    }
+
+    .dropdown-menu.show {
+        width: 100%;
+
+
+        position: static;
+        display: block;
+        top: auto;
+        left: auto;
+    }
+
+    .service-content img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .trending-item {
+        width: 560px;
+    }
+
+    .trending-image img {
+        width: 622px;
+        height: 230px;
+        display: block;
+        border-bottom: 1px solid #ddd;
+    }
+
+
+    .text-container ul {
+        padding-left: 0 !important;
+    }
+
+
+    .text-container p {
+        padding: 10px 0px
+    }
+
+    .text-insights li {
+        padding: 12px 0px;
+    }
+}
+
+
+
+@media (max-width:1300px) {
+
+
+    .image-container img {
+        width: 269px;
+        position: absolute;
+        left: 73%;
+        height: 470px;
+    }
+
+    .image-content img {
+        width: 344px;
+        height: 220px;
+        /* position: absolute; */
+        left: 15%;
+        position: relative;
+    }
+
+    .research-impact {
+        display: flex;
+
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        gap: 37px;
+        padding: 16px;
+        max-height: 600px;
+        /* Adjust based on content */
+
+    }
+
+    .dropdown-menu.show {
+        /* min-width: 468px; */
+        min-width: 468px;
+        min-width: 418px;
+        width: 1277px !important;
+        position: absolute;
+        display: inline-block;
+        left: -371%;
+        top: 111%;
+        padding: 20px;
+    }
+
+    ul.dropdown-menu.custom-dropdown-menu.show {
+        position: absolute;
+        width: 200px !important;
+        left: -24%;
+        padding: 15px;
+        margin: 0;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 0.25rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        top: 119%;
+    }
+
+    ul.dropdown-menu.custom-dropdown-menus.show {
+        position: absolute;
+        width: 340px !important;
+        left: -96%;
+        padding: 15px;
+        margin: 0;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 0.25rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    ul.dropdown-menu.custom-dropdown-menu-policies.show {
+        position: absolute;
+        width: 480px !important;
+        left: -140%;
+        padding: 15px;
+        margin: 0;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 0.25rem;
+    }
+
+    .service-content {
+        padding: 5px;
+        /* width: 222px; */
+
+    }
+
+    .service-content img {
+        width: 260px !important;
+        height: 200px !important;
+    }
+
+
+    .nav-link .dropdown-toggle .show {
+        width: 100%;
+        position: absolute;
+        top: 114%;
+        left: 0%;
+
+    }
+
+    .research-impact h2 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .research-impact p {
+        font-size: 19px;
+    }
+
+    .trending-item {
+        width: 560px;
+    }
+
+    .trending-image img {
+        width: 572px;
+        height: 230px;
+        display: block;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* call section media quey */
+    .section-call {
+        padding: 35px 0px;
+        background-color: #f9f9f9;
+        height: 440px;
+        /* Adjust background color as needed */
+    }
+
+
+    .main-content {
+        width: 71%;
+        /* display: flex; */
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    /* Container for image and text */
+    .call-content {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap !important;
+        position: relative;
+        top: 20px;
+        left: 0%;
+    }
+
+    .call-text p {
+        width: 740px;
+        font-size: 24px;
+        position: relative;
+        top: -50px;
+    }
+
+
+    .call-image img {
+        width: 403px !important;
+        height: 230px;
+    }
+
+
+
+
+    /* Heading styling */
+    .call-text h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    /* Paragraph styling */
+    .call-text p {
+        width: 770px !important;
+        font-size: 24px;
+        position: relative;
+        top: -50px;
+    }
+
+    .call-text a {
+        position: absolute;
+        top: 70%;
+        font-size: 24px;
+    }
+
+    /* Button styling */
+    .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007bff;
+        /* Button background color */
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+        background-color: #0056b3;
+        /* Darker button color on hover */
+    }
+
+    ul.custom-dropdown-menu.dropdown-menu.events.show {
+        width: 200px !important;
+        height: 104px;
+    }
+}
+
+
+
+/* For devices with a minimum width of 1301px (larger desktops) */
+@media (min-width: 1301px) {
+
+    .main-content {
+        width: 66%;
+        /* display: flex; */
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .image-container img {
+        width: 310px !important;
+        position: absolute;
+        left: 73%;
+        height: 470px;
+    }
+
+    .research-impact h2 {
+        font-size: 26px;
+    }
+
+    .research-impact p {
+        font-size: 19px;
+    }
+
+    .service-content img {
+        width: 300px !important;
+        height: 200px !important;
+    }
+
+    .research-impact {
+        display: flex;
+
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        gap: 37px;
+        padding: 16px;
+        max-height: 600px;
+        /* Adjust based on content */
+
+    }
+
+    .dropdown-menu.show {
+        min-width: 418px;
+        width: 1521px !important;
+        position: absolute;
+        display: inline-block;
+        left: -450%;
+        top: 111%;
+        padding: 17px;
+        height: 183px;
+    }
+
+   
+
+    .trending-item {
+        width: 560px;
+    }
+
+    .trending-image img {
+        width: 622px;
+        height: 230px;
+        display: block;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* call section media quey */
+    .section-call {
+        padding: 35px 0px;
+        background-color: #f9f9f9;
+        height: 438px;
+    }
+
+    /* Container for image and text */
+    .call-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        position: relative;
+        top: 13%;
+    }
+
+
+
+    .call-image img {
+        width: 530px;
+        height: 230px;
+    }
+
+
+
+    /* Heading styling */
+    .call-text h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    /* Paragraph styling */
+    .call-text p {
+        width: 860px;
+        font-size: 24px;
+        position: relative;
+        top: -50px;
+    }
+
+    .call-text a {
+        position: absolute;
+        top: 70%;
+        font-size: 24px;
+    }
+
+    /* Button styling */
+    .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007bff;
+        /* Button background color */
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+        background-color: #0056b3;
+        /* Darker button color on hover */
+    }
+
+
+    ul.dropdown-menu.custom-dropdown-menu.show {
+        position: absolute;
+        width: 200px !important;
+        left: -24%;
+        padding: 15px;
+        margin: 0;
+
+
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 0.25rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        top: 119%;
+    }
+
+    ul.dropdown-menu.custom-dropdown-menus.show {
+        position: absolute;
+        width: 340px !important;
+        left: -96%;
+        padding: 15px;
+        margin: 0;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 0.25rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    ul.dropdown-menu.custom-dropdown-menu-policies.show {
+        position: absolute;
+        width: 480px !important;
+        left: -140%;
+        padding: 15px;
+        margin: 0;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 0.25rem;
+    }
+
+    ul.custom-dropdown-menu.dropdown-menu.events.show {
+        width: 200px !important;
+        height: 104px;
+    }
+
+    .register {
+        background-color: #f0f0f0;
+        height: 725px;
+    }
+
+    .text-red {
+        color: red;
+        font-size: 10px;
+        position: relative;
+        bottom: 8px;
+        left: 2px;
+    }
+
+}
