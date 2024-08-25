@@ -4,15 +4,15 @@
             <div class="row">
                 <!-- Text Side -->
                 <div class="col-md-6 text-side">
-                    <h2 class="text-white">Contact Us</h2>
+                    <h2 class="text-black">Contact Us</h2>
                     <p>We would love to hear from you! Whether you have a question, feedback, or need support, feel free
                         to reach out to us. Our team is here to assist you and ensure you have the best experience
                         possible.</p>
                     <p>Fill out the form on the right to get in touch with us, and we will get back to you as soon as
                         possible.</p>
                     <div class="contact-info">
-                        <p><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></p>
-                        <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:info@example.com" >research@vmago.com</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:+1234567890">+91 8234 567 890</a></p>
                     </div>
                     <div class="social-media">
                         <a href="https://facebook.com" target="_blank" class="social-icon"><i
