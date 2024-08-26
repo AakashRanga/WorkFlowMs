@@ -5,19 +5,19 @@
             <div class="left-column">
                 <nav>
                     <ol>
-                        <li data-content="content1" data-image="images/research-otpion-side.jpg" class="selected">1.
+                        <li data-content="content1" data-image="images/p1.jpeg" class="selected">1.
                             Research
                             your options</li>
-                        <li data-content="content2" data-image="images/draft-article-side.jpg">2. Draft your article
+                        <li data-content="content2" data-image="images/p2.jpeg">2. Draft your article
                         </li>
-                        <li data-content="content3" data-image="images/authors-side.jpg">3. Instructions for authors
+                        <li data-content="content3" data-image="images/p3.jpeg">3. Instructions for authors
                         </li>
-                        <li data-content="content4" data-image="images/submission-side.jpg">4. Make your submission</li>
-                        <li data-content="content5" data-image="images/peer-side.jpg">5. Peer review</li>
-                        <li data-content="content6" data-image="images/revision-side.jpg">6. Making revisions</li>
-                        <li data-content="content7" data-image="images/article-side.jpg">7. Your article is accepted
+                        <li data-content="content4" data-image="images/p4.jpeg">4. Make your submission</li>
+                        <li data-content="content5" data-image="images/p5.jpeg">5. Peer review</li>
+                        <li data-content="content6" data-image="images/p6.jpeg">6. Making revisions</li>
+                        <li data-content="content7" data-image="images/p7.jpeg">7. Your article is accepted
                         </li>
-                        <li data-content="content8" data-image="images/promoting-side.jpg">8. Promoting your work</li>
+                        <li data-content="content8" data-image="images/p8.jpeg">8. Promoting your work</li>
                     </ol>
                 </nav>
             </div>
@@ -143,7 +143,7 @@
 
                 <!-- Dynamic image section (optional if needed) -->
                 <div class="image-container">
-                    <img src="images/research-otpion-side.jpeg" alt="Dynamic content image" class="content-image"
+                    <img src="images/p1.jpeg" alt="Dynamic content image" class="content-image"
                         id="dynamicImage">
                 </div>
             </section>
@@ -196,7 +196,7 @@
                 <p>Journals regularly ‘call for papers’, asking for submissions within a particular field or topic.
                     Answering these is a great way to get published, making sure your research fits the journal’s aims
                     and scope. Simply select your subject area with our handy tool to get started.</p>
-                <a href="#" class="cta-button">Search Current Call for papers</a>
+                <a href="callforpapers.php" class="cta-button">Search Current Call for papers</a>
             </div>
         </div>
     </section>
@@ -229,7 +229,7 @@
         }
 
         // Show the default content (content1)
-        showContent('content1', 'images/research-otpion-side.jpg');
+        showContent('content1', 'images/p1.jpeg');
 
         listItems.forEach(item => {
             item.addEventListener('click', function () {

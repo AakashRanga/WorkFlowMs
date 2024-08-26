@@ -575,6 +575,8 @@ ul.dropdown-menu.custom-dropdown-menu-policies.show li {
     /* Make the image responsive */
     height: auto;
     /* Maintain image aspect ratio */
+    border-radius: 8px;
+    /* Optional: rounded corners */
 }
 
 /* Styles for the text container */
@@ -980,7 +982,7 @@ footer .container a {
 
 
 
-.callforpaper-section {
+.callforpaper-section{
     background-color: #1c88ae;
     padding: 40px 20px;
     text-align: center;
@@ -988,23 +990,22 @@ footer .container a {
 }
 
 
-.callforpaper-container {
+.callforpaper-container{
     position: relative;
 }
 
-.callforpaper-container p,
-h1 {
-    color: #fff;
+.callforpaper-container p,h1{
+    color:#fff;
     text-align: left;
-
+    
 }
 
 
-.callforpaper-container h1 {
+.callforpaper-container h1{
     font-size: 64px;
 }
 
-.callforpaper-container p {
+.callforpaper-container p{
     font-size: 29px;
 }
 
@@ -1014,7 +1015,7 @@ h1 {
     top: 20%;
 }
 
-.callforpaper-image img {
+.callforpaper-image img{
     width: 259px;
     height: 260px;
     position: relative;
@@ -1037,15 +1038,14 @@ h1 {
 }
 
 .alternative-call img {
-    width: 50px;
-    /* Adjust image size as needed */
+    width: 50px; /* Adjust image size as needed */
     height: auto;
     margin-right: 10px;
 }
 
 .alternative-call p {
     margin: 0;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .alternative-call a {
@@ -1059,17 +1059,9 @@ h1 {
 }
 
 
-.call-papers {
-    border: 1px solid black;
-    border-radius: 15px 0px 15px 0px;
-    height: 270px;
-}
 
-.call-papers h4,
-.alternative-call {
-    position: relative;
-    top: 20px;
-}
+
+
 
 
 
