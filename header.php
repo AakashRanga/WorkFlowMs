@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/index1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-jcKb9Y4mI6+5c9Y2sFj2M+7Ko5+KAXpQOg4jScA6j/B5ttNgtNvhc9LxjF3dX4v1" crossorigin="anonymous">
 
 </head>
 
@@ -24,12 +25,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php">Home</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#servicesection" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" >
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
                         <ul class="dropdown-menu custom-dropdown-menus" aria-labelledby="navbarDropdown">
@@ -67,7 +68,8 @@
                                 </div>
 
                                 <div id="service2" class="service-content">
-                                    <img src="images/sharing-research.png" alt="Sharing Research Work Image" style="width: 300px;height: 200px;">
+                                    <img src="images/sharing-research.png" alt="Sharing Research Work Image"
+                                        style="width: 300px;height: 200px;">
                                     <h2>Sharing Your Research Work</h2>
                                     <p>Disseminate your research findings through various channels, such as online
                                         journals, research networks, and social media, to reach a wider audience and
@@ -136,7 +138,7 @@
                     <li class="nav-item sign">
                         <a class="nav-link" href="#" id="sign-in">Sign In</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -144,9 +146,11 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 
 </body>
 
