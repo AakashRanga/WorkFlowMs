@@ -64,69 +64,80 @@
             </div>
             <!-- Categories A-C -->
             <div class="col-12 mb-3">
-    <h2>
-        <button class="btn btn-link p-0" type="button" data-bs-toggle="collapse" data-bs-target="#filters-checkboxes-ac" aria-expanded="true" aria-controls="filters-checkboxes-ac">
-            Categories A-C <i class="fa-solid fa-chevron-up"></i>
-        </button>
-    </h2>
-    <div class="collapse show" id="filters-checkboxes-ac">
-        <!-- Categories A-C Group 1 with 4 Checkboxes -->
-        <fieldset>
-            <legend class="visually-hidden">Categories A-C</legend>
-            <div class="form-check mb-2">
-                <input class="form-check-input" id="checkbox-area_studies-1" type="checkbox" value="1684">
-                <label class="form-check-label" for="checkbox-area_studies-1">Area Studies</label>
-            </div>
-            <div class="form-check mb-2">
-                <input class="form-check-input" id="checkbox-artificial_intelligence-1" type="checkbox" value="1685">
-                <label class="form-check-label" for="checkbox-artificial_intelligence-1">Artificial Intelligence</label>
-            </div>
-            <div class="form-check mb-2">
-                <input class="form-check-input" id="checkbox-arts-1" type="checkbox" value="1686">
-                <label class="form-check-label" for="checkbox-arts-1">Arts</label>
-            </div>
-            <div class="form-check mb-2">
-                <input class="form-check-input" id="checkbox-behavioral_sciences-1" type="checkbox" value="1687">
-                <label class="form-check-label" for="checkbox-behavioral_sciences-1">Behavioral Sciences</label>
-            </div>
-        </fieldset>
+                <h2>
+                    <button class="btn btn-link p-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#filters-checkboxes-ac" aria-expanded="true"
+                        aria-controls="filters-checkboxes-ac">
+                        Categories A-C <i class="fa-solid fa-chevron-up"></i>
+                    </button>
+                </h2>
+                <div class="collapse show" id="filters-checkboxes-ac">
+                    <!-- Categories A-C Group 1 with 4 Checkboxes -->
+                    <fieldset>
+                        <legend class="visually-hidden">Categories A-C</legend>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" id="checkbox-area_studies-1" type="checkbox" value="1684">
+                            <label class="form-check-label" for="checkbox-area_studies-1">Area Studies</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" id="checkbox-artificial_intelligence-1" type="checkbox"
+                                value="1685">
+                            <label class="form-check-label" for="checkbox-artificial_intelligence-1">Artificial
+                                Intelligence</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" id="checkbox-arts-1" type="checkbox" value="1686">
+                            <label class="form-check-label" for="checkbox-arts-1">Arts</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" id="checkbox-behavioral_sciences-1" type="checkbox"
+                                value="1687">
+                            <label class="form-check-label" for="checkbox-behavioral_sciences-1">Behavioral
+                                Sciences</label>
+                        </div>
+                    </fieldset>
 
-        <!-- Categories A-C Group 2 with 4 Checkboxes -->
-        <fieldset class="mt-3">
-            <legend class="visually-hidden">Categories A-C</legend>
-            <div class="form-check mb-2">
-                <input class="form-check-input" id="checkbox-bioscience-2" type="checkbox" value="1688">
-                <label class="form-check-label" for="checkbox-bioscience-2">Bioscience</label>
-            </div>
-            <div class="form-check mb-2">
-                <input class="form-check-input" id="checkbox-built_environment-2" type="checkbox" value="1689">
-                <label class="form-check-label" for="checkbox-built_environment-2">Built Environment</label>
-            </div>
-            <div class="form-check mb-2">
-                <input class="form-check-input" id="checkbox-chemistry-2" type="checkbox" value="1690">
-                <label class="form-check-label" for="checkbox-chemistry-2">Chemistry</label>
-            </div>
-            <div class="form-check mb-2">
-                <input class="form-check-input" id="checkbox-communication_studies-2" type="checkbox" value="1691">
-                <label class="form-check-label" for="checkbox-communication_studies-2">Communication Studies</label>
-            </div>
-        </fieldset>
+                    <!-- Categories A-C Group 2 with 4 Checkboxes -->
+                    <fieldset class="mt-3">
+                        <legend class="visually-hidden">Categories A-C</legend>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" id="checkbox-bioscience-2" type="checkbox" value="1688">
+                            <label class="form-check-label" for="checkbox-bioscience-2">Bioscience</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" id="checkbox-built_environment-2" type="checkbox"
+                                value="1689">
+                            <label class="form-check-label" for="checkbox-built_environment-2">Built Environment</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" id="checkbox-chemistry-2" type="checkbox" value="1690">
+                            <label class="form-check-label" for="checkbox-chemistry-2">Chemistry</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" id="checkbox-communication_studies-2" type="checkbox"
+                                value="1691">
+                            <label class="form-check-label" for="checkbox-communication_studies-2">Communication
+                                Studies</label>
+                        </div>
+                    </fieldset>
 
-        <!-- Categories A-C Group 3 with 4 Checkboxes -->
-        <fieldset class="mt-3">
-            <legend class="visually-hidden">Categories A-C</legend>
-            <div class="form-check mb-2">
-                <input class="form-check-input" id="checkbox-area_studies-3" type="checkbox" value="1692">
-                <label class="form-check-label" for="checkbox-area_studies-3">Area Studies</label>
+                    <!-- Categories A-C Group 3 with 4 Checkboxes -->
+                    <fieldset class="mt-3">
+                        <legend class="visually-hidden">Categories A-C</legend>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" id="checkbox-area_studies-3" type="checkbox" value="1692">
+                            <label class="form-check-label" for="checkbox-area_studies-3">Area Studies</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" id="checkbox-artificial_intelligence-3" type="checkbox"
+                                value="1693">
+                            <label class="form-check-label" for="checkbox-artificial_intelligence-3">Artificial
+                                Intelligence</label>
+                        </div>
+
+                    </fieldset>
+                </div>
             </div>
-            <div class="form-check mb-2">
-                <input class="form-check-input" id="checkbox-artificial_intelligence-3" type="checkbox" value="1693">
-                <label class="form-check-label" for="checkbox-artificial_intelligence-3">Artificial Intelligence</label>
-            </div>
-            
-        </fieldset>
-    </div>
-</div>
 
 
 
