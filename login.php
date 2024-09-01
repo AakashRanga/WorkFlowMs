@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>akwithcode</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="login/css/style.css">
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
@@ -48,7 +48,7 @@
 
             <div class="media-options">
                 <a href="#" class="field google">
-                    <img src="google.png" alt="" class="google-img">
+                    <img src="images/google.png" alt="" class="google-img">
                     <span>Login with Google</span>
                 </a>
             </div>
@@ -98,7 +98,7 @@
     </section>
 
     <!-- JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="login/js/script.js"></script>
 </body>
 
 </html>
