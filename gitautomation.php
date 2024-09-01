@@ -1,19 +1,25 @@
 <?php
-  // Secret token to verify that the request is coming from GitHub
-  $secret = 'sunshine247111#'; // Make sure this matches the secret you set in GitHub
-  $signature = 'sha1=' . hash_hmac('sha1', file_get_contents('php://input'), $secret);
+$secret = 'sunshine247111#'; // Your secret key
 
-  if (hash_equals($signature, $_SERVER['HTTP_X_HUB_SIGNATURE'])) {
-    // Change to the directory of your repo
+// Get the signature from the request headers
+$signature = $_SERVER['HTTP_X_HUB_SIGNATURE'] ?? '';
+
+// Create the hash using the secret key and the payload
+$payload = file_get_contents('php://input');
+$expectedSignature = 'sha1=' . hash_hmac('sha1', $payload, $secret);
+
+// Compare the signatures
+if (hash_equals($expectedSignature, $signature)) {
+    // Change to the directory of your Git repository
     chdir('/home/tunetutu/public_html/akwithcode.com/wms');
-
-    // Run the git pull command
+    
+    // Run git pull to update the repository
     $output = shell_exec('git pull origin main 2>&1');
-
+    
     // Log the output
     file_put_contents('deploy.log', $output, FILE_APPEND);
-  } else {
+} else {
     // Log unauthorized access attempts
     file_put_contents('deploy.log', 'Unauthorized access attempt.' . PHP_EOL, FILE_APPEND);
-  }
+}
 ?>
