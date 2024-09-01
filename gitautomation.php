@@ -10,7 +10,7 @@ $expectedSignature = 'sha1=' . hash_hmac('sha1', $payload, $secret);
 
 // Compare the signatures
 if (hash_equals($expectedSignature, $signature)) {
-    // Change to the directory of your Git repository
+    // Hosting service Path folder
     chdir('/home/tunetutu/public_html/akwithcode.com/wms');
     
     // Run git pull to update the repository
