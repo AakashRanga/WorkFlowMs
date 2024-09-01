@@ -4,7 +4,7 @@
             <div class="row">
                 <!-- Text Side -->
                 <div class="col-md-6 text-side">
-                    <h2 class="text-black">Contact Us</h2>
+                    <h2 class="text-black">CONTACT US</h2>
                     <p>We would love to hear from you! Whether you have a question, feedback, or need support, feel free
                         to reach out to us. Our team is here to assist you and ensure you have the best experience
                         possible.</p>
@@ -28,7 +28,7 @@
                 </div>
                 <!-- Form Side -->
                 <div class="col-md-6 form-side">
-                    <h2>Get in Touch</h2>
+                    <h2>GET IN TOUCH</h2>
                     <form>
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
