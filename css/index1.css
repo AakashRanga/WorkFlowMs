@@ -93,18 +93,16 @@ ol li {
     display: none;
 }
 
-
+.left-column ol li:hover {
+    background-color: #050c9c;
+    color: #fff;
+}
 
 .left-column ol li::after {
     content: '';
     position: absolute;
     top: 50%;
     left: 100%;
-    /* Position the pseudo-element to the right side */
-    /* transform: translateY(-50%);
-    border-top: 24px solid rgba(0, 0, 0, 0);
-    border-bottom: 24px solid rgba(0, 0, 0, 0);
-    border-left: 24px solid #96c9fd; */
 }
 
 .left-column ol li.selected {
@@ -115,10 +113,10 @@ ol li {
 .left-column ol li.selected::after {
     border-left: 24px solid #4a90e2;
     transform: translateY(-50%);
-    border-top: 24px solid rgba(0, 0, 0, 0);
-    border-bottom: 24px solid rgba(0, 0, 0, 0);
+    border-top: 32px solid rgba(0, 0, 0, 0);
+    border-bottom: 29px solid rgba(0, 0, 0, 0);
     border-left: 24px solid #4a90e2;
-    /* Change color of the arrow for selected item */
+
 }
 
 /* Hover effect for list items */
@@ -662,7 +660,9 @@ section.image-text-insights {
     padding: 40px 0px;
 }
 
-
+.nav-item .nav-link {
+    width: 150px;
+}
 
 
 .text-container ul {
@@ -1037,7 +1037,7 @@ h1 {
 }
 
 .alternative-call img {
-    width: 50px;
+    width: 80px;
     /* Adjust image size as needed */
     height: auto;
     margin-right: 10px;
@@ -1079,6 +1079,116 @@ h1 {
 
 
 /* For devices with a maximum width of 768px (tablets and small screens) */
+@media (max-width:480px) {
+    .navbar>.container {
+        display: flex !important;
+        justify-content: flex-start !important;
+    }
+
+
+    .banner-section {
+        display: flex;
+        justify-content: center;
+        /* padding: 30px; */
+        padding: 2rem 0;
+        height: 580px;
+        width: 1157px !important;
+    }
+
+    .banner {
+        background-color: #050C9C;
+        display: flex;
+        justify-content: space-evenly;
+        height: 580px;
+        width: 1180px;
+    }
+
+    .left-column {
+        width: 318px !important;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+
+    .content-image {
+        /* max-width: 300px; */
+        height: 170px;
+        /* display: block; */
+        margin-bottom: 15px;
+        width: 300px;
+        position: relative;
+        left: 277% !important;
+    }
+
+
+    .left-column ol li {
+        /* background-color: #96c9fd; */
+        /* margin-right: -1.2rem; */
+        color: white;
+        position: relative;
+        padding: 16px 20px;
+        box-sizing: border-box;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: -10px;
+    }
+
+    .trending-topics {
+        padding: 40px 0px;
+        background-color: #f0f0f0;
+        height: 640px;
+        width: 1170px !important;
+        /* display: flex; */
+    }
+
+    .main-content h2{
+        font-size: 34px;
+    }
+
+    .text-content p{
+        font-size: 23px;
+    }
+
+    .trending-topics h1.text-center{
+        font-size: 67px;
+    }
+    .trending-content p{
+        font-size: 29px;
+    }
+
+    .trending-content a{
+        font-size: 29px;
+    }
+    .section-call {
+        padding: 35px 0px;
+        background-color: #f9f9f9;
+        height: 440px;
+        width: 1180px;
+    }
+
+    .call-image img {
+        width: 330px !important;
+        height: 269px;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     .left-column {
         width: 100%;
@@ -1219,7 +1329,7 @@ h1 {
         width: 1277px !important;
         position: absolute;
         display: inline-block;
-        left: -371%;
+        left: -375%;
         top: 111%;
         padding: 20px;
     }
@@ -1432,13 +1542,13 @@ h1 {
 
     .dropdown-menu.show {
         min-width: 418px;
-        width: 1521px !important;
+        width: 1499px !important;
         position: absolute;
         display: inline-block;
         left: -450%;
         top: 111%;
         padding: 17px;
-        height: 499px !important;
+        height: 551px !important;
     }
 
 

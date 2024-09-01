@@ -45,7 +45,7 @@
                 </div>
                 <div class="alternative-call">
                     <img src="images/routelege-image.jpeg" alt="F1000Research" class="img-fluid">
-                    <p><a href="#">F1000Research<i class="fa-solid fa-arrow-up-right-from-square"></i></a> is a
+                    <p><a href="#">Routledge Open Research<i class="fa-solid fa-arrow-up-right-from-square"></i></a> is a
                         platform for the arts, humanities,
                         behavioural, social sciences</p>
                 </div>
