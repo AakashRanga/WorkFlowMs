@@ -125,7 +125,7 @@
                         </ul>
                     </li>
                     <li class="nav-item sign">
-                        <a class="nav-link" href="#" id="sign-in">Sign In</a>
+                        <a class="nav-link" href="login_page.php" id="sign-in">Sign In</a>
                     </li>
                 </ul>
             </div>
@@ -135,13 +135,13 @@
     <!-- Offcanvas for mobile view -->
     <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">WFMS</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php">WFMS</a>
+                    <a class="nav-link" href="index.php">HOME</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="offcanvasServicesToggle" role="button"
@@ -206,7 +206,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" id="sign-in">Sign In</a>
+                    <a class="nav-link" href="login_page.php" id="sign-in">Sign In</a>
                 </li>
             </ul>
         </div>
