@@ -195,7 +195,7 @@
                                 <li><a class="dropdown-item" href="#">How to Increase Research Impact?</a></li>
                                 <li><a class="dropdown-item" href="#">Sharing Your Research Work</a></li>
                                 <li><a class="dropdown-item" href="#">Write Research Blogs</a></li>
-                                <li><a class="dropdown-item" href="#">Present Your Work in Seminars and Workshops</a>
+                                <li><a class="dropdown-item" href="#">Present Your Work in Seminars & Workshops</a>
                                 </li>
                             </ul>
                         </li>
@@ -213,8 +213,7 @@
                                 <li><a class="dropdown-item" href="#">Acknowledge the institute research</a></li>
                                 <li><a class="dropdown-item" href="#">Funding resources</a></li>
                                 <li><a class="dropdown-item" href="#">Our editorial policies</a></li>
-                                <li><a class="dropdown-item" href="#">Explain your reasonable request data sharing
-                                        policy</a></li>
+                                <li><a class="dropdown-item" href="#">Explain your reasonable request </a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
