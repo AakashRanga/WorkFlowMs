@@ -424,7 +424,7 @@
     a.btn.btn-primary.mt-3 {
         padding: 10px 0px;
         position: relative;
-        left: 17%;
+        left: 17% !important;
     }
 
     .research-section .container h1 {
