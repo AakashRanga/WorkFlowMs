@@ -148,79 +148,88 @@
             </div>
             <!-- mobile view  -->
             <!-- Offcanvas for mobile view -->
-            <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.php">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="offcanvasServicesToggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Services
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="offcanvasServicesToggle">
-                    <li><a class="dropdown-item" href="#">Research/Review Paper Writing Assistance</a></li>
-                    <li><a class="dropdown-item" href="#">Thesis Writing Assistance</a></li>
-                    <li><a class="dropdown-item" href="#">Dissertation/Synopsis Writing Assistance</a></li>
-                    <li><a class="dropdown-item" href="#">Patents</a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="offcanvasPublicationToggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Publication
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="offcanvasPublicationToggle">
-                    <li><a class="dropdown-item" href="#">Scopus</a></li>
-                    <li><a class="dropdown-item" href="#">Web Of Science</a></li>
-                    <li><a class="dropdown-item" href="#">UGC-CARE</a></li>
-                    <li><a class="dropdown-item" href="#">PubMed</a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="offcanvasResearchImpactToggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Research Impact
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="offcanvasResearchImpactToggle">
-                    <li><a class="dropdown-item" href="#">How to Increase Research Impact?</a></li>
-                    <li><a class="dropdown-item" href="#">Sharing Your Research Work</a></li>
-                    <li><a class="dropdown-item" href="#">Write Research Blogs</a></li>
-                    <li><a class="dropdown-item" href="#">Present Your Work in Seminars and Workshops</a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="offcanvasPoliciesToggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Policies
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="offcanvasPoliciesToggle">
-                    <li><a class="dropdown-item" href="#">Define authorship in your manuscript</a></li>
-                    <li><a class="dropdown-item" href="#">Comprehend our data sharing policies</a></li>
-                    <li><a class="dropdown-item" href="#">Author contributions</a></li>
-                    <li><a class="dropdown-item" href="#">Conflict of Interest</a></li>
-                    <li><a class="dropdown-item" href="#">Acknowledge the institute where you have conducted your research</a></li>
-                    <li><a class="dropdown-item" href="#">Funding resources</a></li>
-                    <li><a class="dropdown-item" href="#">Our editorial policies</a></li>
-                    <li><a class="dropdown-item" href="#">Explain your reasonable request data sharing policy</a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="offcanvasEventsToggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Events
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="offcanvasEventsToggle">
-                    <li><a class="dropdown-item" href="#">Our Past Events</a></li>
-                    <li><a class="dropdown-item" href="#">Our Upcoming Events</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" id="sign-in">Sign In</a>
-            </li>
-        </ul>
-    </div>
-</div>
+            <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasServicesToggle" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasServicesToggle">
+                                <li><a class="dropdown-item" href="#">Research/Review Paper Writing Assistance</a></li>
+                                <li><a class="dropdown-item" href="#">Thesis Writing Assistance</a></li>
+                                <li><a class="dropdown-item" href="#">Dissertation/Synopsis Writing Assistance</a></li>
+                                <li><a class="dropdown-item" href="#">Patents</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasPublicationToggle" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Publication <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasPublicationToggle">
+                                <li><a class="dropdown-item" href="#">Scopus</a></li>
+                                <li><a class="dropdown-item" href="#">Web Of Science</a></li>
+                                <li><a class="dropdown-item" href="#">UGC-CARE</a></li>
+                                <li><a class="dropdown-item" href="#">PubMed</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasResearchImpactToggle"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Research Impact <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasResearchImpactToggle">
+                                <li><a class="dropdown-item" href="#">How to Increase Research Impact?</a></li>
+                                <li><a class="dropdown-item" href="#">Sharing Your Research Work</a></li>
+                                <li><a class="dropdown-item" href="#">Write Research Blogs</a></li>
+                                <li><a class="dropdown-item" href="#">Present Your Work in Seminars and Workshops</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasPoliciesToggle" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Policies <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasPoliciesToggle">
+                                <li><a class="dropdown-item" href="#">Define authorship in your manuscript</a></li>
+                                <li><a class="dropdown-item" href="#">Comprehend our data sharing policies</a></li>
+                                <li><a class="dropdown-item" href="#">Author contributions</a></li>
+                                <li><a class="dropdown-item" href="#">Conflict of Interest</a></li>
+                                <li><a class="dropdown-item" href="#">Acknowledge the institute where you have conducted
+                                        your research</a></li>
+                                <li><a class="dropdown-item" href="#">Funding resources</a></li>
+                                <li><a class="dropdown-item" href="#">Our editorial policies</a></li>
+                                <li><a class="dropdown-item" href="#">Explain your reasonable request data sharing
+                                        policy</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasEventsToggle" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Events <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasEventsToggle">
+                                <li><a class="dropdown-item" href="#">Our Past Events</a></li>
+                                <li><a class="dropdown-item" href="#">Our Upcoming Events</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="sign-in">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
 
 
@@ -244,5 +253,6 @@
         });
     </script>
 
+</body>
 
 </html>
