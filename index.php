@@ -97,7 +97,7 @@
                                 <p>The peer review process is essential for maintaining the quality and credibility of
                                     academic research. Experts in the field evaluate submitted work for its originality,
                                     accuracy, and relevance, providing constructive feedback to improve the manuscript.
-                                   </p>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -112,8 +112,7 @@
                                 <h2>Making revisions</h2>
                                 <p>Following peer review, you may be asked to make revisions to your article and
                                     resubmit. Take time to read through the editor and reviewers’ advice, and decide
-                                    what changes you’ll make to your article. Taking their points on board will help to
-                                    ensure your final article is as robust and impactful as possible.</p>
+                                    what changes you’ll make to your article. </p>
                             </div>
                         </div>
                     </div>
@@ -156,8 +155,8 @@
                 </div>
                 <!-- Carousel for Mobile -->
                 <div class="col-12 d-md-none">
-                    <div id="mobileCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="60000">
-                        <div class="carousel-inner">
+                    <id="mobileCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="60000">
+                        < class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="images/researchoption.jpeg" class="d-block w-100" alt="Research your options">
                                 <div class="carousel-caption  d-md-block">
@@ -209,41 +208,46 @@
                                         your
                                         field. Be prepared for feedback and potentially additional revisions to improve
                                         your
+                                        article. Be prepared for feedback and potentially additional revisions to
+                                        improve
+                                        your
                                         article.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="carousel-item ">
-                            <img src="images/revision.avif" class="d-block w-100" alt="Research your options">
-                            <div class="carousel-caption  d-md-block">
-                                <h2>Making revisions</h2>
-                                <p>Following peer review, you may be asked to make revisions to your article and
-                                    resubmit. Take time to read through the editor and reviewers’ advice, and decide
-                                    what changes you’ll make to your article. </p>
+                            <div class="carousel-item ">
+                                <img src="images/revision.avif" class="d-block w-100" alt="Research your options">
+                                <div class="carousel-caption  d-md-block">
+                                    <h2>Making revisions</h2>
+                                    <p>Following peer review, you may be asked to make revisions to your article and
+                                        resubmit. Take time to read through the editor and reviewers’ advice, and decide
+                                        what changes you’ll make to your article. </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="carousel-item ">
-                            <img src="images/article-accept.avif" class="d-block w-100" alt="Research your options">
-                            <div class="carousel-caption  d-md-block">
-                                <h2>Your article is accepted</h2>
-                                <p>The next step is production. Copy editing begins, and we’ll contact you with your
-                                    proofs. You’ll also sign a publishing agreement. If you submitted to an Open Select
-                                    journal, now is the time to choose whether to publish your article open access.</p>
+                            <div class="carousel-item ">
+                                <img src="images/article-accept.avif" class="d-block w-100" alt="Research your options">
+                                <div class="carousel-caption  d-md-block">
+                                    <h2>Your article is accepted</h2>
+                                    <p>The next step is production. Copy editing begins, and we’ll contact you with your
+                                        proofs. You’ll also sign a publishing agreement. If you submitted to an Open
+                                        Select
+                                        journal, now is the time to choose whether to publish your article open access.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="carousel-item ">
-                            <img src="images/wordk-promoting.avif" class="d-block w-100" alt="Research your options">
-                            <div class="carousel-caption  d-md-block">
-                                <h2>Promoting your work</h2>
-                                <p>Promoting your published article is a team effort. Taylor & Francis works hard to
-                                    maximize the discoverability of your work, and we’ve got lots of advice to help you
-                                    share your work and amplify its impact.</p>
+                            <div class="carousel-item ">
+                                <img src="images/wordk-promoting.avif" class="d-block w-100"
+                                    alt="Research your options">
+                                <div class="carousel-caption  d-md-block">
+                                    <h2>Promoting your work</h2>
+                                    <p>Promoting your published article is a team effort. Taylor & Francis works hard to
+                                        maximize the discoverability of your work, and we’ve got lots of advice to help
+                                        you
+                                        share your work and amplify its impact.</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <!-- Add more carousel items as needed -->
-                    </div>
-                    
+                            <!-- Add more carousel items as needed -->
+
                 </div>
             </div>
 
