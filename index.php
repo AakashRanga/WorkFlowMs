@@ -166,8 +166,7 @@
                                         your
                                         research. Find a journal that serves the audience you’re trying to reach and
                                         whose
-                                        aims and scope match your approach. You might also have choices to make about
-                                        different publishing options, including open access.</p>
+                                        aims and scope match your approach. </p>
                                 </div>
                             </div>
                             <div class="carousel-item ">
@@ -220,8 +219,7 @@
                                 <h2>Making revisions</h2>
                                 <p>Following peer review, you may be asked to make revisions to your article and
                                     resubmit. Take time to read through the editor and reviewers’ advice, and decide
-                                    what changes you’ll make to your article. Taking their points on board will help to
-                                    ensure your final article is as robust and impactful as possible.</p>
+                                    what changes you’ll make to your article. </p>
                             </div>
                         </div>
                         <div class="carousel-item ">
@@ -245,16 +243,7 @@
 
                         <!-- Add more carousel items as needed -->
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#mobileCarousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#mobileCarousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    
                 </div>
             </div>
 
@@ -319,7 +308,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
                     <p>Journals regularly ‘call for papers’, asking for submissions within a particular field or topic.
                         Answering these is a great way to get published, making sure your research fits the journal’s
-                        aims and scope. Simply select your subject area with our handy tool to get started.</p>
+                        aims and scope.</p>
                     <a href="callforpapers.php" class="btn btn-primary mt-3">Search Current Call for Papers</a>
                 </div>
             </div>
@@ -327,45 +316,38 @@
     </section>
 </main>
 <?php include('footer.php'); ?>
-
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const mobileCarousel = new bootstrap.Carousel(document.getElementById('mobileCarousel'), {
-            interval: 60000, // 1 minute
+            interval: 5000, // Adjust interval as needed
             ride: 'carousel'
         });
+
         const listItems = document.querySelectorAll('.left-column ol li');
-        const containers = document.querySelectorAll('.right-column .content-container'); // Adjust selector here
+        const containers = document.querySelectorAll('.right-column .content-container');
         const dynamicImage = document.getElementById('dynamicImage');
 
         function showContent(contentId, imageUrl) {
-            // Remove 'selected' class from all list items
             listItems.forEach(li => li.classList.remove('selected'));
-            // Hide all content containers
             containers.forEach(container => container.style.display = 'none');
 
-            // Add 'selected' class to the clicked list item
             const selectedListItem = document.querySelector(`.left-column ol li[data-content="${contentId}"]`);
             if (selectedListItem) {
                 selectedListItem.classList.add('selected');
             }
 
-            // Display the corresponding content container
             const contentToShow = document.getElementById(contentId);
             if (contentToShow) {
                 contentToShow.style.display = 'block';
             }
 
-            // Update the dynamic image source
             if (dynamicImage) {
                 dynamicImage.src = imageUrl;
             }
         }
 
-        // Set the initial display state for the content
         showContent('content1', 'images/p1.jpeg');
 
-        // Add event listeners to each list item
         listItems.forEach(item => {
             item.addEventListener('click', function () {
                 const contentId = this.getAttribute('data-content');
@@ -374,6 +356,4 @@
             });
         });
     });
-
-
 </script>

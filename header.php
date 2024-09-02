@@ -163,6 +163,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="offcanvasServicesToggle" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Services <i class="fa fa-angle-down"></i>
+
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="offcanvasServicesToggle">
                                 <li><a class="dropdown-item" href="#">Research/Review Paper Writing Assistance</a></li>
@@ -174,7 +175,8 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="offcanvasPublicationToggle" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Publication <i class="fa fa-angle-down"></i>
+                                Publication<i class="fa fa-angle-down"></i>
+
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="offcanvasPublicationToggle">
                                 <li><a class="dropdown-item" href="#">Scopus</a></li>
@@ -186,7 +188,8 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="offcanvasResearchImpactToggle"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Research Impact <i class="fa fa-angle-down"></i>
+                                Research Impact<i class="fa fa-angle-down"></i>
+
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="offcanvasResearchImpactToggle">
                                 <li><a class="dropdown-item" href="#">How to Increase Research Impact?</a></li>
@@ -199,15 +202,15 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="offcanvasPoliciesToggle" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Policies <i class="fa fa-angle-down"></i>
+                                Policies<i class="fa fa-angle-down"></i>
+
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="offcanvasPoliciesToggle">
                                 <li><a class="dropdown-item" href="#">Define authorship in your manuscript</a></li>
                                 <li><a class="dropdown-item" href="#">Comprehend our data sharing policies</a></li>
                                 <li><a class="dropdown-item" href="#">Author contributions</a></li>
                                 <li><a class="dropdown-item" href="#">Conflict of Interest</a></li>
-                                <li><a class="dropdown-item" href="#">Acknowledge the institute where you have conducted
-                                        your research</a></li>
+                                <li><a class="dropdown-item" href="#">Acknowledge the institute research</a></li>
                                 <li><a class="dropdown-item" href="#">Funding resources</a></li>
                                 <li><a class="dropdown-item" href="#">Our editorial policies</a></li>
                                 <li><a class="dropdown-item" href="#">Explain your reasonable request data sharing
@@ -217,7 +220,8 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="offcanvasEventsToggle" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Events <i class="fa fa-angle-down"></i>
+                                Events<i class="fa fa-angle-down"></i>
+
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="offcanvasEventsToggle">
                                 <li><a class="dropdown-item" href="#">Our Past Events</a></li>
@@ -230,9 +234,7 @@
                     </ul>
                 </div>
             </div>
-
-
-
+        </div>
     </nav>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
