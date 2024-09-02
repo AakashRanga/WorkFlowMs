@@ -25,6 +25,8 @@
     }
 
 
+
+
 }
 
 
@@ -360,6 +362,12 @@
     .navbar>.container {
         display: flex;
         justify-content: flex-start !important;
+    }
+    .journal-section {
+        background-color: #050C9C;
+        padding: 40px 0;
+        text-align: center;
+        height: 300px;
     }
 
 

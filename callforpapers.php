@@ -68,7 +68,7 @@
                     <button class="btn btn-link p-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#filters-checkboxes-ac" aria-expanded="true"
                         aria-controls="filters-checkboxes-ac">
-                        Categories A-C <i class="fa-solid fa-chevron-up"></i>
+                        Categories A-C 
                     </button>
                 </h2>
                 <div class="collapse show" id="filters-checkboxes-ac">
@@ -147,7 +147,7 @@
                     <button class="btn btn-link p-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#filters-checkboxes-dg" aria-expanded="false"
                         aria-controls="filters-checkboxes-dg">
-                        Categories D-G <i class="fa-solid fa-chevron-down"></i>
+                        Categories D-G
                     </button>
                 </h2>
                 <div class="collapse" id="filters-checkboxes-dg">
@@ -157,6 +157,53 @@
                             <input class="form-check-input" id="checkbox-earth_sciences" type="checkbox" value="1693">
                             <label class="form-check-label" for="checkbox-earth_sciences">Earth Sciences</label>
                         </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="checkbox-earth_sciences" type="checkbox" value="1693">
+                            <label class="form-check-label" for="checkbox-earth_sciences">Earth Sciences</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="checkbox-earth_sciences" type="checkbox" value="1693">
+                            <label class="form-check-label" for="checkbox-earth_sciences">Earth Sciences</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="checkbox-earth_sciences" type="checkbox" value="1693">
+                            <label class="form-check-label" for="checkbox-earth_sciences">Earth Sciences</label>
+                        </div>
+                        <!-- More checkboxes can be added here -->
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="visually-hidden">Categories D-G</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" id="checkbox-earth_sciences" type="checkbox" value="1693">
+                            <label class="form-check-label" for="checkbox-earth_sciences">Earth Sciences</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="checkbox-earth_sciences" type="checkbox" value="1693">
+                            <label class="form-check-label" for="checkbox-earth_sciences">Earth Sciences</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="checkbox-earth_sciences" type="checkbox" value="1693">
+                            <label class="form-check-label" for="checkbox-earth_sciences">Earth Sciences</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="checkbox-earth_sciences" type="checkbox" value="1693">
+                            <label class="form-check-label" for="checkbox-earth_sciences">Earth Sciences</label>
+                        </div>
+                        <!-- More checkboxes can be added here -->
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="visually-hidden">Categories D-G</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" id="checkbox-earth_sciences" type="checkbox" value="1693">
+                            <label class="form-check-label" for="checkbox-earth_sciences">Earth Sciences</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="checkbox-earth_sciences" type="checkbox" value="1693">
+                            <label class="form-check-label" for="checkbox-earth_sciences">Earth Sciences</label>
+                        </div>
+                        
                         <!-- More checkboxes can be added here -->
                     </fieldset>
                 </div>
