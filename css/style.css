@@ -418,6 +418,14 @@ a.btn.btn-primary.mt-3 {
     font-size: 25px;
 }
 
+/* mobile view navbar css */
+.modal-backdrop.show {
+    opacity:0;
+}
+
+
+
+
 
 /* research-insights css */
 .research-section {
