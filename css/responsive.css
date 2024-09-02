@@ -171,7 +171,20 @@
     display: none; /* Hide default Bootstrap arrow */
 }
 
-    
+   .offcanvas-body .dropdown-menu {
+    display: none;
+}
+
+/* Show the active dropdown menu */
+.offcanvas-body .dropdown-menu.show {
+    display: block;
+} 
+.dropdown-toggle::after {
+    content: "\f078"; /* Font Awesome down caret icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-left: 0.5rem;
+}
 }
 
 
