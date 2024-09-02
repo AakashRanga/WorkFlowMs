@@ -134,6 +134,7 @@
     font-size: 1.1rem; /* Font size of links */
     padding: 0.75rem 1rem; /* Padding around links */
     color: #333; /* Link color */
+
 }
 
 .nav-link:hover {
@@ -145,16 +146,22 @@
     border: none; /* Remove border */
     border-radius: 0; /* Remove border radius */
     box-shadow: none; /* Remove shadow */
+    cursor: pointer;
+
 }
 
 .dropdown-item {
     font-size: 1rem; /* Font size of dropdown items */
     padding: 0.75rem 1rem; /* Padding for dropdown items */
     color: #333; /* Dropdown item color */
+    cursor: pointer;
 }
 
 .dropdown-item:hover {
     background-color: #e9ecef; /* Background color on hover */
+    cursor: pointer;
+
+
 }
 
 /* Custom dropdown menus with scrollbar */
@@ -381,7 +388,7 @@
         /* height: auto; */
         height: 330px;
         object-fit: contain;
-        width: 390px;
+        width: 390px !important;
     }
 
     .trending-image .img-fluid {
@@ -417,7 +424,7 @@
     a.btn.btn-primary.mt-3 {
         padding: 10px 0px;
         position: relative;
-        left: 5%;
+        left: 23%;
     }
 
     .research-section .container h1 {
