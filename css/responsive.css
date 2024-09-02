@@ -492,6 +492,11 @@
     img.image {
         width: 367px !important;
     }
+    a.btn.btn-primary.mt-3 {
+        padding: 10px 0px;
+        position: relative;
+        left: 17% !important;
+    }
 }
 
 @media (max-width:380px) {
