@@ -94,104 +94,6 @@
         height: 520px;
     }
 
-    .offcanvas-body .nav-item .nav-link {
-        /* width: 136px; */
-        /* text-align: center; */
-        text-align: left;
-    }
-    /* Basic styles for offcanvas */
-.offcanvas {
-    background-color: #ffffff; /* Background color */
-    width: 250px; /* Width of the off-canvas menu */
-    padding: 0; /* Remove padding */
-}
-
-.offcanvas-header {
-    background-color: #007bff; /* Background color of the header */
-    color: #ffffff; /* Text color in the header */
-    padding: 1rem; /* Padding inside header */
-}
-
-.offcanvas-title {
-    font-size: 1.25rem; /* Title font size */
-    font-weight: bold; /* Make title bold */
-}
-
-.btn-close {
-    color: #ffffff; /* Close button color */
-    font-size: 1.5rem; /* Close button size */
-}
-
-.offcanvas-body {
-    padding: 1rem; /* Padding inside the body */
-}
-
-.navbar-nav .nav-item {
-    margin-bottom: 1rem; /* Spacing between items */
-}
-
-.nav-link {
-    font-size: 1.1rem; /* Font size of links */
-    padding: 0.75rem 1rem; /* Padding around links */
-    color: #333; /* Link color */
-
-}
-
-.nav-link:hover {
-    color: #007bff; /* Link color on hover */
-}
-
-.dropdown-menu {
-    background-color: #f8f9fa; /* Background color of dropdowns */
-    border: none; /* Remove border */
-    border-radius: 0; /* Remove border radius */
-    box-shadow: none; /* Remove shadow */
-    cursor: pointer;
-
-}
-
-.dropdown-item {
-    font-size: 1rem; /* Font size of dropdown items */
-    padding: 0.75rem 1rem; /* Padding for dropdown items */
-    color: #333; /* Dropdown item color */
-    cursor: pointer;
-}
-
-.dropdown-item:hover {
-    background-color: #e9ecef; /* Background color on hover */
-    cursor: pointer;
-
-
-}
-
-/* Custom dropdown menus with scrollbar */
-.custom-dropdown-menus,
-.custom-dropdown-menu,
-.custom-dropdown-menu-policies,
-.events {
-    max-height: 300px; /* Limit dropdown height */
-    overflow-y: auto; /* Add vertical scrollbar if needed */
-}
-
-/* Styles for dropdown toggle */
-.nav-link.dropdown-toggle::after {
-    display: none; /* Hide default Bootstrap arrow */
-}
-
-   .offcanvas-body .dropdown-menu {
-    display: none;
-}
-
-/* Show the active dropdown menu */
-.offcanvas-body .dropdown-menu.show {
-    display: block;
-} 
-.dropdown-toggle::after {
-    content: "\f078"; /* Font Awesome down caret icon */
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    margin-left: 0.5rem;
-}
 }
 
 
@@ -734,4 +636,79 @@
         position: absolute;
         top: -78px;
     }
+    /* Basic styles for offcanvas */
+.offcanvas {
+    background-color: #ffffff; /* Background color */
+    width: 250px; /* Width of the off-canvas menu */
+    padding: 0; /* Remove padding */
+}
+
+.offcanvas-header {
+    background-color: #007bff; /* Background color of the header */
+    color: #ffffff; /* Text color in the header */
+    padding: 1rem; /* Padding inside header */
+}
+
+.offcanvas-title {
+    font-size: 1.25rem; /* Title font size */
+    font-weight: bold; /* Make title bold */
+}
+
+.btn-close {
+    color: #ffffff; /* Close button color */
+    font-size: 1.5rem; /* Close button size */
+}
+
+.offcanvas-body {
+    padding: 0.5rem; /* Padding inside the body */
+}
+
+.navbar-nav .nav-item {
+    margin-bottom: 1rem; /* Spacing between items */
+}
+
+.nav-link {
+    font-size: 1.1rem; /* Font size of links */
+    padding: 0.75rem 1rem; /* Padding around links */
+    color: #333; /* Link color */
+}
+
+.nav-link:hover {
+    color: #007bff; /* Link color on hover */
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa; /* Background color of dropdowns */
+    border: none; /* Remove border */
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove shadow */
+}
+
+.dropdown-item {
+    font-size: 1rem; /* Font size of dropdown items */
+    padding: 0.75rem 1rem; /* Padding for dropdown items */
+    color: #333; /* Dropdown item color */
+}
+
+.dropdown-item:hover {
+    background-color: #e9ecef; /* Background color on hover */
+}
+
+/* Custom dropdown menus with scrollbar */
+.custom-dropdown-menus,
+.custom-dropdown-menu,
+.custom-dropdown-menu-policies,
+.events {
+    max-height: 300px; /* Limit dropdown height */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+}
+
+/* Styles for dropdown toggle */
+.nav-link.dropdown-toggle::after {
+    display: none; /* Hide default Bootstrap arrow */
+}
+.navbar-nav .nav-item .nav-link {
+    width: 136px;
+    text-align: left;
+}
 }
