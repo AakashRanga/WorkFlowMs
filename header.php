@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
@@ -17,14 +18,13 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-large sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-large sticky-top ">
         <div class="container">
-            <!-- <a class="navbar-brand" href="#">WFMS</a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="index.php">Home</a>
@@ -53,6 +53,7 @@
                             <li><a class="dropdown-item" href="#">PubMed</a></li>
                         </ul>
                     </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -66,6 +67,7 @@
                                     <h2>How to Increase Research Impact?</h2>
                                     <p>To enhance the impact of your research, consider these key strategies:</p>
                                 </div>
+
                                 <div id="service2" class="service-content">
                                     <img src="images/sharing-research.png" alt="Sharing Research Work Image"
                                         style="width: 300px;height: 200px;">
@@ -74,6 +76,7 @@
                                         journals, research networks, and social media, to reach a wider audience and
                                         engage with the academic community.</p>
                                 </div>
+
                                 <div id="service3" class="service-content">
                                     <img src="images/research-blog.png" alt="Writing Research Blogs Image"
                                         style="width:300px">
@@ -83,6 +86,7 @@
                                         research more accessible and engaging to both academic and non-academic
                                         audiences.</p>
                                 </div>
+
                                 <div id="service4" class="service-content">
                                     <img src="images/presentation-workshop.png" alt="Presenting Work Image"
                                         style="width:300px">
@@ -125,98 +129,137 @@
                         </ul>
                     </li>
                     <li class="nav-item sign">
-                        <a class="nav-link" href="login_page.php" id="sign-in">Sign In</a>
+                        <a class="nav-link" href="#" id="sign-in">Sign In</a>
                     </li>
                 </ul>
             </div>
+            <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasServicesToggle" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasServicesToggle">
+                                <li><a class="dropdown-item" href="#">Research/Review Paper Writing Assistance</a></li>
+                                <li><a class="dropdown-item" href="#">Thesis Writing Assistance</a></li>
+                                <li><a class="dropdown-item" href="#">Dissertation/Synopsis Writing Assistance</a></li>
+                                <li><a class="dropdown-item" href="#">Patents</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasPublicationToggle" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Publication <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasPublicationToggle">
+                                <li><a class="dropdown-item" href="#">Scopus</a></li>
+                                <li><a class="dropdown-item" href="#">Web Of Science</a></li>
+                                <li><a class="dropdown-item" href="#">UGC-CARE</a></li>
+                                <li><a class="dropdown-item" href="#">PubMed</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasResearchImpactToggle"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Research Impact<i class="fa fa-angle-down"></i>
+
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasResearchImpactToggle">
+                                <li><a class="dropdown-item" href="#">How to Increase Research Impact?</a></li>
+                                <li><a class="dropdown-item" href="#">Sharing Your Research Work</a></li>
+                                <li><a class="dropdown-item" href="#">Write Research Blogs</a></li>
+                                <li><a class="dropdown-item" href="#">Present Your Work in Seminars & Workshops</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasPoliciesToggle" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Policies<i class="fa fa-angle-down"></i>
+
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasPoliciesToggle">
+                                <li><a class="dropdown-item" href="#">Define authorship in your manuscript</a></li>
+                                <li><a class="dropdown-item" href="#">Comprehend our data sharing policies</a></li>
+                                <li><a class="dropdown-item" href="#">Author contributions</a></li>
+                                <li><a class="dropdown-item" href="#">Conflict of Interest</a></li>
+                                <li><a class="dropdown-item" href="#">Acknowledge the institute research</a></li>
+                                <li><a class="dropdown-item" href="#">Funding resources</a></li>
+                                <li><a class="dropdown-item" href="#">Our editorial policies</a></li>
+                                <li><a class="dropdown-item" href="#">Explain your reasonable request </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasEventsToggle" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Events<i class="fa fa-angle-down"></i>
+
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasEventsToggle">
+                                <li><a class="dropdown-item" href="#">Our Past Events</a></li>
+                                <li><a class="dropdown-item" href="#">Our Upcoming Events</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="sign-in">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </nav>
 
-    <!-- Offcanvas for mobile view -->
-    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">WFMS</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php">HOME</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasServicesToggle" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Services <i class="fa fa-angle-down"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="offcanvasServicesToggle">
-                        <li><a class="dropdown-item" href="#">Research/Review Paper Writing Assistance</a></li>
-                        <li><a class="dropdown-item" href="#">Thesis Writing Assistance</a></li>
-                        <li><a class="dropdown-item" href="#">Dissertation/Synopsis Writing Assistance</a></li>
-                        <li><a class="dropdown-item" href="#">Patents</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasPublicationToggle" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Publication <i class="fa fa-angle-down"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="offcanvasPublicationToggle">
-                        <li><a class="dropdown-item" href="#">Scopus</a></li>
-                        <li><a class="dropdown-item" href="#">Web Of Science</a></li>
-                        <li><a class="dropdown-item" href="#">UGC-CARE</a></li>
-                        <li><a class="dropdown-item" href="#">PubMed</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasResearchImpactToggle" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Research Impact <i class="fa fa-angle-down"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="offcanvasResearchImpactToggle">
-                        <li><a class="dropdown-item" href="#">How to Increase Research Impact?</a></li>
-                        <li><a class="dropdown-item" href="#">Sharing Your Research Work</a></li>
-                        <li><a class="dropdown-item" href="#">Write Research Blogs</a></li>
-                        <li><a class="dropdown-item" href="#">Present Your Work in Seminars and Workshops</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasPoliciesToggle" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Policies <i class="fa fa-angle-down"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="offcanvasPoliciesToggle">
-                        <li><a class="dropdown-item" href="#">Define authorship in your manuscript</a></li>
-                        <li><a class="dropdown-item" href="#">Comprehend our data sharing policies</a></li>
-                        <li><a class="dropdown-item" href="#">Author contributions</a></li>
-                        <li><a class="dropdown-item" href="#">Conflict of Interest</a></li>
-                        <li><a class="dropdown-item" href="#">Acknowledge the institute where you have conducted your research</a></li>
-                        <li><a class="dropdown-item" href="#">Funding resources</a></li>
-                        <li><a class="dropdown-item" href="#">Our editorial policies</a></li>
-                        <li><a class="dropdown-item" href="#">Explain your reasonable request data sharing policy</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasEventsToggle" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Events <i class="fa fa-angle-down"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="offcanvasEventsToggle">
-                        <li><a class="dropdown-item" href="#">Our past events</a></li>
-                        <li><a class="dropdown-item" href="#">Our Upcoming events</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login_page.php" id="sign-in">Sign In</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
-    <!-- Scripts -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+            dropdownToggles.forEach(function (toggle) {
+                toggle.addEventListener('click', function () {
+                    var dropdownMenu = this.nextElementSibling;
+
+                    if (dropdownMenu.style.display === 'block') {
+                        dropdownMenu.style.display = 'none';
+                    } else {
+                        // Close any other open dropdowns
+                        dropdownToggles.forEach(function (otherToggle) {
+                            if (otherToggle !== toggle) {
+                                var otherMenu = otherToggle.nextElementSibling;
+                                if (otherMenu.style.display === 'block') {
+                                    otherMenu.style.display = 'none';
+                                }
+                            }
+                        });
+                        dropdownMenu.style.display = 'block';
+                    }
+                });
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!e.target.matches('.dropdown-toggle')) {
+                    dropdownToggles.forEach(function (toggle) {
+                        var dropdownMenu = toggle.nextElementSibling;
+                        if (dropdownMenu.style.display === 'block') {
+                            dropdownMenu.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
