@@ -129,14 +129,16 @@
                         </ul>
                     </li>
                     <li class="nav-item sign">
-                        <a class="nav-link" href="#" id="sign-in">Sign In</a>
+                        <a class="nav-link" href="login_page.php" id="sign-in">Sign In</a>
                     </li>
                 </ul>
             </div>
+
+            <!-- mobile view -->
             <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">WFMS</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -211,7 +213,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="sign-in">Sign In</a>
+                            <a class="nav-link" href="login_page" id="sign-in">Sign In</a>
                         </li>
                     </ul>
                 </div>
@@ -225,6 +227,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            const mobileCarousel = new bootstrap.Carousel(document.getElementById('mobileCarousel'), {
+                interval: 6000, // Adjust interval as needed
+                ride: 'carousel'
+            });
             var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
             dropdownToggles.forEach(function (toggle) {
@@ -258,6 +264,37 @@
                     });
                 }
             });
+            const listItems = document.querySelectorAll('.left-column ol li');
+        const containers = document.querySelectorAll('.right-column .content-container');
+        const dynamicImage = document.getElementById('dynamicImage');
+
+        function showContent(contentId, imageUrl) {
+            listItems.forEach(li => li.classList.remove('selected'));
+            containers.forEach(container => container.style.display = 'none');
+
+            const selectedListItem = document.querySelector(`.left-column ol li[data-content="${contentId}"]`);
+            if (selectedListItem) {
+                selectedListItem.classList.add('selected');
+            }
+
+            const contentToShow = document.getElementById(contentId);
+            if (contentToShow) {
+                contentToShow.style.display = 'block';
+            }
+
+            if (dynamicImage) {
+                dynamicImage.src = imageUrl;
+            }
+        }
+
+
+        listItems.forEach(item => {
+            item.addEventListener('click', function () {
+                const contentId = this.getAttribute('data-content');
+                const imageUrl = this.getAttribute('data-image');
+                showContent(contentId, imageUrl);
+            });
+        });
         });
     </script>
 </body>

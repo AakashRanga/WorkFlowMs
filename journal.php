@@ -16,7 +16,7 @@
             <div class="col-lg-12 mb-4">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="text-contents me-4">
-                        <p>Where you decide to submit your work can make a big difference to the reach and impact your research has. Our free guide to choosing a journal has all the information you need to know to make the right decision.</p>
+                        <p class="mb-3">Where you decide to submit your work can make a big difference to the reach and impact your research has. Our free guide to choosing a journal has all the information you need to know to make the right decision.</p>
                         <p>Below is a sneak peek of what to expect from this guide.</p>
                     </div>
                     <button class="btn btn-primary">Download</button>

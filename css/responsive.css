@@ -22,7 +22,7 @@
     }
 
     .text-content p {
-        width: 650px;
+        width: 600px;
     }
 
 
@@ -56,49 +56,51 @@
         margin-bottom: 20px;
     }
 
-    img.images {
-        height: 383px;
-        object-fit: contain;
-        width: 100%;
-    }
-
-    img.image {
-        height: 410px;
-        width: 520px;
-    }
-
-    .right-column {
-        background-color: #fff;
-        width: 75%;
-        padding: 21px 13px;
-        display: flex;
-    }
-
-    .image-container img {
-        /* max-width: 100%; */
-        height: 440px;
-        position: absolute;
-        left: 72%;
-        width: 269px !important;
-        top: 15%;
-    }
-
-    .dropdown-menu.show {
-        display: inline-block;
-        width: 1270px !important;
-        /* height: 96%; */
-        position: absolute;
-        top: 114%;
-        left: -417%;
-        /* transform: translateX(-50%); */
-        height: 520px;
-    }
-
-
-
-
-
 }
+
+img.images {
+    height: 383px;
+    object-fit: contain;
+    width: 100%;
+}
+
+img.image {
+    height: 410px;
+    width: 520px;
+}
+
+.right-column {
+    background-color: #fff;
+    width: 75%;
+    padding: 21px 13px;
+    display: flex;
+}
+
+.image-container img {
+    /* max-width: 100%; */
+    height: 440px;
+    position: absolute;
+    left: 72%;
+    width: 269px !important;
+    top: 15%;
+}
+
+.dropdown-menu.show {
+    display: inline-block;
+    width: 1270px !important;
+    /* height: 96%; */
+    position: absolute;
+    top: 114%;
+    left: -417%;
+    /* transform: translateX(-50%); */
+    height: 520px;
+}
+
+
+
+
+
+
 
 
 
@@ -381,6 +383,110 @@
         height: 500px;
     }
 
+    /* Basic styles for offcanvas */
+    .offcanvas {
+        background-color: #ffffff;
+        /* Background color */
+        width: 250px;
+        /* Width of the off-canvas menu */
+        padding: 0;
+        /* Remove padding */
+    }
+
+    .offcanvas-header {
+        background-color: #6a6d71ed;
+        /* Background color of the header */
+        color: #ffffff;
+        /* Text color in the header */
+        padding: 1rem;
+        /* Padding inside header */
+    }
+
+    .offcanvas-title {
+        font-size: 1.25rem;
+        /* Title font size */
+        font-weight: bold;
+        /* Make title bold */
+    }
+
+    .btn-close {
+        color: #ffffff;
+        /* Close button color */
+        font-size: 1.5rem;
+        /* Close button size */
+    }
+
+    .offcanvas-body {
+        padding: 20px 30px;
+        /* Padding inside the body */
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 1rem;
+        /* Spacing between items */
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+        /* Font size of links */
+        padding: 0.75rem 1rem;
+        /* Padding around links */
+        color: #333;
+        /* Link color */
+    }
+
+    .nav-link:hover {
+        color: #007bff;
+        /* Link color on hover */
+    }
+
+    .dropdown-menu {
+        background-color: #f8f9fa;
+        /* Background color of dropdowns */
+        border: none;
+        /* Remove border */
+        border-radius: 0;
+        /* Remove border radius */
+        box-shadow: none;
+        /* Remove shadow */
+    }
+
+    .dropdown-item {
+        font-size: 1rem;
+        /* Font size of dropdown items */
+        padding: 0.75rem 1rem;
+        /* Padding for dropdown items */
+        color: #333;
+        /* Dropdown item color */
+    }
+
+    .dropdown-item:hover {
+        background-color: #e9ecef;
+        /* Background color on hover */
+    }
+
+    /* Custom dropdown menus with scrollbar */
+    .custom-dropdown-menus,
+    .custom-dropdown-menu,
+    .custom-dropdown-menu-policies,
+    .events {
+        max-height: 300px;
+        /* Limit dropdown height */
+        overflow-y: auto;
+        /* Add vertical scrollbar if needed */
+    }
+
+    /* Styles for dropdown toggle */
+    .nav-link.dropdown-toggle::after {
+        display: none;
+        /* Hide default Bootstrap arrow */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        width: 136px;
+        text-align: left;
+    }
+
 }
 
 @media (max-width:400px) {
@@ -418,7 +524,7 @@
     }
 
     .offcanvas-header {
-        background-color: #007bff;
+        background-color: #6a6d71ed;
         /* Background color of the header */
         color: #ffffff;
         /* Text color in the header */
@@ -441,7 +547,7 @@
     }
 
     .offcanvas-body {
-        padding: 0.5rem;
+        padding: 20px 30px;
         /* Padding inside the body */
     }
 
@@ -522,14 +628,16 @@
         border-radius: 15px 0px 15px 0px;
         height: 370px;
     }
+
     fieldset {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    label{
+    label {
         font-size: 10px;
     }
+
 }
 
 @media (max-width:380px) {
@@ -593,7 +701,7 @@
     }
 
     .offcanvas-header {
-        background-color: #007bff;
+        background-color: #6a6d71ed;
         /* Background color of the header */
         color: #ffffff;
         /* Text color in the header */
@@ -616,7 +724,7 @@
     }
 
     .offcanvas-body {
-        padding: 0.5rem;
+        padding: 20px 30px;
         /* Padding inside the body */
     }
 
@@ -766,7 +874,7 @@
         background-color: #050C9C;
         /* padding: 40px 0; */
         text-align: center;
-        /* height: 300px; */
+        height: 300px !important;
     }
 
     .journal-section h1 {
@@ -881,7 +989,7 @@
     }
 
     .offcanvas-header {
-        background-color: #007bff;
+        background-color: #6a6d71ed;
         /* Background color of the header */
         color: #ffffff;
         /* Text color in the header */
@@ -904,7 +1012,7 @@
     }
 
     .offcanvas-body {
-        padding: 0.5rem;
+        padding: 20px 30px;
         /* Padding inside the body */
     }
 
@@ -999,4 +1107,42 @@
         /* object-fit: contain; */
         height: 320px;
     }
+
+    .navbar-light .navbar-toggler {
+        color: rgba(0, 0, 0, .55);
+        /* border-color: rgba(0, 0, 0, .1); */
+        position: relative;
+        left: -11%;
+    }
+
+    .row.align-items-center .row {
+        background: beige;
+        padding: 20px 0px;
+    }
+    button.btn.btn-primary {
+        width: 248px;
+        border-radius: 6px;
+        position: relative;
+        top: 10px;
+    }
+    .row.align-items-center {
+        padding: 15px 0px;
+    }
+    .content-section {
+        padding: 20px 0px;
+    }
+
+    .me-4{
+        margin-right: 0px !important;
+    }
+    .text-red {
+        color: red;
+        font-size: 6px;
+        position: relative;
+        /* bottom: 8px; */
+        /* left: 2px; */
+        left: 249%;
+        bottom: 20px;
+    }
+    
 }

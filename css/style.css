@@ -434,6 +434,10 @@ section.call-categories-outer .row {
 
 }
 
+h2 .btn{
+    text-decoration: none;
+}
+
 .call-paper-outer p {
     font-size: 24px;
 }
@@ -449,8 +453,16 @@ a.btn.btn-primary.mt-3 {
 }
 
 
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .55);
+    /* border-color: rgba(0, 0, 0, .1); */
+    position: relative;
+    left: -11%;
+}
 
-
+.navbar-light .navbar-toggler{
+    border-color: #fff;
+}
 
 /* research-insights css */
 .research-section {
