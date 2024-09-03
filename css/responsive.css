@@ -20,10 +20,10 @@
         padding: 21px 13px;
         display: flex;
     }
+
     .text-content p {
         width: 650px;
     }
-
 
 
 
@@ -94,6 +94,10 @@
         height: 520px;
     }
 
+
+
+
+
 }
 
 
@@ -103,7 +107,8 @@
         height: 350px;
         width: 450px;
     }
-    .left-column ol{
+
+    .left-column ol {
         font-size: 15px;
     }
 
@@ -275,7 +280,7 @@
         top: 11%;
     }
 
-    .left-column ol{
+    .left-column ol {
         padding: 15px 0px;
     }
 
@@ -363,7 +368,7 @@
         display: flex;
         justify-content: flex-start !important;
     }
-    
+
 
 
 }
@@ -375,7 +380,7 @@
         text-align: center;
         height: 500px;
     }
-    
+
 }
 
 @media (max-width:400px) {
@@ -394,11 +399,136 @@
     img.image {
         width: 367px !important;
     }
+
     a.btn.btn-primary.mt-3 {
         padding: 10px 5px 10px 5px;
         position: relative;
         left: 17% !important;
         font-size: 11px;
+    }
+
+    /* Basic styles for offcanvas */
+    .offcanvas {
+        background-color: #ffffff;
+        /* Background color */
+        width: 250px;
+        /* Width of the off-canvas menu */
+        padding: 0;
+        /* Remove padding */
+    }
+
+    .offcanvas-header {
+        background-color: #007bff;
+        /* Background color of the header */
+        color: #ffffff;
+        /* Text color in the header */
+        padding: 1rem;
+        /* Padding inside header */
+    }
+
+    .offcanvas-title {
+        font-size: 1.25rem;
+        /* Title font size */
+        font-weight: bold;
+        /* Make title bold */
+    }
+
+    .btn-close {
+        color: #ffffff;
+        /* Close button color */
+        font-size: 1.5rem;
+        /* Close button size */
+    }
+
+    .offcanvas-body {
+        padding: 0.5rem;
+        /* Padding inside the body */
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 1rem;
+        /* Spacing between items */
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+        /* Font size of links */
+        padding: 0.75rem 1rem;
+        /* Padding around links */
+        color: #333;
+        /* Link color */
+    }
+
+    .nav-link:hover {
+        color: #007bff;
+        /* Link color on hover */
+    }
+
+    .dropdown-menu {
+        background-color: #f8f9fa;
+        /* Background color of dropdowns */
+        border: none;
+        /* Remove border */
+        border-radius: 0;
+        /* Remove border radius */
+        box-shadow: none;
+        /* Remove shadow */
+    }
+
+    .dropdown-item {
+        font-size: 1rem;
+        /* Font size of dropdown items */
+        padding: 0.75rem 1rem;
+        /* Padding for dropdown items */
+        color: #333;
+        /* Dropdown item color */
+    }
+
+    .dropdown-item:hover {
+        background-color: #e9ecef;
+        /* Background color on hover */
+    }
+
+    /* Custom dropdown menus with scrollbar */
+    .custom-dropdown-menus,
+    .custom-dropdown-menu,
+    .custom-dropdown-menu-policies,
+    .events {
+        max-height: 300px;
+        /* Limit dropdown height */
+        overflow-y: auto;
+        /* Add vertical scrollbar if needed */
+    }
+
+    /* Styles for dropdown toggle */
+    .nav-link.dropdown-toggle::after {
+        display: none;
+        /* Hide default Bootstrap arrow */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        width: 136px;
+        text-align: left;
+    }
+
+    img.img-fluid {
+        width: 87px;
+        height: 90px;
+
+    }
+
+    .call-papers {
+        border: 1px solid black;
+        border-radius: 15px 0px 15px 0px;
+        height: 370px;
+    }
+    fieldset {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    label{
+        font-size: 10px;
     }
 }
 
@@ -452,6 +582,109 @@
         justify-content: flex-start !important;
     }
 
+    /* Basic styles for offcanvas */
+    .offcanvas {
+        background-color: #ffffff;
+        /* Background color */
+        width: 250px;
+        /* Width of the off-canvas menu */
+        padding: 0;
+        /* Remove padding */
+    }
+
+    .offcanvas-header {
+        background-color: #007bff;
+        /* Background color of the header */
+        color: #ffffff;
+        /* Text color in the header */
+        padding: 1rem;
+        /* Padding inside header */
+    }
+
+    .offcanvas-title {
+        font-size: 1.25rem;
+        /* Title font size */
+        font-weight: bold;
+        /* Make title bold */
+    }
+
+    .btn-close {
+        color: #ffffff;
+        /* Close button color */
+        font-size: 1.5rem;
+        /* Close button size */
+    }
+
+    .offcanvas-body {
+        padding: 0.5rem;
+        /* Padding inside the body */
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 1rem;
+        /* Spacing between items */
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+        /* Font size of links */
+        padding: 0.75rem 1rem;
+        /* Padding around links */
+        color: #333;
+        /* Link color */
+    }
+
+    .nav-link:hover {
+        color: #007bff;
+        /* Link color on hover */
+    }
+
+    .dropdown-menu {
+        background-color: #f8f9fa;
+        /* Background color of dropdowns */
+        border: none;
+        /* Remove border */
+        border-radius: 0;
+        /* Remove border radius */
+        box-shadow: none;
+        /* Remove shadow */
+    }
+
+    .dropdown-item {
+        font-size: 1rem;
+        /* Font size of dropdown items */
+        padding: 0.75rem 1rem;
+        /* Padding for dropdown items */
+        color: #333;
+        /* Dropdown item color */
+    }
+
+    .dropdown-item:hover {
+        background-color: #e9ecef;
+        /* Background color on hover */
+    }
+
+    /* Custom dropdown menus with scrollbar */
+    .custom-dropdown-menus,
+    .custom-dropdown-menu,
+    .custom-dropdown-menu-policies,
+    .events {
+        max-height: 300px;
+        /* Limit dropdown height */
+        overflow-y: auto;
+        /* Add vertical scrollbar if needed */
+    }
+
+    /* Styles for dropdown toggle */
+    .nav-link.dropdown-toggle::after {
+        display: none;
+        /* Hide default Bootstrap arrow */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        width: 136px;
+        text-align: left;
+    }
 
 }
 
@@ -636,79 +869,134 @@
         position: absolute;
         top: -78px;
     }
+
     /* Basic styles for offcanvas */
-.offcanvas {
-    background-color: #ffffff; /* Background color */
-    width: 250px; /* Width of the off-canvas menu */
-    padding: 0; /* Remove padding */
-}
+    .offcanvas {
+        background-color: #ffffff;
+        /* Background color */
+        width: 250px;
+        /* Width of the off-canvas menu */
+        padding: 0;
+        /* Remove padding */
+    }
 
-.offcanvas-header {
-    background-color: #007bff; /* Background color of the header */
-    color: #ffffff; /* Text color in the header */
-    padding: 1rem; /* Padding inside header */
-}
+    .offcanvas-header {
+        background-color: #007bff;
+        /* Background color of the header */
+        color: #ffffff;
+        /* Text color in the header */
+        padding: 1rem;
+        /* Padding inside header */
+    }
 
-.offcanvas-title {
-    font-size: 1.25rem; /* Title font size */
-    font-weight: bold; /* Make title bold */
-}
+    .offcanvas-title {
+        font-size: 1.25rem;
+        /* Title font size */
+        font-weight: bold;
+        /* Make title bold */
+    }
 
-.btn-close {
-    color: #ffffff; /* Close button color */
-    font-size: 1.5rem; /* Close button size */
-}
+    .btn-close {
+        color: #ffffff;
+        /* Close button color */
+        font-size: 1.5rem;
+        /* Close button size */
+    }
 
-.offcanvas-body {
-    padding: 0.5rem; /* Padding inside the body */
-}
+    .offcanvas-body {
+        padding: 0.5rem;
+        /* Padding inside the body */
+    }
 
-.navbar-nav .nav-item {
-    margin-bottom: 1rem; /* Spacing between items */
-}
+    .navbar-nav .nav-item {
+        margin-bottom: 1rem;
+        /* Spacing between items */
+    }
 
-.nav-link {
-    font-size: 1.1rem; /* Font size of links */
-    padding: 0.75rem 1rem; /* Padding around links */
-    color: #333; /* Link color */
-}
+    .nav-link {
+        font-size: 1.1rem;
+        /* Font size of links */
+        padding: 0.75rem 1rem;
+        /* Padding around links */
+        color: #333;
+        /* Link color */
+    }
 
-.nav-link:hover {
-    color: #007bff; /* Link color on hover */
-}
+    .nav-link:hover {
+        color: #007bff;
+        /* Link color on hover */
+    }
 
-.dropdown-menu {
-    background-color: #f8f9fa; /* Background color of dropdowns */
-    border: none; /* Remove border */
-    border-radius: 0; /* Remove border radius */
-    box-shadow: none; /* Remove shadow */
-}
+    .dropdown-menu {
+        background-color: #f8f9fa;
+        /* Background color of dropdowns */
+        border: none;
+        /* Remove border */
+        border-radius: 0;
+        /* Remove border radius */
+        box-shadow: none;
+        /* Remove shadow */
+    }
 
-.dropdown-item {
-    font-size: 1rem; /* Font size of dropdown items */
-    padding: 0.75rem 1rem; /* Padding for dropdown items */
-    color: #333; /* Dropdown item color */
-}
+    .dropdown-item {
+        font-size: 1rem;
+        /* Font size of dropdown items */
+        padding: 0.75rem 1rem;
+        /* Padding for dropdown items */
+        color: #333;
+        /* Dropdown item color */
+    }
 
-.dropdown-item:hover {
-    background-color: #e9ecef; /* Background color on hover */
-}
+    .dropdown-item:hover {
+        background-color: #e9ecef;
+        /* Background color on hover */
+    }
 
-/* Custom dropdown menus with scrollbar */
-.custom-dropdown-menus,
-.custom-dropdown-menu,
-.custom-dropdown-menu-policies,
-.events {
-    max-height: 300px; /* Limit dropdown height */
-    overflow-y: auto; /* Add vertical scrollbar if needed */
-}
+    /* Custom dropdown menus with scrollbar */
+    .custom-dropdown-menus,
+    .custom-dropdown-menu,
+    .custom-dropdown-menu-policies,
+    .events {
+        max-height: 300px;
+        /* Limit dropdown height */
+        overflow-y: auto;
+        /* Add vertical scrollbar if needed */
+    }
 
-/* Styles for dropdown toggle */
-.nav-link.dropdown-toggle::after {
-    display: none; /* Hide default Bootstrap arrow */
-}
-.navbar-nav .nav-item .nav-link {
-    width: 136px;
-    text-align: left;
-}
+    /* Styles for dropdown toggle */
+    .nav-link.dropdown-toggle::after {
+        display: none;
+        /* Hide default Bootstrap arrow */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        width: 136px;
+        text-align: left;
+    }
+
+    fieldset {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-check {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    button.btn.btn-link.p-0 {
+        font-size: 25px;
+    }
+
+    label {
+        width: 15px;
+    }
+
+    img.img-fluid {
+        width: 220px;
+        /* object-fit: contain; */
+        height: 320px;
+    }
 }
