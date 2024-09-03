@@ -41,8 +41,10 @@ li {
     /* 5 columns */
     gap: 5px;
     padding: 16px;
-    max-height: 600px;
+    /* max-height: 600px; */
     /* Adjust based on content */
+    width: 1508px;
+    height: 520px;
 }
 
 .dropdown-menu.show {
@@ -133,6 +135,11 @@ ul.dropdown-menu.custom-dropdown-menus.show li {
 
 ul.dropdown-menu.custom-dropdown-menu-policies.show li {
     margin-bottom: 10px;
+}
+
+ul.dropdown-menu.research {
+    position: absolute;
+    left: -376%;
 }
 
 /* banner css */
@@ -396,7 +403,14 @@ section.trending-topic-outer {
     right: 4%;
 }
 
+button.btn.btn-primary {
+    width: 208px;
+    border-radius: 0px;
+}
 
+.row.align-items-center{
+    padding: 15px 10px;
+}
 
 /* call for paper css  */
 
@@ -408,6 +422,17 @@ section.call-paper-outer {
     padding: 30px 0px;
 }
 
+section.call-categories-outer .row {
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    border: 1px solid #fff;
+    background: #fff;
+}
+
+.form-check-input[type=radio]{
+    width: 32px;
+    height: 32px;
+
+}
 
 .call-paper-outer p {
     font-size: 24px;
@@ -420,7 +445,7 @@ a.btn.btn-primary.mt-3 {
 
 /* mobile view navbar css */
 .modal-backdrop.show {
-    opacity:0;
+    opacity: 0;
 }
 
 
@@ -467,24 +492,26 @@ section.image-text-insights {
 
 section.call-categories-outer {
     background-color: #f2f3f8;
+    padding: 30px 0px;
 }
 
-fieldset{
+fieldset {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.form-check-input[type=checkbox]{
+.form-check-input[type=checkbox] {
     width: 2rem;
     height: 2rem;
 }
 
-.form-check{
+.form-check {
     display: flex;
     gap: 12px;
     align-items: center;
-    font-size: 20px;
+    font-size: 16px;
 }
+
 /* jouranla section css */
 .journal-section {
     background-color: #050C9C;
@@ -665,7 +692,7 @@ h1 {
     top: 20px;
 }
 
-section.call-paper-sections .dropdown-menu.show{
+section.call-paper-sections .dropdown-menu.show {
     width: 200px;
 }
 
@@ -673,7 +700,7 @@ button.btn.btn-link.p-0 {
     font-size: 38px;
 }
 
-i.fa-solid.fa-chevron-up{
+i.fa-solid.fa-chevron-up {
     position: relative;
     left: 340%;
 }

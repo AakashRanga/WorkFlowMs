@@ -54,12 +54,12 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Research Impact
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <ul class="dropdown-menu research" aria-labelledby="navbarDropdown3">
                             <div class="research-impact">
                                 <div id="service1" class="service-content">
                                     <img src="images/research-impact.png" alt="Research Assistance Image"
