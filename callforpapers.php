@@ -67,7 +67,7 @@
                     <button class="btn btn-link p-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#filters-checkboxes-ac" aria-expanded="true"
                         aria-controls="filters-checkboxes-ac">
-                        Categories A-C
+                        Categories A-C<i class="fa fa-caret-down"></i>
                     </button>
                 </h2>
                 <div class="collapse show" id="filters-checkboxes-ac">
@@ -143,7 +143,7 @@
                     <button class="btn btn-link p-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#filters-checkboxes-dg" aria-expanded="false"
                         aria-controls="filters-checkboxes-dg">
-                        Categories D-G
+                        Categories D-G<i class="fa fa-caret-down"></i>
                     </button>
                 </h2>
                 <div class="collapse" id="filters-checkboxes-dg">
@@ -210,7 +210,7 @@
                     <button class="btn btn-link p-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#filters-checkboxes-hm" aria-expanded="false"
                         aria-controls="filters-checkboxes-hm">
-                        Categories H-M
+                        Categories H-M<i class="fa fa-caret-down"></i>
                     </button>
                 </h2>
                 <div class="collapse" id="filters-checkboxes-hm">
@@ -262,15 +262,17 @@
             </div>
 
             <!-- Categories N-Z -->
+            <!-- Categories N-Z -->
             <div class="col-12 mb-3">
                 <h2>
                     <button class="btn btn-link p-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#filters-checkboxes-nz" aria-expanded="false"
                         aria-controls="filters-checkboxes-nz">
-                        Categories N-Z
+                        Categories N-Z <i class="fa fa-caret-down"></i>
                     </button>
                 </h2>
-                <div class="collapse" id="filters-checkboxes-nz">
+                <div id="filters-checkboxes-nz" class="collapse">
+                    <!-- Content for Categories N-Z -->
                     <fieldset>
                         <legend class="visually-hidden">Categories N-Z</legend>
                         <div class="form-check">
@@ -340,6 +342,7 @@
                 </div>
             </div>
 
+
         </form>
         <div class="row d-flex align-items-center">
             <!-- Order By Heading -->
@@ -366,10 +369,10 @@
                 </div>
             </div>
         </div>
-<div class="row d-flex align-items-center py-5">
-    <button class="btn btn-primary">
-        SHOW CALL FOR PAPER
-    </button>
-</div>
+        <div class="row d-flex align-items-center py-5">
+            <button class="btn btn-primary">
+                SHOW CALL FOR PAPER
+            </button>
+        </div>
     </div>
 </section>
