@@ -20,13 +20,13 @@
         <div class="form login">
             <div class="form-content">
                 <header>LogIn</header>
-                <form action="#">
+                <form action="loginbk.php" method="POST">
                     <div class="field input-field">
-                        <input type="email" placeholder="Email" class="input">
+                        <input type="email" name="username" placeholder="Email" class="input">
                     </div>
 
                     <div class="field input-field">
-                        <input type="password" placeholder="Password" class="password">
+                        <input type="password" name="password" placeholder="Password" class="password">
                         <i class='bx bx-hide eye-icon'></i>
                     </div>
 
@@ -60,7 +60,7 @@
         <div class="form signup">
             <div class="form-content">
                 <header>SignUp</header>
-                <form action="#">
+                <form action="">
                     <div class="field input-field">
                         <input type="email" placeholder="Email" class="input">
                     </div>
