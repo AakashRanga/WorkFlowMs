@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'config.php'; // Database connection
+include 'config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
@@ -13,9 +13,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
-        echo "Login successful!";
+        echo json_encode(['status' => 'success', 'username' => $user['username']]);
     } else {
-        echo "Invalid username or password!";
+        echo json_encode(['status' => 'error', 'message' => 'Invalid credentials!']);
     }
 }
 ?>
