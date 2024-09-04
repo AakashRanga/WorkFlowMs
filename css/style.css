@@ -47,16 +47,7 @@ li {
     height: 520px;
 }
 
-.dropdown-menu.show {
-    display: inline-block;
-    width: 1494px !important;
-    /* height: 96%; */
-    position: absolute;
-    top: 114%;
-    left: -372%;
-    /* transform: translateX(-50%); */
-    height: 520px;
-}
+
 
 ul.dropdown-menu.custom-dropdown-menu.show {
     position: absolute;
@@ -446,6 +437,10 @@ a.btn.btn-primary.mt-3 {
     width: 340px;
     font-size: 25px;
 }
+ul.dropdown-menu.show {
+    position: relative;
+    left: -376%;
+}
 
 /* mobile view navbar css */
 .modal-backdrop.show {
@@ -614,7 +609,7 @@ img.image {
 
 
 .callforpaper-section {
-    background-color: #1c88ae;
+    background-color: #050C9C;
     padding: 40px 20px;
     text-align: center;
     height: 37 0px;

@@ -10,7 +10,7 @@
             </div>
             <div class="col-md-6">
                 <div class="callforpaper-image">
-                    <img src="images/callforpaper.avif" alt="callforpaper" class="img-fluid">
+                    <img src="images/call-paper.jpeg" alt="callforpaper" class="img-fluid">
                 </div>
             </div>
         </div>
