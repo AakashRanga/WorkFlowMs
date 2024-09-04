@@ -1,22 +1,52 @@
-<!-- WebSocket Library : Ratchet -->
 <?php
 require 'vendor/autoload.php';
 
-use Ratchet\App;
 use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;
 
-class MyWebSocketServer implements MessageComponentInterface {
+class Chat implements MessageComponentInterface {
+    protected $clients;
+
+    public function __construct() {
+        $this->clients = new \SplObjectStorage;
+    }
+
     public function onOpen(ConnectionInterface $conn) {
-        echo "New connection: ({$conn->resourceId})\n";
+        $this->clients->attach($conn);
+        echo "New connection! ({$conn->resourceId})\n";
     }
 
     public function onMessage(ConnectionInterface $from, $msg) {
-        echo "New message from ({$from->resourceId}): $msg\n";
-        $from->send("Received: $msg");
+        $msgData = json_decode($msg, true);
+    
+        // Log incoming message
+        error_log("Received message: " . print_r($msgData, true));
+    
+        if (isset($msgData['username']) && isset($msgData['message'])) {
+            $username = $msgData['username'];
+            $message = $msgData['message'];
+
+            echo $username;
+    
+            include 'config.php';
+            $query = "INSERT INTO messages (username, message) VALUES (?, ?)";
+            $stmt = $conn->prepare($query);
+            $stmt->bind_param("is", $username, $message);
+            $stmt->execute();
+    
+            foreach ($this->clients as $client) {
+                if ($from !== $client) {
+                    $client->send($msg);
+                }
+            }
+        } else {
+            error_log("Received message is missing required fields.");
+        }
     }
+    
 
     public function onClose(ConnectionInterface $conn) {
+        $this->clients->detach($conn);
         echo "Connection {$conn->resourceId} has disconnected\n";
     }
 
@@ -26,11 +56,7 @@ class MyWebSocketServer implements MessageComponentInterface {
     }
 }
 
-// Create a new Ratchet App instance
-$app = new App('localhost', 8080, '0.0.0.0');
-
-// Set up the route for the WebSocket
-$app->route('/my-websocket', new MyWebSocketServer, ['*']);
-
-// Run the application
-$app->run();
+$server = new Ratchet\App('localhost', 8080);
+$server->route('/chat', new Chat, ['*']);
+$server->run();
+?>

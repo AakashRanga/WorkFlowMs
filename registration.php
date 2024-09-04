@@ -1,6 +1,5 @@
 <?php
-session_start();
-include 'config.php'; // Database connection
+include 'conn.php'; // Database connection
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
@@ -8,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $query = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
     if (mysqli_query($conn, $query)) {
-        echo "Registration successful!";
+        header("Location: login.php");
     } else {
         echo "Error: " . mysqli_error($conn);
     }
