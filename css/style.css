@@ -761,3 +761,8 @@ i.fa-solid.fa-chevron-up {
 footer .container a {
     color: #000000;
 }
+
+ul.dropdown-menu .show {
+    position: relative;
+    left: -377%;
+}
