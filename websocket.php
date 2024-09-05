@@ -1,4 +1,9 @@
 <?php
+// Setup : 
+// 1. Install composer
+// 2. come to path in VS Terminal and Install (composer require cboden/ratchet)
+// 3. Run server : php websocket.php
+
 require 'vendor/autoload.php';
 
 use Ratchet\MessageComponentInterface;
