@@ -47,8 +47,7 @@
 
                     <form action="index.html" autocomplete="off" class="sign-up-form">
                         <div class="logo">
-                            <img src="images/" alt="easyclass" />
-                            <h4>easyclass</h4>
+                            <h4>WFMS</h4>
                         </div>
 
                         <div class="heading">
@@ -85,21 +84,21 @@
                 </div>
 
                 <div class="carousel">
-    <div class="images-wrapper">
-        <img src="./images/task.jpeg" class="image img-1 show" alt="Task Management" />
-       
-    </div>
+                    <div class="images-wrapper">
+                        <img src="./images/task.jpeg" class="image img-1 show" alt="Task Management" />
 
-    <div class="text-slider">
-        <div class="text-wrap">
-            <div class="text-group">
-                <h2>Streamline Your Tasks</h2>
-            </div>
-        </div>
+                    </div>
 
-        
-    </div>
-</div>
+                    <div class="text-slider">
+                        <div class="text-wrap">
+                            <div class="text-group">
+                                <h2>Streamline Your Tasks</h2>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
 
             </div>
         </div>
