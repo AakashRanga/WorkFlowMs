@@ -417,6 +417,8 @@ section.call-categories-outer .row {
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     border: 1px solid #fff;
     background: #fff;
+    width: 1320px;
+    padding: 10px 10px;
 }
 
 .form-check-input[type=radio]{
@@ -765,4 +767,76 @@ footer .container a {
 ul.dropdown-menu .show {
     position: relative;
     left: -377%;
+}
+
+
+/* call fro us section box css */
+.box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.box h4 {
+    margin-top: 0;
+}
+.warning-message {
+    display: none; /* Initially hidden */
+    color: #d9534f; /* Bootstrap’s danger color */
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+a#clearFiltersBtn{
+    position: relative;
+    left: 50%;
+
+}
+.row.align-items-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust as necessary */
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-img-top{
+    width: 200px;
+}
+
+.card-bordered {
+    border: 2px solid #007bff; /* Adjust the color and thickness as needed */
+    border-radius: 0.25rem; /* Optional: to match Bootstrap's default border-radius */
+}
+
+.row.no-gutters{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+a.title.mt-3 {
+    font-size: 21px;
+}
+
+i.fa-solid.fa-arrow-up-right-from-square{
+    color: #0d6efd;
+    font-size: 25px;
+    margin-left: 10px;
+}
+p.para-title {
+    font-size: 39px;
+    color: #0d6efd;
+}
+
+button.btn.btn-primary i.fa-solid.fa-arrow-up-right-from-square{
+    color: #fff;
+    font-size: 12px;
+    margin-left: 10px;
 }
