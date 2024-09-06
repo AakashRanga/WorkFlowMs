@@ -307,12 +307,12 @@ p {
 
 
 .image-container img {
-    /* max-width: 100%; */
-    height: 440px;
-    position: absolute;
-    left: 66%;
-    width: 269px !important;
-    top: 17%;
+       /* max-width: 100%; */
+       height: 440px;
+       position: absolute;
+       left: 73%;
+       width: 269px !important;
+       top: 15%;
 }
 
 article {
@@ -390,7 +390,7 @@ section.trending-topic-outer {
 .image-container.mt-3 {
     margin: 0 auto;
     position: relative;
-    top: -95%;
+    top: -90%;
     right: 4%;
 }
 
