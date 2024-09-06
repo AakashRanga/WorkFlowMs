@@ -149,7 +149,7 @@
                     </div>
 
                     <!-- Dynamic Image -->
-                    <div class="image-container mt-3">
+                    <div class="image-container mt-5">
                         <img src="images/p1.jpeg" alt="Dynamic content image" class="content-image img-fluid"
                             id="dynamicImage">
                     </div>

@@ -60,7 +60,7 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Research Impact
                         </a>
-                        <ul class="dropdown-menu custom-dropdown-menu-research" aria-labelledby="navbarDropdown3" >
+                        <ul class="dropdown-menu custom-dropdown-menu-research" aria-labelledby="navbarDropdown3">
                             <div class="research-impact">
                                 <div id="service1" class="service-content">
                                     <img src="images/research-impact.png" alt="Research Assistance Image"
@@ -240,22 +240,41 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-    const dropdowns = document.querySelectorAll('.dropdown');
+            const dropdowns = document.querySelectorAll('.dropdown');
 
-    dropdowns.forEach(function (dropdown) {
-        const toggle = dropdown.querySelector('.dropdown-toggle');
-        const menu = dropdown.querySelector('.dropdown-menu');
+            dropdowns.forEach(function (dropdown) {
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                const menu = dropdown.querySelector('.dropdown-menu');
 
-        toggle.addEventListener('click', function () {
-            // Toggle the display of the dropdown menu
-            if (window.getComputedStyle(menu).display === 'block') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'block';
-            }
+                toggle.addEventListener('click', function (event) {
+                    event.stopPropagation(); // Prevent event from bubbling up
+
+                    // Close all other dropdowns
+                    dropdowns.forEach(function (otherDropdown) {
+                        if (otherDropdown !== dropdown) {
+                            const otherMenu = otherDropdown.querySelector('.dropdown-menu');
+                            otherMenu.style.display = 'none';
+                        }
+                    });
+
+                    // Toggle the current dropdown
+                    if (window.getComputedStyle(menu).display === 'block') {
+                        menu.style.display = 'none';
+                    } else {
+                        menu.style.display = 'block';
+                    }
+                });
+            });
+
+            // Close all dropdowns if click outside
+            document.addEventListener('click', function () {
+                dropdowns.forEach(function (dropdown) {
+                    const menu = dropdown.querySelector('.dropdown-menu');
+                    menu.style.display = 'none';
+                });
+            });
         });
-    });
-});
+
 
     </script>
 </body>
