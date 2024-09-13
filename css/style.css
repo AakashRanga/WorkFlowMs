@@ -130,7 +130,11 @@ ul.dropdown-menu.custom-dropdown-menu-policies.show li {
 
 ul.dropdown-menu.research {
     position: absolute;
-    left: -376%;
+    left: -376% !important;
+}
+ul.dropdown-menu.custom-dropdown-menu-research {
+    position: absolute;
+    left: -377%;
 }
 
 /* banner css */
