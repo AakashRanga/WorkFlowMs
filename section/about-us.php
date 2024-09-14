@@ -1,3 +1,9 @@
+
+<?php include('../section/navbar.php'); ?>
+
+
+
+
 <!-- about us section -->
 <section class="about-us py-5">
         <div class="container">
@@ -24,7 +30,7 @@
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <img src="images/about-us.png" alt="About Us" class="img-fluid">
+                    <img src="../images/about-us.png" alt="About Us" class="img-fluid">
                 </div>
             </div>
         </div>

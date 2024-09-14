@@ -27,10 +27,10 @@
             </button>
             <div class="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <li class="nav-item hover-underline-animation">
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown hover-underline-animation ">
                         <a class="nav-link dropdown-toggle" href="#servicesection" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Services
@@ -42,7 +42,7 @@
                             <li><a class="dropdown-item" href="#">Patents</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown hover-underline-animation">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Publication
@@ -55,7 +55,7 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown hover-underline-animation">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Research Impact
@@ -64,14 +64,14 @@
                             <div class="research-impact">
                                 <div id="service1" class="service-content">
                                     <img src="images/research-impact.png" alt="Research Assistance Image"
-                                        style="width:300px;height:200px">
+                                        style="width:350px;height:200px">
                                     <h2>How to Increase Research Impact?</h2>
                                     <p>To enhance the impact of your research, consider these key strategies:</p>
                                 </div>
 
                                 <div id="service2" class="service-content">
                                     <img src="images/sharing-research.png" alt="Sharing Research Work Image"
-                                        style="width: 300px;height: 200px;">
+                                        style="width: 350px;height: 200px;">
                                     <h2>Sharing Your Research Work</h2>
                                     <p>Disseminate your research findings through various channels, such as online
                                         journals, research networks, and social media, to reach a wider audience and
@@ -80,7 +80,7 @@
 
                                 <div id="service3" class="service-content">
                                     <img src="images/research-blog.png" alt="Writing Research Blogs Image"
-                                        style="width:300px">
+                                        style="width:350px">
                                     <h2>Write Research Blogs</h2>
                                     <p>Share your research insights and updates through blogs. This helps in making
                                         your
@@ -90,7 +90,7 @@
 
                                 <div id="service4" class="service-content">
                                     <img src="images/presentation-workshop.png" alt="Presenting Work Image"
-                                        style="width:300px">
+                                        style="width:350px">
                                     <h2>Present Your Work in Seminars and Workshops</h2>
                                     <p>Presenting your research at seminars, workshops, and conferences offers
                                         valuable
@@ -110,7 +110,7 @@
                         </ul>
 
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown hover-underline-animation">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Policies
@@ -128,7 +128,7 @@
                                     policy</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown hover-underline-animation">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Events
@@ -140,7 +140,7 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item sign">
+                    <li class="nav-item sign hover-underline-animation ">
                         <a class="nav-link" href="#" id="sign-in">Sign In</a>
                     </li>
 

@@ -318,34 +318,68 @@ ul.dropdown-menu.custom-dropdown-menu-policies.show li {
     width: 4% !important;
 }
 
-/* services section */
-.service-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 0;
+/* Styles for carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    /* background-color: rgba(0, 0, 0, 0.5); Dark background with some transparency */
+    border: none;
+    border-radius: 50%;
+    /* Rounded corners for a circular button */
 }
 
-.service-image {
-    max-width: 100%;
-    border-radius: 15px;
-}
-
-.service-content {
-    padding: 20px;
-    text-align: left;
-}
-
-.service-content h2 {
-    margin-bottom: 20px;
-}
-
-.service-content p {
-    margin-bottom: 20px;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: white;
+    /* Icon color */
+    border-radius: 50%;
 }
 
 
 
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    outline: none;
+    /* Remove default focus outline */
+}
+
+/* Custom icon styles */
+.custom-prev-icon::before {
+    content: '\f053';
+    /* Font Awesome arrow-left icon */
+    font-family: 'FontAwesome';
+    color: black !important;
+    font-size: 1.5rem;
+}
+
+.custom-next-icon::before {
+    content: '\f054';
+    /* Font Awesome arrow-right icon */
+    font-family: 'FontAwesome';
+    color: black !important;
+    font-size: 1.5rem;
+}
+
+.carousel-control-next {
+    right: -62px;
+}
+
+.carousel-control-prev {
+    left: -62px;
+}
+
+@media (max-width: 767.98px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+}
+
+.courses-section {
+    background: #f0f0f0 !important;
+    height: 420px;
+}
 
 
 /* about us section */

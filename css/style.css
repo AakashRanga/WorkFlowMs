@@ -20,12 +20,45 @@ li {
     background-color: #fff;
 }
 
-
+a#sign-in{
+    background: #050c9c;
+    border-radius: 40px;
+    color: #fff;
+}
+a#sign-in:hover{
+    background: #fff;
+    color: #000000;
+}
 .navbar-nav .nav-item .nav-link {
-    width: 177px;
+    width: 150px;
     text-align: center;
 }
 
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #050C9C;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #050C9C;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+  }
+  
 .navbar-collapse {
     flex-grow: 0;
 }
@@ -39,7 +72,7 @@ li {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* 5 columns */
-    gap: 5px;
+    gap: 25px;
     padding: 16px;
     /* max-height: 600px; */
     /* Adjust based on content */
@@ -132,6 +165,7 @@ ul.dropdown-menu.research {
     position: absolute;
     left: -376% !important;
 }
+
 ul.dropdown-menu.custom-dropdown-menu-research {
     position: absolute;
     left: -377%;
@@ -311,12 +345,12 @@ p {
 
 
 .image-container img {
-       /* max-width: 100%; */
-       height: 440px;
-       position: absolute;
-       left: 73%;
-       width: 269px !important;
-       top: 15%;
+    /* max-width: 100%; */
+    height: 440px;
+    position: absolute;
+    left: 73%;
+    width: 269px !important;
+    top: 15%;
 }
 
 article {
@@ -403,7 +437,7 @@ button.btn.btn-primary {
     border-radius: 0px;
 }
 
-.row.align-items-center{
+.row.align-items-center {
     padding: 15px 10px;
 }
 
@@ -425,13 +459,13 @@ section.call-categories-outer .row {
     padding: 10px 10px;
 }
 
-.form-check-input[type=radio]{
+.form-check-input[type=radio] {
     width: 32px;
     height: 32px;
 
 }
 
-h2 .btn{
+h2 .btn {
     text-decoration: none;
 }
 
@@ -443,6 +477,7 @@ a.btn.btn-primary.mt-3 {
     width: 340px;
     font-size: 25px;
 }
+
 ul.dropdown-menu.show {
     position: relative;
     left: -376%;
@@ -461,7 +496,7 @@ ul.dropdown-menu.show {
     left: -11%;
 }
 
-.navbar-light .navbar-toggler{
+.navbar-light .navbar-toggler {
     border-color: #fff;
 }
 
@@ -782,12 +817,16 @@ ul.dropdown-menu .show {
     border-radius: 5px;
     background-color: #f9f9f9;
 }
+
 .box h4 {
     margin-top: 0;
 }
+
 .warning-message {
-    display: none; /* Initially hidden */
-    color: #d9534f; /* Bootstrap’s danger color */
+    display: none;
+    /* Initially hidden */
+    color: #d9534f;
+    /* Bootstrap’s danger color */
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -795,32 +834,36 @@ ul.dropdown-menu .show {
 }
 
 
-a#clearFiltersBtn{
+a#clearFiltersBtn {
     position: relative;
     left: 50%;
 
 }
+
 .row.align-items-center {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Adjust as necessary */
+    justify-content: space-between;
+    /* Adjust as necessary */
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: row;
 }
 
-.card-img-top{
+.card-img-top {
     width: 200px;
 }
 
 .card-bordered {
-    border: 2px solid #007bff; /* Adjust the color and thickness as needed */
-    border-radius: 0.25rem; /* Optional: to match Bootstrap's default border-radius */
+    border: 2px solid #007bff;
+    /* Adjust the color and thickness as needed */
+    border-radius: 0.25rem;
+    /* Optional: to match Bootstrap's default border-radius */
 }
 
-.row.no-gutters{
+.row.no-gutters {
     margin-left: 0;
     margin-right: 0;
 }
@@ -829,18 +872,257 @@ a.title.mt-3 {
     font-size: 21px;
 }
 
-i.fa-solid.fa-arrow-up-right-from-square{
+i.fa-solid.fa-arrow-up-right-from-square {
     color: #0d6efd;
     font-size: 25px;
     margin-left: 10px;
 }
+
 p.para-title {
     font-size: 39px;
     color: #0d6efd;
 }
 
-button.btn.btn-primary i.fa-solid.fa-arrow-up-right-from-square{
+button.btn.btn-primary i.fa-solid.fa-arrow-up-right-from-square {
     color: #fff;
     font-size: 12px;
     margin-left: 10px;
+}
+
+
+/* about us section */
+.about-us {
+    background: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+
+}
+
+
+.about-us img {
+    border-radius: 20px;
+}
+
+/* branding section */
+.branding-images ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+
+.branding-images img {
+    display: block;
+    height: 340px;
+    width: 240px;
+    object-fit: contain;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.branding-section img {
+    width: 50%;
+}
+
+
+.branding-section ul {
+    display: flex;
+    list-style-type: none;
+}
+
+/* publication css */
+.custom-card {
+    height: 330px;
+    width: 100%;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column !important;
+}
+
+
+.customs-card-img-top {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* banner section */
+
+/* this is for the section here */
+.bg-image-section {
+    position: relative;
+    height: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    /* Ensures the video is behind the overlay and content */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Adjust the opacity as needed */
+    z-index: 1;
+}
+
+.container {
+    z-index: 2;
+}
+
+.animate-fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* course section */
+/* .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+} */
+
+
+
+/* Floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* servie section css */
+/* Styles for carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    /* background-color: rgba(0, 0, 0, 0.5); Dark background with some transparency */
+    border: none;
+    border-radius: 50%;
+    /* Rounded corners for a circular button */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: white;
+    /* Icon color */
+    border-radius: 50%;
+}
+
+
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    outline: none;
+    /* Remove default focus outline */
+}
+
+/* Custom icon styles */
+.custom-prev-icon::before {
+    content: '\f053';
+    /* Font Awesome arrow-left icon */
+    font-family: 'FontAwesome';
+    color: black;
+    font-size: 1.5rem;
+}
+
+.custom-next-icon::before {
+    content: '\f054';
+    /* Font Awesome arrow-right icon */
+    font-family: 'FontAwesome';
+    color: black;
+    font-size: 1.5rem;
+}
+
+.carousel-control-next {
+    right: -62px;
+}
+
+.carousel-control-prev {
+    left: -62px;
+}
+
+@media (max-width: 767.98px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+}
+
+.courses-section {
+    background: #f0f0f0 !important;
+    height: 420px;
+}
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* public section witout bg image */
+
+section.publication-section-another.py-5 {
+    background: #f0f0f0;
 }
