@@ -15,12 +15,6 @@
 <body>
 <?php include('header.php'); ?>
 
-<?php include('section/banner.php'); ?>
-<?php include('section/about-us.php'); ?>
-<?php include('section/service-section.php'); ?>
-<?php include('section/ourservice-section.php'); ?>
-<?php include('section/publication-section.php'); ?>
-<?php include('section/footer-section.php'); ?>
 
 
 
