@@ -1,9 +1,7 @@
-<?php include('../section/navbar.php'); ?>
-
 <!-- publication section -->
 <section class="publication-section py-5">
     <div class="container">
-        <h1 class="text-center mb-4 text-black">OUR PUBLICATION</h1>
+        <h1 class="text-center mb-4 text-black">BRAND</h1>
         <div class="row">
             <div class="col-md-3 mb-4">
                 <div class="card h-100 custom-card">
