@@ -1,6 +1,3 @@
-<?php include('../section/navbar.php'); ?>
-
-
 
 <!-- Publication Section -->
 <section class="publication-section-another py-5">
@@ -11,7 +8,7 @@
                 <div class="card h-100 custom-card">
                     <div class="card-body">
                         <h5 class="card-title">Scopus</h5>
-                        <p class="card-text">Scopus is a comprehensive abstract and citation database of peer-reviewed
+                        <p class="card-text" style="color:#10147e;">Scopus is a comprehensive abstract and citation database of peer-reviewed
                             literature. It includes scientific journals, books, conference proceedings, and provides
                             tools for tracking, analyzing, and visualizing research trends.</p>
                         <p class="card-text"><strong>Key Features:</strong> Extensive coverage of scientific

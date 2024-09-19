@@ -10,17 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Bootstrap CSS -->
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Bootstrap JS with Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS with Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Custom CSS -->
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/responsive.css" rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -36,115 +34,29 @@
                     <li class="nav-item hover-underline-animation">
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
+                    <li class="nav-item hover-underline-animation">
+                        <a class="nav-link" href="">About Us</a>
+                    </li>
+                   
+                    <li class="nav-item hover-underline-animation">
+                        <a class="nav-link" href="">Blog</a>
+                    </li>
+                    <li class="nav-item hover-underline-animation">
+                        <a class="nav-link" href="">Contact Us</a>
+                    </li>
                     <li class="nav-item dropdown hover-underline-animation">
                         <a class="nav-link dropdown-toggle" href="#servicesection" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
+                            Brand
                         </a>
                         <ul class="dropdown-menu custom-dropdown-menus" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Research/Review Paper Writing Assistance</a></li>
-                            <li><a class="dropdown-item" href="#">Thesis Writing Assistance</a></li>
-                            <li><a class="dropdown-item" href="#">Dissertation/Synopsis Writing Assistance</a></li>
-                            <li><a class="dropdown-item" href="#">Patents</a></li>
+                            <li><a class="dropdown-item" href="../index.php">VMAGO</a></li>
+                            <li><a class="dropdown-item" href="#">Researcher Hub</a></li>
+                            <li><a class="dropdown-item" href="#">Digi Med Global</a></li>
+                          
                         </ul>
                     </li>
-                    <li class="nav-item dropdown hover-underline-animation">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Publication
-                        </a>
-                        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdown2">
-                            <li><a class="dropdown-item" href="#">Scopus</a></li>
-                            <li><a class="dropdown-item" href="#">Web Of Science</a></li>
-                            <li><a class="dropdown-item" href="#">UGC-CARE</a></li>
-                            <li><a class="dropdown-item" href="#">PubMed</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown hover-underline-animation">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Research Impact
-                        </a>
-                        <ul class="dropdown-menu custom-dropdown-menu-research" aria-labelledby="navbarDropdown3">
-                            <div class="research-impact">
-                                <div id="service1" class="service-content">
-                                    <img src="../images/research-impact.png" alt="Research Assistance Image"
-                                        style="width:300px;height:200px">
-                                    <h2>How to Increase Research Impact?</h2>
-                                    <p>To enhance the impact of your research, consider these key strategies:</p>
-                                </div>
-
-                                <div id="service2" class="service-content">
-                                    <img src="../images/sharing-research.png" alt="Sharing Research Work Image"
-                                        style="width: 300px;height: 200px;">
-                                    <h2>Sharing Your Research Work</h2>
-                                    <p>Disseminate your research findings through various channels, such as online
-                                        journals, research networks, and social media, to reach a wider audience and
-                                        engage with the academic community.</p>
-                                </div>
-
-                                <div id="service3" class="service-content">
-                                    <img src="../images/research-blog.png" alt="Writing Research Blogs Image"
-                                        style="width:300px">
-                                    <h2>Write Research Blogs</h2>
-                                    <p>Share your research insights and updates through blogs. This helps in making
-                                        your
-                                        research more accessible and engaging to both academic and non-academic
-                                        audiences.</p>
-                                </div>
-
-                                <div id="service4" class="service-content">
-                                    <img src="../images/presentation-workshop.png" alt="Presenting Work Image"
-                                        style="width:300px">
-                                    <h2>Present Your Work in Seminars and Workshops</h2>
-                                    <p>Presenting your research at seminars, workshops, and conferences offers
-                                        valuable
-                                        attention and feedback from peers and experts, which can enhance the
-                                        visibility
-                                        and impact of your work.</p>
-                                </div>
-
-                                <!-- <div id="service5" class="service-content">
-                                        <img src="images/research-impact.png" alt="Preparing Scientific Videos Image">
-                                        <h2>Prepare Scientific Videos</h2>
-                                        <p>Create videos that simplify and visually present your research. Share these on
-                                            video platforms and social media to attract a broader audience and enhance your
-                                            research's visibility.</p>
-                                    </div> -->
-                            </div>
-                        </ul>
-
-                    </li>
-                    <li class="nav-item dropdown hover-underline-animation">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Policies
-                        </a>
-                        <ul class="dropdown-menu custom-dropdown-menu-policies" aria-labelledby="navbarDropdown3">
-                            <li><a class="dropdown-item" href="#">Define authorship in your manuscript</a></li>
-                            <li><a class="dropdown-item" href="#">Comprehend our data sharing policies</a></li>
-                            <li><a class="dropdown-item" href="#">Author contributions</a></li>
-                            <li><a class="dropdown-item" href="#">Conflict of Interest</a></li>
-                            <li><a class="dropdown-item" href="#">Acknowledge the institute where you have conducted
-                                    your research</a></li>
-                            <li><a class="dropdown-item" href="#">Funding resources</a></li>
-                            <li><a class="dropdown-item" href="#">Our editorial policies</a></li>
-                            <li><a class="dropdown-item" href="#">Explain your reasonable request data sharing
-                                    policy</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown hover-underline-animation">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Events
-                        </a>
-                        <ul class="dropdown-menu custom-dropdown-menu events" aria-labelledby="navbarDropdown3">
-                            <li><a class="dropdown-item" href="#">Our past events</a></li>
-                            <li><a class="dropdown-item" href="#">Our Upcoming events</a></li>
-
-                        </ul>
-                    </li>
+                   
 
                     <li class="nav-item sign hover-underline-animation ">
                         <a class="nav-link" href="#" id="sign-in">Sign In</a>
@@ -168,11 +80,11 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="offcanvasServicesToggle" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Services <i class="fa fa-angle-down"></i>
+                                Brand <i class="fa fa-angle-down"></i>
 
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="offcanvasServicesToggle">
-                                <li><a class="dropdown-item" href="#">Research/Review Paper Writing Assistance</a></li>
+                                <li><a class="dropdown-item" href="#">VMAGO</a></li>
                                 <li><a class="dropdown-item" href="#">Thesis Writing Assistance</a></li>
                                 <li><a class="dropdown-item" href="#">Dissertation/Synopsis Writing Assistance</a></li>
                                 <li><a class="dropdown-item" href="#">Patents</a></li>
@@ -191,20 +103,7 @@
                                 <li><a class="dropdown-item" href="#">PubMed</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasResearchImpactToggle"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Research Impact<i class="fa fa-angle-down"></i>
-
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="offcanvasResearchImpactToggle">
-                                <li><a class="dropdown-item" href="#">How to Increase Research Impact?</a></li>
-                                <li><a class="dropdown-item" href="#">Sharing Your Research Work</a></li>
-                                <li><a class="dropdown-item" href="#">Write Research Blogs</a></li>
-                                <li><a class="dropdown-item" href="#">Present Your Work in Seminars & Workshops</a>
-                                </li>
-                            </ul>
-                        </li>
+                       
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="offcanvasPoliciesToggle" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -245,18 +144,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             const dropdowns = document.querySelectorAll('.dropdown');
 
-            dropdowns.forEach(function (dropdown) {
+            dropdowns.forEach(function(dropdown) {
                 const toggle = dropdown.querySelector('.dropdown-toggle');
                 const menu = dropdown.querySelector('.dropdown-menu');
 
-                toggle.addEventListener('click', function (event) {
+                toggle.addEventListener('click', function(event) {
                     event.stopPropagation(); // Prevent event from bubbling up
 
                     // Close all other dropdowns
-                    dropdowns.forEach(function (otherDropdown) {
+                    dropdowns.forEach(function(otherDropdown) {
                         if (otherDropdown !== dropdown) {
                             const otherMenu = otherDropdown.querySelector('.dropdown-menu');
                             otherMenu.style.display = 'none';
@@ -273,15 +172,13 @@
             });
 
             // Close all dropdowns if click outside
-            document.addEventListener('click', function () {
-                dropdowns.forEach(function (dropdown) {
+            document.addEventListener('click', function() {
+                dropdowns.forEach(function(dropdown) {
                     const menu = dropdown.querySelector('.dropdown-menu');
                     menu.style.display = 'none';
                 });
             });
         });
-
-
     </script>
 </body>
 

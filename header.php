@@ -141,7 +141,7 @@
                     </li>
 
                     <li class="nav-item sign hover-underline-animation ">
-                        <a class="nav-link" href="#" id="sign-in">Sign In</a>
+                        <a class="nav-link" href="login_page.php" id="sign-in">Sign In</a>
                     </li>
 
                 </ul>

@@ -1,9 +1,3 @@
-
-<?php include('../section/navbar.php'); ?>
-
-
-
-
 <!-- about us section -->
 <section class="about-us py-5">
         <div class="container">
@@ -11,7 +5,8 @@
             <div class="row align-items-center">
 
                 <div class="col-md-6">
-                    <h2 class="text-center text-white">About Us</h2>
+                    <h2 class="text-left text-white">About Us</h2>
+                    <!-- <hr stye="background-color:#050c9c;"> -->
                     <p class="text-white">
                         We are dedicated to revolutionizing the way organizations manage their
                         workflows. Our Workflow Management System is designed to streamline and optimize business

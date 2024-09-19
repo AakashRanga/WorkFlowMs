@@ -1,12 +1,8 @@
-<?php include('../section/navbar.php'); ?>
-<style>
- 
 
-</style>
 
 <section class="courses-section">
     <div class="container py-5">
-        <h1 class="text-center mb-4 text-black">OUR SERVICES</h1>
+        <h1 class="text-center mb-4 text-black">Our Knowledge Partners</h1>
         <!-- Carousel for larger screens -->
         <div id="servicesCarouselLarge" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
             <div class="carousel-inner">
