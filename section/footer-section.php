@@ -4,15 +4,15 @@
             <div class="row">
                 <!-- Text Side -->
                 <div class="col-md-6 text-side">
-                    <h2 style="color:#050c9c">Contact Us</h2>
-                    <p>We would love to hear from you! Whether you have a question, feedback, or need support, feel free
+                    <h2 style="color:black">Contact Us</h2>
+                    <p class="mb-3">We would love to hear from you! Whether you have a question, feedback, or need support, feel free
                         to reach out to us. Our team is here to assist you and ensure you have the best experience
                         possible.</p>
-                    <p>Fill out the form on the right to get in touch with us, and we will get back to you as soon as
+                    <p class="mb-3">Fill out the form on the right to get in touch with us, and we will get back to you as soon as
                         possible.</p>
                     <div class="contact-info">
-                        <p><strong>Email:</strong> <a href="mailto:info@example.com">support@vmagsglobal.com</a></p>
-                        <p><strong>Phone:</strong> <a href="tel:+1234567890">+91 8234 567 890</a></p>
+                        <p class="mb-3"><strong>Email:</strong> <a href="mailto:info@example.com">support@vmagsglobal.com</a></p>
+                        <p class="mb-3"><strong>Phone:</strong> <a href="tel:+1234567890">+91 8234 567 890</a></p>
                     </div>
                     <div class="social-media">
                         <a href="https://facebook.com" target="_blank" class="social-icon"><i
@@ -28,7 +28,7 @@
                 </div>
                 <!-- Form Side -->
                 <div class="col-md-6 form-side">
-                    <h2 style="color:#050c9c">Get in Touch</h2>
+                    <h2 style="color:black">Get in Touch</h2>
                     <form>
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>

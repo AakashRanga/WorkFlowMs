@@ -20,15 +20,17 @@ li {
     background-color: #fff;
 }
 
-a#sign-in{
+a#sign-in {
     background: #050c9c;
     border-radius: 40px;
     color: #fff;
 }
-a#sign-in:hover{
+
+a#sign-in:hover {
     background: #fff;
     color: #000000;
 }
+
 .navbar-nav .nav-item .nav-link {
     width: 150px;
     text-align: center;
@@ -38,9 +40,9 @@ a#sign-in:hover{
     display: inline-block;
     position: relative;
     color: #050C9C;
-  }
-  
-  .hover-underline-animation::after {
+}
+
+.hover-underline-animation::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -51,14 +53,14 @@ a#sign-in:hover{
     background-color: #050C9C;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-  }
-  
-  .hover-underline-animation:hover::after {
+}
+
+.hover-underline-animation:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-    
-  }
-  
+
+}
+
 .navbar-collapse {
     flex-grow: 0;
 }
@@ -942,6 +944,30 @@ button.btn.btn-primary i.fa-solid.fa-arrow-up-right-from-square {
     flex-direction: column !important;
 }
 
+.custom-card-text {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.custom-card-text a,p{
+    color: #333;
+}
+
+.custom-author{
+    min-height: 100px;
+}
+
+.card.h-100.custom-card.public {
+    width: 350px;
+    /* border: 0 !important; */
+    border-radius: 10px 10px 0px 12px !important;
+    border-top: 7px solid #050c9c;
+    /* border-bottom: 0 !important; */
+    background-color: #fbf8f8;
+    ;
+}
+
 
 .customs-card-img-top {
     display: block;
@@ -949,6 +975,41 @@ button.btn.btn-primary i.fa-solid.fa-arrow-up-right-from-square {
     margin-right: auto;
     width: 50%;
 }
+.card-body-title {
+    min-height: 185px;
+    font-size: 18px;
+    color: #666;
+}
+
+
+/*explore-journal css  */
+ /* Explore Journal CSS */
+ section.explore-section.py-5 {
+    background-color: #fff;
+}
+.container-fluid {
+    max-width: 1470px; /* Corrected max-width value */
+}
+.container-fluid ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 17px;
+    list-style-type: none; /* Moved from inline to internal */
+    padding: 0; /* Moved from inline to internal */
+}
+.container-fluid li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+.container-fluid a {
+    text-decoration: none; /* Ensures links don't have underlines */
+    color: black; /* Adjust link color if needed */
+}
+
+.container-fluid ul li a{
+    color: #10147e;
+}
+
 
 /* banner section */
 
@@ -1107,6 +1168,7 @@ button.btn.btn-primary i.fa-solid.fa-arrow-up-right-from-square {
     background: #f0f0f0 !important;
     height: 420px;
 }
+
 .custom-card:hover {
     transform: translateY(-10px);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
@@ -1117,12 +1179,20 @@ button.btn.btn-primary i.fa-solid.fa-arrow-up-right-from-square {
     font-weight: bold;
 }
 
+h5.card-title.custom {
+    color: #444;
+    font-size: 14px;
+}
+
 .card-body {
     padding: 1.5rem;
 }
-
+.card-text{
+    font-size: 17px;
+}
 /* public section witout bg image */
 
 section.publication-section-another.py-5 {
     background: #f0f0f0;
 }
+

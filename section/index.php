@@ -4,6 +4,7 @@
 
 <?php include ("publication-section.php")?>
 
+<?php include ("publicationsection-withoutimg.php")?>
 
 <?php include ("footer-section.php")?>
 
