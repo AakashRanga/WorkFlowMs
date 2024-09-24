@@ -6,7 +6,6 @@
 
 <?php include ("publicationsection-withoutimg.php")?>
 
-<?php include ("explore-journals.php")?>
 
 
 <?php include ("footer-section.php")?>
