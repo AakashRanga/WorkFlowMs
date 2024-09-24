@@ -126,11 +126,15 @@
         object-fit: contain;
     }
     .container-fluid{
-        max-width: 1230px;
+        max-width: 1246px;
     }
     .card.h-100.custom-card.public {
         width: 288px;
         
+    }
+
+    .lead{
+        font-size:18px;
     }
 
 }
