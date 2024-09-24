@@ -1,4 +1,3 @@
-<?php include("navbar.php"); ?>
 
 
 <section class="explore-section py-5">
