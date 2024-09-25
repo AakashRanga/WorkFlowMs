@@ -1,6 +1,6 @@
 
 <!-- Publication Section -->
-<section class="publication-section-another py-5">
+<section class="publication-sections-another py-5">
     <div class="container-fluid">
         <h1 class="text-center mb-4 text-black">Trending Research</h1>
         <div class="row">

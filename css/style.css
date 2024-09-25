@@ -940,8 +940,8 @@ button.btn.btn-primary i.fa-solid.fa-arrow-up-right-from-square {
     height: 330px;
     width: 100%;
     border-radius: 13px;
-    display: flex;
-    flex-direction: column !important;
+    /* display: flex;
+    flex-direction: column !important; */
 }
 
 .custom-card-text {
@@ -967,6 +967,7 @@ button.btn.btn-primary i.fa-solid.fa-arrow-up-right-from-square {
     background-color: #fbf8f8;
     ;
 }
+
 
 
 .customs-card-img-top {
@@ -1192,7 +1193,57 @@ h5.card-title.custom {
 }
 /* public section witout bg image */
 
-section.publication-section-another.py-5 {
+section.publication-sections-another.py-5 {
     background: #f0f0f0;
 }
 
+
+
+/* blog section */
+
+.blog-section {
+    width: 100%;
+    padding: 1rem 1rem;
+    margin: 0 auto;
+  }
+  
+  .blog-section img {
+    width: 100%;
+    max-width: 520px;
+    height: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin: 1rem 0;
+    display: block;
+    border-radius: 8px;
+    transform-origin: center;
+  }
+  
+  .card-blog {
+    width: 100%;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: fade-in linear both;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  .card-blog h2, .card p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-container-blog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 36px;
+  }
+
+  .blog-section h1{
+    font-size: 32px;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #000000;
+  }
