@@ -8,6 +8,7 @@
 
 <?php include ("explore-journals.php")?>
 
+<?php include ("blog.php")?>
 
 <?php include ("footer-section.php")?>
 
