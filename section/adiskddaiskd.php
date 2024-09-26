@@ -47,7 +47,7 @@
 
 <body>
     <div class="love-message">
-       <span class="heart">♥ </span> 
+       <span class="heart">AK</span> 
     </div>
 </body>
 
