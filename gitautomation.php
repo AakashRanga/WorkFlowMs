@@ -1,5 +1,5 @@
 <?php
-$secret = 'sunshine247111#'; // Your secret key
+$secret = 'badassmymf247#$12345'; // Your secret key
 
 // Get the signature from the request headers
 $signature = $_SERVER['HTTP_X_HUB_SIGNATURE'] ?? '';
