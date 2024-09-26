@@ -47,7 +47,7 @@
 
 <body>
     <div class="love-message">
-        AK <span class="heart">♥</span> Datchu
+       <span class="heart">♥</span> 
     </div>
 </body>
 
