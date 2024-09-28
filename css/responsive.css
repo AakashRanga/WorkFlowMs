@@ -165,6 +165,204 @@
         grid-template-columns: repeat(3, 1fr);
       }
 
+
+      .title .section-title {
+        font-size: 36px;
+        text-align: justify;
+        letter-spacing: normal;
+        margin-bottom: 0;
+        font-weight: bold;
+        width: 500px;
+        font-weight: bold;
+    }
+
+    .title .container {
+        max-width: 740px  !important;
+        padding: 0 15px;
+    }
+
+    section.title {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        min-height: auto;
+    }
+
+    .authors .d-flex {
+        align-items: center;
+        display: flex;
+        font-size: 26px;
+        justify-content: space-between;
+        line-height: 1.5;
+        width: 308px;
+    }
+
+    .auth-ul .d-flex {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .authors .container {
+        max-width: 802px  !important;
+    }
+
+    li a {
+        color: black;
+    }
+
+    .images .container {
+        max-width: 746px  !important;
+    }
+
+    .images img {
+        max-width: 100%;
+        /* Ensures image is responsive */
+        height: auto;
+        /* Maintains aspect ratio */
+    }
+
+    .images p {
+        font-size: 20px;
+    }
+
+    .video-section .container {
+        max-width: 760px  !important;
+    }
+
+    .blog-info .container {
+        max-width: 770px  !important;
+    }
+
+    .blog-info,
+    .images-blog,
+    .blog-structure,
+    .types-of-blogs,
+    .website-vs-blog,
+    .importance-of-blogs,
+    .faq p {
+        font-size: 20px;
+    }
+
+    .images-blog .container {
+        max-width: 770px  !important;
+    }
+
+    .images-blog img {
+
+        max-width: 100%;
+        /* Ensures image is responsive */
+        height: auto;
+        /* Maintains aspect ratio */
+    }
+
+    .blog-structure .container {
+        max-width: 770px  !important;
+    }
+
+    h2,
+    h3 {
+        font-weight: bold;
+    }
+
+    .types-of-blogs,
+    .website-vs-blog,
+    .importance-of-blogs,
+    .faq h1 {
+        color: black !important;
+    }
+
+    .types-of-blogs .container {
+        max-width: 770px  !important;
+    }
+
+    .types-of-blogs li a {
+        color: blue;
+        font-size: 20px;
+    }
+
+    .types-of-blogs li {
+        list-style-type: disc;
+
+    }
+
+    .list-unstyled {
+        padding-left: 40px;
+    }
+
+    .website-vs-blog .container {
+        max-width: 770px  !important;
+    }
+
+    .importance-of-blogs .container {
+        max-width: 770px  !important;
+    }
+
+    .blog-templates .container {
+        max-width: 770px  !important;
+    }
+
+    .blog-templates li {
+        list-style-type: disc;
+        font-size: 25px;
+    }
+
+    .website-vs-blog h1 {
+        color: black !important;
+    }
+
+    .blog-templates li a {
+        color: blue !important;
+    }
+
+    /* Style for FAQ Section */
+    .faq-content {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    .faq-content.show {
+        max-height: 200px;
+        /* Adjust based on content */
+        opacity: 1;
+    }
+
+    h4 {
+        cursor: pointer;
+        margin: 10px 0;
+        font-weight: bold;
+    }
+
+
+    .faq .container {
+        max-width: 770px !important;
+    }
+
+    .faq-content {
+        display: none;
+        /* Hide all content by default */
+    }
+
+    .faq-content.show {
+        display: block;
+        /* Show content when 'show' class is added */
+    }
+
+    .faq p{
+        margin-left: 30px;
+    }
+    h4 i {
+            margin-right: 8px; /* Spacing between icon and text */
+            transition: transform 0.3s ease; /* Smooth icon rotation */
+        }
+
+        h4.active i {
+            transform: rotate(180deg); /* Rotate the chevron icon when active */
+        }
+        .faq h3{
+            font-size: 40px;
+        }
+
 }
 
 
