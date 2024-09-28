@@ -5,7 +5,7 @@
     <div class="card-container-blog">
       <div class="card-blog">
         <h2>Valley</h2>
-        <img src="img/img1.png" alt="Valley" />
+        <a href="blog1.php"><img src="img/img1.png" alt="Valley" /></a>
         <p>The peaceful valley surrounded by towering mountains is the perfect escape into nature's serenity.</p>
       </div>
       <div class="card-blog">
