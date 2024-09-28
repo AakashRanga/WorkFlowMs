@@ -193,6 +193,7 @@
         font-size: 26px;
         justify-content: space-between;
         line-height: 1.5;
+        width: 308px;
     }
 
     .auth-ul .d-flex {
