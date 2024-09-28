@@ -947,14 +947,15 @@ button.btn.btn-primary i.fa-solid.fa-arrow-up-right-from-square {
 .custom-card-text {
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.custom-card-text a,p{
+.custom-card-text a,
+p {
     color: #333;
 }
 
-.custom-author{
+.custom-author {
     min-height: 100px;
 }
 
@@ -976,6 +977,7 @@ button.btn.btn-primary i.fa-solid.fa-arrow-up-right-from-square {
     margin-right: auto;
     width: 50%;
 }
+
 .card-body-title {
     min-height: 185px;
     font-size: 18px;
@@ -984,30 +986,39 @@ button.btn.btn-primary i.fa-solid.fa-arrow-up-right-from-square {
 
 
 /*explore-journal css  */
- /* Explore Journal CSS */
- section.explore-section.py-5 {
+/* Explore Journal CSS */
+section.explore-section.py-5 {
     background-color: #fff;
 }
+
 .container-fluid {
-    max-width: 1470px; /* Corrected max-width value */
+    max-width: 1470px;
+    /* Corrected max-width value */
 }
+
 .container-fluid ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 17px;
-    list-style-type: none; /* Moved from inline to internal */
-    padding: 0; /* Moved from inline to internal */
+    list-style-type: none;
+    /* Moved from inline to internal */
+    padding: 0;
+    /* Moved from inline to internal */
 }
+
 .container-fluid li {
     border-bottom: 1px solid #ccc;
     padding: 10px 0;
 }
+
 .container-fluid a {
-    text-decoration: none; /* Ensures links don't have underlines */
-    color: black; /* Adjust link color if needed */
+    text-decoration: none;
+    /* Ensures links don't have underlines */
+    color: black;
+    /* Adjust link color if needed */
 }
 
-.container-fluid ul li a{
+.container-fluid ul li a {
     color: #10147e;
 }
 
@@ -1188,9 +1199,11 @@ h5.card-title.custom {
 .card-body {
     padding: 1.5rem;
 }
-.card-text{
+
+.card-text {
     font-size: 17px;
 }
+
 /* public section witout bg image */
 
 section.publication-sections-another.py-5 {
@@ -1205,9 +1218,9 @@ section.publication-sections-another.py-5 {
     width: 100%;
     padding: 1rem 1rem;
     margin: 0 auto;
-  }
-  
-  .blog-section img {
+}
+
+.blog-section img {
     width: 100%;
     max-width: 520px;
     height: 100%;
@@ -1217,9 +1230,9 @@ section.publication-sections-another.py-5 {
     display: block;
     border-radius: 8px;
     transform-origin: center;
-  }
-  
-  .card-blog {
+}
+
+.card-blog {
     width: 100%;
     padding: 16px;
     background-color: #fff;
@@ -1229,21 +1242,225 @@ section.publication-sections-another.py-5 {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-  }
-  
-  .card-blog h2, .card p {
+}
+
+.card-blog h2,
+.card p {
     margin-bottom: 0.5rem;
-  }
-  
-  .card-container-blog {
+}
+
+.card-container-blog {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 36px;
-  }
+}
 
-  .blog-section h1{
+.blog-section h1 {
     font-size: 32px;
-  margin-bottom: 3rem;
-  text-align: center;
-  color: #000000;
-  }
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #000000;
+}
+
+
+/* blog1 stylee  */
+.title .section-title {
+    font-size: 36px;
+    text-align: justify;
+    letter-spacing: normal;
+    margin-bottom: 0;
+    font-weight: bold;
+    width: 500px;
+    font-weight: bold;
+}
+
+.title .container {
+    max-width: 740px;
+    padding: 0 15px;
+}
+
+section.title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: auto;
+}
+
+.authors .d-flex {
+    align-items: center;
+    display: flex;
+    font-size: 26px;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+
+.auth-ul .d-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.authors .container {
+    max-width: 802px;
+}
+
+li a {
+    color: black;
+}
+
+.images .container {
+    max-width: 746px;
+}
+
+.images img {
+    max-width: 100%;
+    /* Ensures image is responsive */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+.images p {
+    font-size: 20px;
+}
+
+.video-section .container {
+    max-width: 760px;
+}
+
+.blog-info .container {
+    max-width: 770px;
+}
+
+.blog-info,
+.images-blog,
+.blog-structure,
+.types-of-blogs,
+.website-vs-blog,
+.importance-of-blogs,
+.faq p {
+    font-size: 20px;
+}
+
+.images-blog .container {
+    max-width: 770px;
+}
+
+.images-blog img {
+
+    max-width: 100%;
+    /* Ensures image is responsive */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+.blog-structure .container {
+    max-width: 770px;
+}
+
+h2,
+h3 {
+    font-weight: bold;
+}
+
+.types-of-blogs,
+.website-vs-blog,
+.importance-of-blogs,
+.faq h1 {
+    color: black !important;
+}
+
+.types-of-blogs .container {
+    max-width: 770px;
+}
+
+.types-of-blogs li a {
+    color: blue;
+    font-size: 20px;
+}
+
+.types-of-blogs li {
+    list-style-type: disc;
+
+}
+
+.list-unstyled {
+    padding-left: 40px;
+}
+
+.website-vs-blog .container {
+    max-width: 770px;
+}
+
+.importance-of-blogs .container {
+    max-width: 770px;
+}
+
+.blog-templates .container {
+    max-width: 770px;
+}
+
+.blog-templates li {
+    list-style-type: disc;
+    font-size: 25px;
+}
+
+.website-vs-blog h1 {
+    color: black !important;
+}
+
+.blog-templates li a {
+    color: blue !important;
+}
+
+/* Style for FAQ Section */
+.faq-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.faq-content.show {
+    max-height: 200px;
+    /* Adjust based on content */
+    opacity: 1;
+}
+
+h4 {
+    cursor: pointer;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+
+.faq .container {
+    max-width: 770px;
+}
+
+.faq-content {
+    display: none;
+    /* Hide all content by default */
+}
+
+.faq-content.show {
+    display: block;
+    /* Show content when 'show' class is added */
+}
+
+.faq p {
+    margin-left: 30px;
+}
+
+h4 i {
+    margin-right: 8px;
+    /* Spacing between icon and text */
+    transition: transform 0.3s ease;
+    /* Smooth icon rotation */
+}
+
+h4.active i {
+    transform: rotate(180deg);
+    /* Rotate the chevron icon when active */
+}
+
+.faq h3 {
+    font-size: 40px;
+}
