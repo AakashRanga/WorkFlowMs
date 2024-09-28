@@ -22,10 +22,13 @@
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex">
-                <ul class="auth-ul d-flex">
+                <ul class="auth-ul d-flex align-items-center">
                     <li><a href="#">dhatchu</a></li>
-                    <li><span> . </span></li>
-                    <li>oct18<span>.</span> 10 min</li>
+                    <li><span>.</span></li>
+                    <li>oct18</li>
+                    <li><span>.</span></li>
+                    <li>10min</li>
+
                 </ul>
             </div>
         </div>
@@ -287,20 +290,6 @@
 
 
 
-<section class="images-blog mt-5">
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col-12">
-                <img src="../images/image-section.webp" alt="Image Section">
-            </div>
-        </div>
-        <span><br></span>
-
-
-    </div>
-</section>
-
-
 <section class="importance-of-blogs mt-5">
     <div class="container">
         <div class="row mb-4">
@@ -393,7 +382,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h3>What is a Blog? FAQ</h3>
+                    <h2>What is a Blog? FAQ</h2>
                 </div>
 
                 <!-- FAQ Item 1 -->
