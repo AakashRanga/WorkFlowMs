@@ -1,5 +1,5 @@
 <?php
-$secret = 'sunshine247111#'; // Your secret key
+$secret = 'badassmymf247#$12345'; // Your secret key
 
 // Get the signature from the request headers
 $signature = $_SERVER['HTTP_X_HUB_SIGNATURE'] ?? '';
@@ -11,7 +11,7 @@ $expectedSignature = 'sha1=' . hash_hmac('sha1', $payload, $secret);
 // Compare the signatures
 if (hash_equals($expectedSignature, $signature)) {
     // Hosting service Path folder
-    chdir('/home/tunetutu/public_html/akwithcode.com/wms');
+    chdir('/home/tunetutu/public_html/wms');
     
     // Run git pull to update the repository
     $output = shell_exec('git pull origin main 2>&1');
