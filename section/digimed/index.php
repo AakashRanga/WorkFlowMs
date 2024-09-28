@@ -8,4 +8,4 @@
 
 <?php include ("publication-section.php")?>
 
-<?php include ("../footer-section.php")?>
+<?php include ("footer-section.php")?>
