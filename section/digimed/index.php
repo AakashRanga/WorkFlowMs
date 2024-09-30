@@ -2,6 +2,7 @@
 
 <?php include("about-us.php")?>
 
+<?php include("mission-vission.php")?>
 <?php include ("ourservice-section.php")?>
 
 <?php include ("explore-journals.php")?>
