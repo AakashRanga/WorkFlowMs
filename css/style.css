@@ -1472,3 +1472,28 @@ h4.active i {
 .importance-of-blogs h1{
     color: #000000 !important;
 }
+
+
+/* mission-vission section csss */
+.mission-vision{
+    padding: 30px 0px;
+}
+
+
+.mission-vision .col-md-6 .card{
+    border-left: 4px solid #050c9c;
+    border-radius: 7px;
+    padding: 10px 10px;
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.mission-vision .col-md-6 p{
+    font-size: 20px;
+}
+
+.mission-vision img{
+    height: 415px;
+}
+
