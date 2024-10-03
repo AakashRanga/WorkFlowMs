@@ -231,7 +231,7 @@
     }
 
     .images p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .video-section .container {
@@ -271,6 +271,7 @@
     h2,
     h3 {
         font-weight: bold;
+        font-size: 20px;
     }
 
     .types-of-blogs,
@@ -312,7 +313,7 @@
 
     .blog-templates li {
         list-style-type: disc;
-        font-size: 25px;
+        font-size: 19px;
     }
 
     .website-vs-blog h1 {
@@ -321,6 +322,7 @@
 
     .blog-templates li a {
         color: blue !important;
+        font-size: 16px;
     }
 
     /* Style for FAQ Section */
@@ -341,6 +343,7 @@
         cursor: pointer;
         margin: 10px 0;
         font-weight: bold;
+        font-size: 18px;
     }
 
 
@@ -397,7 +400,18 @@
         font-size: 20px;
     }
     
-    
+    .px-5{
+        padding-right: 2rem !important;
+    }
+
+    .blog-structure p{
+        font-size: 15px;
+        /* text-indent: 25px; */
+    }
+
+    .blog-info p{
+        font-size: 16px;
+    }
 
 }
 
