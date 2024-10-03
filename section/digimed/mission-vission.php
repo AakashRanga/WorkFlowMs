@@ -1,12 +1,10 @@
-
-
 <section class="mission-vision py-5">
     <div class="container">
         <h1 class="text-dark text-center mb-5">OUR VISION & MISSION</h1>
         <div class="row align-items-center">
             <!-- Left Column: Image -->
             <div class="col-md-6 mb-4">
-                <img src="../../mission-vission.avif" alt="Vision and Mission" class="img-fluid w-100">
+                <img src="../../images/vm.jpg" alt="Vision and Mission" class="img-fluid w-100">
             </div>
             <!-- Right Column: Vision & Mission Content -->
             <div class="col-md-6 mb-4">
