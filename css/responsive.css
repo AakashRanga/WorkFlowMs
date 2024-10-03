@@ -397,15 +397,12 @@
         font-size: 20px;
     }
     
-    
+    .about-us-outer .row .text-button {
+        position: relative;
+        top: 64px;
+    }
 
 }
-
-
-
-
-
-
 
 
 @media (max-width:1025px) {
