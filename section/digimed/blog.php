@@ -10,7 +10,7 @@
     <div class="container text-center mt-5">
         <div class="row">
             <div class="col-12">
-                <p class="section-title text-dark">About Courses</p>
+                <!-- <p class="section-title text-dark">About Courses</p> -->
             </div>
         </div>
     </div>
@@ -34,11 +34,11 @@
     </div>
 </section> -->
 
-<section class="images mt-5">
+<section class="images">
     <div class="container">
         <div class="row mb-4">
             <div class="col-12">
-                <img src="../../images/image-section.webp" alt="Image Section">
+                <img src="../../images/blog.png" alt="Image Section">
             </div>
         </div>
         <span><br></span>
@@ -58,7 +58,7 @@
 
 <section class="blog-info mt-5">
     <div class="container">
-        <div class="row mb-4">
+        <div class="row mb-2">
             <div class="col-12">
                 <h2 class="section-title text-dark">For Whom?</h2>
             </div>
@@ -71,29 +71,22 @@
     </div>
 </section>
 
+
+
+
 <section class="blog-templates mt-5">
     <div class="container">
-        <div class="row mb-4">
-            <div class="col-12">
-                <h2>Option A:</h2>
-            </div>
-        </div>
         <div class="row">
-            <div class="col-12">
+            <div class="col-lg-6">
+                <h2>Option A</h2>
                 <ul class="list-unstyled">
                     <li><a href="#food-blogs">Any Researchers</a></li>
                     <li><a href="#travel-blogs">Graduate</a></li>
                     <li><a href="#health-blogs">Industry Professional</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="row mb-4">
-            <div class="col-12">
-                <h2>Option B:</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
+            <div class="col-lg-6">
+                <h2>Option B</h2>
                 <ul class="list-unstyled">
                     <li><a href="#food-blogs">Institutes</a></li>
                     <li><a href="#travel-blogs">Colleges</a></li>
@@ -106,22 +99,22 @@
     </div>
 </section>
 
-
-<section class="blog-structure mt-5">
+<section class="blog-structure mt-2">
     <div class="container">
         <div class="row mb-4">
             <div class="col-12">
                 <h2 class="section-title text-dark">Learning mode</h2>
-                <span><br></span>
+                <span></span>
 
-                <p>Online Modules: Research Design, Data Analysis, Ethical Considerations <br>Assessment: Online exams and research project </p>
+                <p><b>Online Modules:</b> Research Design, Data Analysis, Ethical Considerations 
+                    <span><br></span><b>Assessment:</b> Online exams and research project </p>
             </div>
         </div>
 
         <div class="row mb-4">
             <div class="col-12">
                 <h3>VIDEO LECTURE </h3>
-                <span><br></span>
+                <span></span>
 
                 <p>The top section of a blog often contains your blog's title or logo, along with a navigation menu that
                     helps visitors explore different sections or categories of your blog. You might decide to categorize
@@ -133,7 +126,7 @@
         <div class="row mb-4">
             <div class="col-12">
                 <h3>PRESENTATION SLIDES </h3>
-                <span><br></span>
+                <span></span>
 
                 <p>This is where the content of your blog posts is displayed. Each post usually includes a title, author
                     name, date of publication, and the main content of the post, which can include text, images, videos,
@@ -144,7 +137,7 @@
         <div class="row mb-4">
             <div class="col-12">
                 <h3>MCQS </h3>
-                <span><br></span>
+                <span></span>
 
                 <p>A blog may have a sidebar on one or both sides of the main content area. The sidebar often contains
                     additional information or features such as a search bar, recent posts, popular posts, categories,
@@ -158,20 +151,20 @@
 
 <section class="blog-templates mt-5">
     <div class="container">
-        <div class="row mb-4">
+        <div class="row">
             <div class="col-12">
                 <h2>Eligibility</h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row  mt-3">
             <div class="col-12">
-                <ul class="list-unstyled"> 
+                <ul class="list-unstyled">
 
                     <li><a href="#">GRADUATE STUDENTS</a></li>
                     <li><a href="#">PROFESSIONALS</a></li>
                     <li><a href="#">RESEARCHERS</a></li>
                     <li><a href="#">SCHOLARS</a></li>
-             
+
                 </ul>
             </div>
         </div>
@@ -180,7 +173,7 @@
 
 
 <!-- FAQ Section -->
-<section class="faq mt-5">
+<section class="faq mt-3">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -188,7 +181,7 @@
             </div>
 
             <!-- FAQ Item 1 -->
-            <div class="col-12">
+            <div class="col-12 px-5 mt-3">
                 <h4 onclick="toggleFAQ('blogPost', this)">
                     <i class="fas fa-chevron-down"></i>
                     What is a blog post?
@@ -197,7 +190,7 @@
             </div>
 
             <!-- FAQ Item 2 -->
-            <div class="col-12">
+            <div class="col-12 px-5">
                 <h4 onclick="toggleFAQ('blogPurpose', this)">
                     <i class="fas fa-chevron-down"></i>
                     What is a blog post used for?
@@ -206,7 +199,7 @@
             </div>
 
             <!-- FAQ Item 3 -->
-            <div class="col-12">
+            <div class="col-12 px-5">
                 <h4 onclick="toggleFAQ('howToStart', this)">
                     <i class="fas fa-chevron-down"></i>
                     Where to start with writing a blog post?
@@ -215,7 +208,7 @@
             </div>
 
             <!-- FAQ Item 4 -->
-            <div class="col-12">
+            <div class="col-12 px-5">
                 <h4 onclick="toggleFAQ('blogWriting', this)">
                     <i class="fas fa-chevron-down"></i>
                     What is blog writing?
@@ -225,7 +218,8 @@
         </div>
     </div>
 </section>
-
+<span><br></span>
+<span><br></span>
 <!-- JavaScript for FAQ Toggle -->
 <script>
     function toggleFAQ(faqId, element) {
@@ -236,4 +230,4 @@
         element.classList.toggle('active');
     }
 </script>
-<?php include ("footer-section.php")?>
+<?php include("footer-section.php") ?>
