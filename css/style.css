@@ -476,8 +476,8 @@ h2 .btn {
 }
 
 a.btn.btn-primary.mt-3 {
-    width: 340px;
-    font-size: 25px;
+    width: 150px;
+    font-size: 20px;
 }
 
 ul.dropdown-menu.show {
@@ -1497,3 +1497,18 @@ h4.active i {
     height: 415px;
 }
 
+/* digi med about-courses */
+section.about-us-outer {
+    padding: 30px 0px;
+}
+
+.about-us-outer p {
+    font-size: 20px;
+    
+}
+
+
+.about-us-outer .row .text-button{
+    position: relative;
+    top: 100px;
+}

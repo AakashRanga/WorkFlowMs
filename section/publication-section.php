@@ -34,7 +34,7 @@
                     <div class="card-body">
                         <h5 class="card-title">UGC-CARE</h5>
                         <p class="card-text">UGC-CARE (Consortium for Academic and Research Ethics) is an initiative by
-                            the University Grants from the  Commission of India.</p>
+                            the University Grants from the Commission of India.</p>
                         <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
