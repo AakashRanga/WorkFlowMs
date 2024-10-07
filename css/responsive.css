@@ -104,7 +104,7 @@
         position: absolute;
         left: 71%;
         width: 269px !important;
-        top: 19%;
+        top: 16%;
     }
 
     .image-content img {
@@ -400,7 +400,14 @@
         font-size: 20px;
     }
     
-    
+    #service4 img{
+        width: 280px !important;
+        height: 210px;
+    }
+    ul.dropdown-menu.custom-dropdown-menu-research {
+        position: absolute;
+        left: -416%;
+    }
 
 }
 

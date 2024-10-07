@@ -1,15 +1,21 @@
-<?php include("navbar.php") ?>
+<?php include("digimed-navbar.php") ?>
+
+<?php include("banner.php") ?>
+
 
 <?php include("about-us.php") ?>
 
-<?php include("mission-vission.php") ?>
-
-<?php include("ourservice-section.php") ?>
-
-<?php include("about-course.php") ?>
-
 <?php include("explore-journals.php") ?>
 
-<?php include("publication-section.php") ?>
+<?php include("whocanapply.php") ?>
+
+<?php include("steps.php") ?>
+
+<?php include("brandsection.php") ?>
+
+
+
+
+
 
 <?php include("footer-section.php") ?>

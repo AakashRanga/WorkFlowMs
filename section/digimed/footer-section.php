@@ -1,6 +1,6 @@
 <footer>
     <section class="contact-section">
-        <div class="container">
+        <div class="container py-5">
             <div class="row">
                 <!-- Text Side -->
                 <div class="col-md-6 text-side">
