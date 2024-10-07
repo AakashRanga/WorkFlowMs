@@ -1,70 +1,33 @@
-<?php include ("navbar.php")?>
-<!-- Include Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<style>
-    .steps-container img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .row .col-lg-3 {
-        border: 1px solid black;
-        border-radius: 50%;
-        width: 260px;
-        height: 253px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .steps-container h1 {
-        font-size: 1.5em;
-        margin: 10px 0;
-    }
-
-    .steps-container p {
-        font-size: 1em;
-        color: gray;
-    }
-
-    .steps-container .row {
-        display: grid; /* Fixed typo from 'gird' to 'grid' */
-        grid-template-columns: repeat(4, 1fr);
-        gap: 15px;
-    }
-
-    .icon {
-        font-size: 40px; /* Adjust size as needed */
-        color: #007bff; /* Change color if desired */
-        margin-bottom: 10px; /* Spacing between icon and text */
-    }
-</style>
 
 <section class="steps-container">
     <div class="container">
+        <h1 class="section-heading text-center">STEPS TO APPLY</h1>
+
         <div class="row">
             <div class="col-lg-3">
-                <i class="fas fa-user icon"></i>
+                <i class="fas fa-user-plus icon"></i>
                 <h1>Registration</h1>
-                <p>Hii hello</p>
+                <p>Welcome to our platform! Start your journey by registering your details. Fill out the form with your
+                    name, email, and password to create an account. It's quick and easy!</p>
             </div>
             <div class="col-lg-3">
-                <i class="fas fa-check icon"></i>
-                <h1>Confirmation</h1>
-                <p>Hii hello</p>
+                <i class="fas fa-file-alt icon"></i>
+                <h1>Application Form</h1>
+                <p>Ensure all required fields are completed accurately. Upload necessary documents such as ID proofs and
+                    transcripts as specified in the guidelines.</p>
             </div>
             <div class="col-lg-3">
-                <i class="fas fa-envelope icon"></i>
-                <h1>Verification</h1>
-                <p>Hii hello</p>
+                <i class="fas fa-credit-card icon"></i>
+                <h1>Fee Payment</h1>
+                <p>After submitting your application, you’ll be prompted to make the fee payment. Choose your preferred
+                    payment method for a seamless transaction.</p>
             </div>
             <div class="col-lg-3">
-                <i class="fas fa-thumbs-up icon"></i>
-                <h1>Success</h1>
-                <p>Hii hello</p>
+                <i class="fas fa-check-circle icon"></i>
+                <h1>Submission</h1>
+                <p>Congratulations! Your application has been successfully submitted. You will receive a notification
+                    once your payment is confirmed and your application is processed.</p>
             </div>
         </div>
     </div>
