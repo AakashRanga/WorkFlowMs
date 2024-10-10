@@ -2,7 +2,7 @@
 <section class="bg-image-section position-relative d-flex justify-content-center align-items-center">
     <!-- Background Video -->
     <video autoplay muted loop id="bg-video">
-        <source src="../../images/bannervideo.mp4" type="video/mp4">
+        <source src="../../images/bg1.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
