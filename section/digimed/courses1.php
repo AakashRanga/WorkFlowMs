@@ -5,6 +5,7 @@
         font-family: Roobert, serif !important;
 
     }
+
     .register-section {
         background-color: #ffffff;
         padding: 40px;
@@ -83,15 +84,36 @@
     .btn-primary:hover {
         background-color: #0056b3;
     }
-    .register-section img{
-        width: 500px;
-        height: 437px;
+
+    .courses-register-section img {
+        width: 620px;
+        height: 468px;
+        
     }
+
+
+    .courses-register-section .row{
+        padding-right: 0 !important;
+
+    }
+    .courses-register-section .container{
+align-items: normal;
+max-width: 1260px;
+    }
+    .courses-register-section{
+        padding: 20px 0px;
+    }
+    .courses-register-section h1 {
+    position: relative;
+    margin-top: 20px;
+    z-index: 2;
+    top:0px;
+}
 </style>
 
 <section class="courses-images">
-    <div class="container">
-        <div class="row">
+    <div class="container mt-5">
+        <div class="row py-5">
             <div class="col-12">
                 <img src="../../images/research-impact-strat.jpg" alt="Image Section" class="img-fluid">
                 <!-- Responsive image -->
@@ -115,8 +137,6 @@
                     valid till 31st November!</p>
             </div>
         </div>
-
-
     </div>
 
 </section>
@@ -180,57 +200,65 @@
 </section>
 
 
-<section class="register-section container my-5">
-    <div class="row">
-        <div class="col-md-6">
-            <h1>Welcome to Our Registration Page</h1>
+<section class="courses-register-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <!-- <h1>Welcome to Our Contact Us Page</h1>
             <p>We are excited to have you here! Please fill in the details in the registration form to create your
-                account. You will gain access to exclusive features and content tailored just for you.</p>
-            <img src="../../images/contact-us.png" alt="">
+                account. You will gain access to exclusive features and content tailored just for you.</p> -->
+                <img src="../../images/broucher-contact.png" alt="">
+
+            </div>
+
+            <div class="col-lg-6 col-md-6 py-3 px-5" style="background:#f0f0f0">
+                <h1>Contact Us</h1>
+                <form action="submit_registration.php" method="POST">
+
+                    <!-- Full Name -->
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="full-name" name="full_name" required placeholder="">
+                        <label for="full-name">* Full Name</label>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="">
+                        <label for="email">* Email Address</label>
+                    </div>
+
+                    <!-- Mobile -->
+                    <div class="form-floating">
+                        <input type="tel" class="form-control" id="mobile" name="mobile" required placeholder="">
+                        <label for="mobile">* Mobile Number</label>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-floating">
+                        <textarea class="form-control" id="message" name="message" required placeholder=""></textarea>
+                        <label for="message">* Message</label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-danger mt-3">Download Now</button>
+                </form>
+            </div>
 
         </div>
-
-        <div class="col-md-6">
-    <h1>Register Now</h1>
-    <form action="submit_registration.php" method="POST">
-        
-        <!-- Full Name -->
-        <div class="form-floating">
-            <input type="text" class="form-control" id="full-name" name="full_name" required placeholder="">
-            <label for="full-name">* Full Name</label>
-        </div>
-
-        <!-- Email -->
-        <div class="form-floating">
-            <input type="email" class="form-control" id="email" name="email" required placeholder="">
-            <label for="email">* Email Address</label>
-        </div>
-
-        <!-- Mobile -->
-        <div class="form-floating">
-            <input type="tel" class="form-control" id="mobile" name="mobile" required placeholder="">
-            <label for="mobile">* Mobile Number</label>
-        </div>
-
-        <!-- Message -->
-        <div class="form-floating">
-            <textarea class="form-control" id="message" name="message" required placeholder=""></textarea>
-            <label for="message">* Message</label>
-        </div>
-
-        <!-- Submit Button -->
-        <button type="submit" class="btn btn-danger mt-3">Download Now</button>
-    </form>
-</div>
 
     </div>
+</section>
+
+
+<section>
+
 </section>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         const subjectCheckboxes = document.querySelectorAll('input[name="subjects"]');
         const subjectsInput = document.getElementById('subjects-input');
         const errorMessage = document.createElement('div');
@@ -238,7 +266,7 @@
         subjectsInput.parentNode.insertBefore(errorMessage, subjectsInput.nextSibling);
 
         subjectCheckboxes.forEach(checkbox => {
-            checkbox.addEventListener('change', function () {
+            checkbox.addEventListener('change', function() {
                 const selectedValues = Array.from(subjectCheckboxes)
                     .filter(checkbox => checkbox.checked)
                     .map(checkbox => checkbox.nextSibling.textContent);

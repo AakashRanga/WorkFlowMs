@@ -155,8 +155,8 @@ a {
     animation: fadeIn 2s ease-in-out;
     z-index: 2;
     /* Ensure it stays above the video */
-    font-size: 93px;
-    color: #ffff;
+    font-size: 83px;
+    color: #444444;
 
 }
 
@@ -510,7 +510,7 @@ h1 {
 
 .contact-section {
     padding: 30px 0;
-    background: #f0f0f0;
+    background: #d6dfdf;
 
 }
 
