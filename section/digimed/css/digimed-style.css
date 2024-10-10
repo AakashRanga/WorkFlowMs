@@ -2,7 +2,8 @@
     font-family: 'Roboto', 'san-seriff';
     font-size: 16px;
 }
-a{
+
+a {
     text-decoration: none !important;
 }
 
@@ -40,6 +41,9 @@ a{
     height: 70px;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
 
 .nav-link:hover {
     color: #050c9c;
@@ -69,7 +73,8 @@ a{
     transform-origin: bottom left;
 
 }
-.navbar .container-fluid ul{
+
+.navbar .container-fluid ul {
     border-bottom: none;
 }
 
@@ -94,9 +99,10 @@ a{
     z-index: -1;
 }
 
-.bg-image-section img{
+.bg-image-section img {
     max-width: 420px;
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -150,7 +156,7 @@ a{
     z-index: 2;
     /* Ensure it stays above the video */
     font-size: 93px;
-    color: #ffff ;
+    color: #ffff;
 
 }
 
@@ -230,7 +236,7 @@ section.explore-section {
 .explore-section .container {
     display: flex;
     flex-direction: column;
-    align-items:normal;
+    align-items: normal;
 }
 
 
@@ -245,7 +251,7 @@ section.explore-section {
     position: relative;
     margin-top: 20px;
     z-index: 2;
-    top:0;
+    top: 0;
 }
 
 @keyframes fadeInUp {
@@ -253,6 +259,7 @@ section.explore-section {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -261,61 +268,73 @@ section.explore-section {
 
 
 
-.grow{
+.grow {
     transition: all .2s ease-in-out;
 
 }
 
-.grow:hover{
+.grow:hover {
     transform: scale(1.5);
     cursor: pointer;
 
 }
+
 /* Delay for each image for staggered effect */
-.explore-section .col-lg-3:nth-child(1) img { animation-delay: 0.1s; }
-.explore-section .col-lg-3:nth-child(2) img { animation-delay: 0.2s; }
-.explore-section .col-lg-3:nth-child(3) img { animation-delay: 0.3s; }
-.explore-section .col-lg-3:nth-child(4) img { animation-delay: 0.4s; }
+.explore-section .col-lg-3:nth-child(1) img {
+    animation-delay: 0.1s;
+}
+
+.explore-section .col-lg-3:nth-child(2) img {
+    animation-delay: 0.2s;
+}
+
+.explore-section .col-lg-3:nth-child(3) img {
+    animation-delay: 0.3s;
+}
+
+.explore-section .col-lg-3:nth-child(4) img {
+    animation-delay: 0.4s;
+}
 
 
 
 /* who can apply css  */
-.who-can-apply{
+.who-can-apply {
     padding: 20px 0px;
     background-color: #000000;
 }
 
-.who-can-apply h1{
+.who-can-apply h1 {
     top: 0;
     text-align: center;
 }
 
-.who-can-apply img{
+.who-can-apply img {
     border-radius: 50%;
 }
 
-.who-can-apply h3{
+.who-can-apply h3 {
     font-size: 20px;
 }
 
-.who-can-apply .container{
+.who-can-apply .container {
     align-items: normal;
 }
 
-.who-can-apply.grow{
+.who-can-apply.grow {
     transition: all .2s ease-in-out;
 
 }
 
-.who-can-apply.grow:hover{
+.who-can-apply.grow:hover {
     transform: scale(1.5);
     cursor: pointer;
 
 }
 
 /* steps section csss */
-.steps-container{
-    padding:20px 0px;
+.steps-container {
+    padding: 20px 0px;
 }
 
 .steps-container p {
@@ -357,11 +376,11 @@ h1 {
 
 .steps-container {
     background-color: #f0f0f0;
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        /* align-items: center; */
-    }
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
 
 
 
@@ -402,50 +421,60 @@ h1 {
     font-size: 20px;
 }
 
-.steps-container .col-lg-3{
+.steps-container .col-lg-3 {
     width: 100% !important;
 }
 
 /* brancd section css */
-.brand-section{
+.brand-section {
     padding: 20px 0px;
 }
 
 .marquee-container {
-    overflow: hidden; /* Hide overflow to keep the scroll smooth */
-    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden;
+    /* Hide overflow to keep the scroll smooth */
+    white-space: nowrap;
+    /* Prevent line breaks */
     position: relative;
-    width: 100%; /* Full width */
+    width: 100%;
+    /* Full width */
 }
 
 .marquee-inner {
-    display: inline-block; /* Allow items to be inline */
-    animation: marquee 20s linear infinite; /* Adjust duration for speed */
+    display: inline-block;
+    /* Allow items to be inline */
+    animation: marquee 20s linear infinite;
+    /* Adjust duration for speed */
 }
 
 .marquee-item {
-    display: inline-block; /* Keep items inline */
-    margin: 0 15px; /* Add some spacing between items */
+    display: inline-block;
+    /* Keep items inline */
+    margin: 0 15px;
+    /* Add some spacing between items */
 }
 
 @keyframes marquee {
     0% {
-        transform: translateX(100%); /* Start from the right */
+        transform: translateX(100%);
+        /* Start from the right */
     }
+
     100% {
-        transform: translateX(-100%); /* End to the left */
+        transform: translateX(-100%);
+        /* End to the left */
     }
 }
 
 
 /* css for brand section without marqueee */
-.brand-section .row{
+.brand-section .row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
 }
 
-.brand-section img{
+.brand-section img {
     width: 200px;
     height: 100px;
 }
@@ -502,18 +531,27 @@ footer .container a {
 
 /* faq section css */
 
-.faq .container{
+.faq .container {
     max-width: 746px;
 }
 
 
 /* contatct-us section css */
+
+
 .register-section {
+    padding: 90px 0px;
+}
+
+.register-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #ffffff;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
 }
 
 h1 {
@@ -547,13 +585,13 @@ p {
 
 .dropdown-content {
     display: none;
-    position: relative;
+    position: absolute;
     background-color: #ffffff;
     min-width: 540px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1;
     /* max-height: 200px; */
-    overflow-y: auto;
+    /* overflow-y: auto; */
     border-radius: 5px;
 }
 
@@ -587,11 +625,182 @@ p {
     background-color: #0056b3;
 }
 
-.register-section h1{
+.register-section h1 {
 
-        position: relative;
-        margin-top: 20px;
-        z-index: 2;
-        top: 0 !important;
-    }
+    position: relative;
+    margin-top: 20px;
+    z-index: 2;
+    top: 0 !important;
+}
+
+/* courses css */
+.digimed-courses{
+    padding: 90px 0px;
+}
+.digimed-courses .container{
+    align-items: normal;
+}
+.digimed-courses .card {
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 350px; /* Set a fixed height for uniformity */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+    border-radius: 20px; /* Rounded corners */
+    width: 250px;
+}
+
+.digimed-courses .card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.digimed-courses .card-img-top {
+    width: 100%; /* Ensure image takes full width */
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: contain; /* Cover the area without stretching */
+}
+
+.digimed-courses .card-body {
+    flex-grow: 1; /* Allow card body to expand to fill space */
+    display: flex; /* Use Flexbox for card body */
+    flex-direction: column; /* Stack title, text, and button vertically */
+    justify-content: space-between; /* Space elements evenly */
+    padding: 1rem; /* Add padding for better spacing */
+}
+
+.digimed-courses .card-text {
+    flex-grow: 1; /* Allow text to grow and take available space */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.digimed-courses h5{
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.digi-course-pay span{
+    font-size: 14px;
+}
+
+.course-amount {
+    padding: 0 0 .8rem;
+    color:#0d80f5;
+}
+
+.digimed-courses a{
+    color: #000000;
+}
+
+/* courses click panaathum vara page oda css  */
+.courses-images{
+    padding: 30px 0px;
+    background-color: #f0f0f0;
+}
+section.courses-images h1 {
+    color: #10147e;
+    font-size: 44px;
+    font-family: 'Roobert', sans-serif;
+    top: 0;
+    position: relative;
+    font-weight: bold;
+    max-width: 746px !important;
+}
+.courses-images .container {
+    max-width: 851px;
+}
+
+.courses-images img{
+    border-radius: 20px;
+}
+
+.courses-images p{
+    font-size: 27px;
+    max-width: 839px;
+    color: #000000;
+}
+
+.courses-images .offer {
+    font-size: 20px;
+    max-width: 707px;
+}
+
+
+
+
+.courses-digimed{
+    padding: 30px 0px;
+}
+
+.courses-digimed h5{
+    font-size: 40px;
+}
+
+.course-desc{
+    padding: 50px 30px;
+    background-color: #f0f0f0;
+}
+
+.course-desc strong{
+    color: black;
+    font-size: 29px;
+}
+
+.course-desc p{
+    font-size: 20px;
+    color: #000000;
+}
+
+.courses-digimed .container{
+    max-width: 1330px;
+}
+
+.research-benefits {
+    list-style-type: disc; /* Keeps the default bullet points */
+    padding-left: 0; /* Remove left padding */
+    margin: 20px 0; /* Space above and below the list */
+    text-align: center; /* Center-aligns the text */
+}
+
+
+
+.research-benefits li {
+    margin-bottom: 10px;
+    font-size: 26px;
+    line-height: 1.5;
+    display: list-item;
+    text-align: left; 
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.learn {
+    list-style-type: disc; /* Keeps bullet points as default discs */
+    padding-left: 20px; /* Adjusts padding for bullets */
+    margin: 20px auto; /* Centers the list on the page */
+    max-width: 800px; /* Limits the width of the content */
+}
+
+.learn li {
+    margin-bottom: 15px;
+    font-size: 25px;
+    line-height: 1.5;
+    position: relative;
+    text-align: center;
+    display: list-item;
+    text-align: left; 
+    max-width: fit-content;
+}
+.learn li p {
+    margin-left: 20px; /* Indents the paragraph under the list item */
+    font-size: 15px; /* Slightly smaller font for the paragraph */
+    line-height: 1.4; /* Improves readability for paragraph text */
+    color: #555; /* Makes the paragraph text slightly lighter */
+}
+
+
+
 
