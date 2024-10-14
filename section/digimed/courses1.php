@@ -88,27 +88,30 @@
     .courses-register-section img {
         width: 620px;
         height: 468px;
-        
+
     }
 
 
-    .courses-register-section .row{
+    .courses-register-section .row {
         padding-right: 0 !important;
 
     }
-    .courses-register-section .container{
-align-items: normal;
-max-width: 1260px;
+
+    .courses-register-section .container {
+        align-items: normal;
+        max-width: 1260px;
     }
-    .courses-register-section{
+
+    .courses-register-section {
         padding: 20px 0px;
     }
+
     .courses-register-section h1 {
-    position: relative;
-    margin-top: 20px;
-    z-index: 2;
-    top:0px;
-}
+        position: relative;
+        margin-top: 20px;
+        z-index: 2;
+        top: 0px;
+    }
 </style>
 
 <section class="courses-images">
@@ -202,12 +205,12 @@ max-width: 1260px;
 
 <section class="courses-register-section">
     <div class="container">
-        <div class="row">
+        <div class="row py-5">
             <div class="col-lg-6 col-md-6">
                 <!-- <h1>Welcome to Our Contact Us Page</h1>
             <p>We are excited to have you here! Please fill in the details in the registration form to create your
                 account. You will gain access to exclusive features and content tailored just for you.</p> -->
-                <img src="../../images/broucher-contact.png" alt="">
+                <img src="../../images/courses.jpg" alt="">
 
             </div>
 
