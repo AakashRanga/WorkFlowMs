@@ -1547,18 +1547,20 @@ section.about-us-outer {
     height: 200px;
 }
 
-.row .fas {
-    border-radius: 50%;
-    width: 166px;
-    height: 159px;
-    display: flex;
+
+.row .fas .fa-chevron-down{
+    border-radius: 50%; 
+    /* width: 166px; */
+    /* height: 159px; */
+    /* display: flex; */
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     text-align: center;
     position: relative;
-    left: 24%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* left: 24%; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+
 }
 
 .steps-container h1 {

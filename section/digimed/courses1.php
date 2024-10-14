@@ -5,93 +5,11 @@
         font-family: Roobert, serif !important;
 
     }
-    .register-section {
-        background-color: #ffffff;
-        padding: 40px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin-top: 30px;
-    }
-
-    h1 {
-        font-size: 24px;
-        margin-bottom: 20px;
-        color: #333;
-    }
-
-    p {
-        font-size: 16px;
-        line-height: 1.5;
-        color: #666;
-    }
-
-    .form-floating {
-        margin-bottom: 20px;
-    }
-
-    .form-control {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 10px;
-        transition: border-color 0.3s;
-    }
-
-    .form-control:focus {
-        border-color: #007bff;
-        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-        outline: none;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: relative;
-        background-color: #ffffff;
-        min-width: 540px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        /* max-height: 200px; */
-        overflow-y: auto;
-        border-radius: 5px;
-    }
-
-    .dropdown-content label {
-        display: block;
-        padding: 10px;
-        cursor: pointer;
-        color: #333;
-    }
-
-    .dropdown-content label:hover {
-        background-color: #f8f9fa;
-    }
-
-    .error-message {
-        color: red;
-        font-size: 0.9em;
-        margin-top: 5px;
-    }
-
-    .btn-primary {
-        background-color: #007bff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        color: white;
-        transition: background-color 0.3s;
-    }
-
-    .btn-primary:hover {
-        background-color: #0056b3;
-    }
-    .register-section img{
-        width: 500px;
-        height: 437px;
-    }
 </style>
 
 <section class="courses-images">
     <div class="container">
-        <div class="row">
+        <div class="row py-5">
             <div class="col-12">
                 <img src="../../images/research-impact-strat.jpg" alt="Image Section" class="img-fluid">
                 <!-- Responsive image -->
@@ -179,50 +97,84 @@
     </div>
 </section>
 
-
-<section class="register-section container my-5">
-    <div class="row">
-        <div class="col-md-6">
-            <h1>Welcome to Our Registration Page</h1>
-            <p>We are excited to have you here! Please fill in the details in the registration form to create your
-                account. You will gain access to exclusive features and content tailored just for you.</p>
-            <img src="../../images/contact-us.png" alt="">
-
+<section class="meet-digimed">
+    <div class="container justify-content-center">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="../../images/meet-digimed.png" alt="">
+                <div class="digi-meet">
+                <h3>Meet DIGIMEDGLOBAL
+                    </h3>
+                    <p>Expand your knowledge with our expert-led courses. Join DIGIMEDGLOBAL and dive into diverse subjects
+                    and linguistic richness. Enhance your academic foundation and immerse yourself in the beauty of
+                    languages. All levels welcome.</p>
+                </div>
+            </div>
         </div>
+    </div>
+</section>
 
-        <div class="col-md-6">
-    <h1>Register Now</h1>
-    <form action="submit_registration.php" method="POST">
-        
-        <!-- Full Name -->
-        <div class="form-floating">
-            <input type="text" class="form-control" id="full-name" name="full_name" required placeholder="">
-            <label for="full-name">* Full Name</label>
+<section class="we-offer-section py-5">
+    <h1 class="text-center mb-4">What Do We Offer</h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Offer Item -->
+            <div class="col-lg-12 d-flex justify-content-start mb-3">
+                <div class="icon me-3">
+                    <i class="fa-solid fa-video fa-2x text-primary" style="font-size: 25px;"></i>
+                </div>
+                <div>
+                    <h5 class="mb-2">Live Learning</h5>
+                    <p>Learn live with top educators, chat with teachers and other attendees, and get your doubts cleared.</p>
+                </div>
+            </div>
+            <!-- Repeat Offer Item as needed -->
+            <div class="col-lg-12 d-flex justify-content-start mb-3">
+                <div class="icon me-3">
+                    <i class="fa-solid fa-book fa-2x text-primary" style="font-size: 25px;"></i>
+                </div>
+                <div>
+                    <h5 class="mb-2">Structured learning</h5>
+                    <p>Our curriculum is designed by experts to make sure you get the best learning experience.</p>
+                </div>
+            </div>
+            <div class="col-lg-12 d-flex justify-content-start mb-3">
+                <div class="icon me-3">
+                    <i class="fa-solid fa-user-group fa-2x text-primary" style="font-size: 25px;"></i>
+                </div>
+                <div>
+                    <h5 class="mb-2">Community & Networking</h5>
+                    <p>Interact and network with like-minded folks from various backgrounds in exclusive chat groups.</p>
+                </div>
+            </div>
+            <div class="col-lg-12 d-flex justify-content-start mb-3">
+                <div class="icon me-3">
+                    <i class="fa-solid fa-comments fa-2x text-primary" style="font-size: 25px;"></i>
+                </div>
+                <div>
+                    <h5 class="mb-2">Learn with the best</h5>
+                    <p>Stuck on something? Discuss it with your peers and the instructors in the inbuilt chat groups.</p>
+                </div>
+            </div>
+            <div class="col-lg-12 d-flex justify-content-start mb-3">
+                <div class="icon me-3">
+                    <i class="fa-solid fa-rectangle-list fa-2x text-primary" style="font-size: 25px;"></i>
+                </div>
+                <div>
+                    <h5 class="mb-2">Practice tests</h5>
+                    <p>With the quizzes and live tests practice what you learned, and track your class performance.</p>
+                </div>
+            </div>
+            <div class="col-lg-12 d-flex justify-content-start mb-3">
+                <div class="icon me-3">
+                    <i class="fa-solid fa-medal fa-2x text-primary" style="font-size: 25px;"></i>
+                </div>
+                <div>
+                    <h5 class="mb-2">Get certified</h5>
+                    <p>Flaunt your skills with course certificates. You can showcase the certificates on LinkedIn with a click.</p>
+                </div>
+            </div>
         </div>
-
-        <!-- Email -->
-        <div class="form-floating">
-            <input type="email" class="form-control" id="email" name="email" required placeholder="">
-            <label for="email">* Email Address</label>
-        </div>
-
-        <!-- Mobile -->
-        <div class="form-floating">
-            <input type="tel" class="form-control" id="mobile" name="mobile" required placeholder="">
-            <label for="mobile">* Mobile Number</label>
-        </div>
-
-        <!-- Message -->
-        <div class="form-floating">
-            <textarea class="form-control" id="message" name="message" required placeholder=""></textarea>
-            <label for="message">* Message</label>
-        </div>
-
-        <!-- Submit Button -->
-        <button type="submit" class="btn btn-danger mt-3">Download Now</button>
-    </form>
-</div>
-
     </div>
 </section>
 
@@ -258,8 +210,5 @@
         });
     });
 
-    function toggleDropdown() {
-        const dropdownContent = document.querySelector('.dropdown-content');
-        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-    }
+
 </script>
