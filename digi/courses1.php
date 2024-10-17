@@ -250,7 +250,7 @@
                         <div class="dropdown-content">
                             <div class="left-side">
                                 <span>01</span>
-                                <span>UNIT 1: How to develop and report good research questions</span>
+                                <span style="font-weight: bold;">UNIT 1: How to develop and report good research questions</span>
                             </div>
                             <div class="right-side">
                                 <span>2 attachments</span>
@@ -278,7 +278,7 @@
                         <div class="dropdown-content">
                             <div class="left-side">
                                 <span>02</span>
-                                <span>UNIT 2: Understanding Research Impact</span>
+                                <span style="font-weight: bold;">UNIT 2: Understanding Research Impact</span>
                             </div>
                             <div class="right-side">
                                 <span>5 attachments</span>
@@ -313,7 +313,7 @@
                         <div class="dropdown-content">
                             <div class="left-side">
                                 <span>03</span>
-                                <span>UNIT 3: Effective Communication of Research Findings</span>
+                                <span style="font-weight: bold;">UNIT 3: Effective Communication of Research Findings</span>
                             </div>
                             <div class="right-side">
                                 <span>8 attachment</span>
@@ -356,7 +356,7 @@
                         <div class="dropdown-content">
                             <div class="left-side">
                                 <span>04</span>
-                                <span>UNIT 4: How to do ethical research</span>
+                                <span style="font-weight: bold;">UNIT 4: How to do ethical research</span>
                             </div>
                             <div class="right-side">
                                 <span>8 attachments</span>
@@ -401,7 +401,7 @@
                         <div class="dropdown-content">
                             <div class="left-side">
                                 <span>05</span>
-                                <span>UNIT 5: How to write a research paper</span>
+                                <span style="font-weight: bold;">UNIT 5: How to write a research paper</span>
                             </div>
                             <div class="right-side">
                                 <span>5 attachments</span>
@@ -437,7 +437,7 @@
                         <div class="dropdown-content">
                             <div class="left-side">
                                 <span>06</span>
-                                <span>UNIT 6: Running the essential trial</span>
+                                <span style="font-weight: bold;">UNIT 6: Running the essential trial</span>
                             </div>
                             <div class="right-side">
                                 <span>6 attachments</span>
@@ -471,7 +471,7 @@
                         <div class="dropdown-content">
                             <div class="left-side">
                                 <span>07</span>
-                                <span>UNIT 7: Conclusion</span>
+                                <span style="font-weight: bold;">UNIT 7: Conclusion</span>
                             </div>
                             <div class="right-side">
                                 <span>6 attachments</span>
@@ -505,7 +505,7 @@
                         <div class="dropdown-content">
                             <div class="left-side">
                                 <span>08</span>
-                                <span>UNIT 8: Picking the right journal and getting published</span>
+                                <span style="font-weight: bold;">UNIT 8: Picking the right journal and getting published</span>
                             </div>
                             <div class="right-side">
                                 <span>5 attachments</span>
@@ -539,7 +539,7 @@
                         <div class="dropdown-content">
                             <div class="left-side">
                                 <span>09</span>
-                                <span>UNIT 9: Avoiding scientific misconduct</span>
+                                <span style="font-weight: bold;">UNIT 9: Avoiding scientific misconduct</span>
                             </div>
                             <div class="right-side">
                                 <span>4 attachments</span>
@@ -571,7 +571,7 @@
                         <div class="dropdown-content">
                             <div class="left-side">
                                 <span>10</span>
-                                <span>UNIT 10: Reviewing of good Publisher</span>
+                                <span style="font-weight: bold;">UNIT 10: Reviewing of good Publisher</span>
                             </div>
                             <div class="right-side">
                                 <span>2 attachments</span>
@@ -596,7 +596,7 @@
                         <div class="dropdown-content">
                             <div class="left-side">
                                 <span>11</span>
-                                <span>UNIT 11 & 12: EXAM & PUBLICATION</span>
+                                <span style="font-weight: bold;">UNIT 11 & 12: EXAM & PUBLICATION</span>
                             </div>
                             <div class="right-side">
                                 <span>1 attachment</span>
