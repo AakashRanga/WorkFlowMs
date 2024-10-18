@@ -10,6 +10,7 @@
         justify-content: space-between;
         /* Align items to the left and right */
         width: 100%;
+        background-color: #f0f0f0 !important;
     }
 
     .left-side,
@@ -32,46 +33,40 @@
 
     .dropdown-toggle {
         cursor: pointer;
-        border: 1px solid #ccc;
-        padding: 10px;
-        background-color: #fff;
+        /* border: 1px solid #ccc; */
+        padding: 30px;
+        background-color: #f0f0f0;
         display: flex;
         align-items: center;
-        border-radius: 4px;
-        /* Rounded corners */
+        border-radius: 24px
+            /* Rounded corners */
     }
 
     .menu {
         display: none;
-        /* Hide by default */
         background-color: #fff;
-        border: 1px solid #ccc;
+        /* border: 1px solid #ccc; */
         z-index: 1;
-        /* Ensure it's above other content */
         width: 100%;
-        /* Set to 100% width for full responsiveness */
         max-height: 100%;
-        /* Set a maximum height */
         /* overflow-y: auto; */
-        /* Enable vertical scrolling */
         margin-top: 5px;
-        /* Space between dropdown toggle and dropdown */
         border-radius: 4px;
+        position: relative;
+        top: -17px;
     }
 
     .menu .item {
-        padding: 10px;
+        padding: 20px;
         cursor: pointer;
         display: flex;
         flex-direction: row;
         gap: 10px;
         align-items: center;
+        border-bottom: 1px solid #f0f0f0;
     }
 
-    .menu .item:hover {
-        background-color: #f0f0f0;
-        /* Highlight on hover */
-    }
+
 
     .menu.show {
         display: block;
@@ -124,7 +119,14 @@
 
     }
 
+    .right-side span {
+        color: #001eae;
+    }
 
+    .btn-danger{
+    position: absolute;
+    left: 70%;
+    }
 </style>
 
 <section class="courses-images">
@@ -212,7 +214,7 @@
                 <img src="images/broucher-contact.png" alt="" class="img-fluid">
             </div>
             <div class="col-lg-6 col-md-6" style="background:#f0f0f0; padding: 20px;">
-                <h1 class="mb-4">Register Now</h1>
+                <h1 class="mb-4 text-center">Get Free Broucher</h1>
                 <form action="submit_registration.php" method="POST">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="full-name" name="full_name" required placeholder="">
@@ -240,7 +242,7 @@
 
 <section class="ciriculam-section py-5">
     <div class="container">
-        <h2 class="text-center mb-4">Curriculum</h2>
+        <h2 class="text-center mb-4" style="color: #001eae;font-weight: bold;">Curriculum</h2>
         <div class="row justify-content-center">
             <!-- Unit 1 -->
             <div class="col-lg-10 col-md-12 mb-3">
@@ -249,8 +251,9 @@
                     <div class="dropdown-toggle" id="unit1-dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="dropdown-content">
                             <div class="left-side">
-                                <span>01</span>
-                                <span style="font-weight: bold;">UNIT 1: How to develop and report good research questions</span>
+                                <span style="color: #001eae;font-weight: bold;">01</span>
+                                <span style="font-weight: bold;">UNIT 1: How to develop and report good research
+                                    questions</span>
                             </div>
                             <div class="right-side">
                                 <span>2 attachments</span>
@@ -277,7 +280,7 @@
                     <div class="dropdown-toggle" id="unit2-dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="dropdown-content">
                             <div class="left-side">
-                                <span>02</span>
+                                <span style="color: #001eae;font-weight: bold;">02</span>
                                 <span style="font-weight: bold;">UNIT 2: Understanding Research Impact</span>
                             </div>
                             <div class="right-side">
@@ -312,8 +315,9 @@
                     <div class="dropdown-toggle" id="unit3-dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="dropdown-content">
                             <div class="left-side">
-                                <span>03</span>
-                                <span style="font-weight: bold;">UNIT 3: Effective Communication of Research Findings</span>
+                                <span style="color: #001eae;font-weight: bold;">03</span>
+                                <span style="font-weight: bold;">UNIT 3: Effective Communication of Research
+                                    Findings</span>
                             </div>
                             <div class="right-side">
                                 <span>8 attachment</span>
@@ -355,7 +359,7 @@
                     <div class="dropdown-toggle" id="unit4-dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="dropdown-content">
                             <div class="left-side">
-                                <span>04</span>
+                                <span style="color: #001eae;font-weight: bold;">04</span>
                                 <span style="font-weight: bold;">UNIT 4: How to do ethical research</span>
                             </div>
                             <div class="right-side">
@@ -400,7 +404,7 @@
                     <div class="dropdown-toggle" id="unit5-dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="dropdown-content">
                             <div class="left-side">
-                                <span>05</span>
+                                <span style="color: #001eae;font-weight: bold;">05</span>
                                 <span style="font-weight: bold;">UNIT 5: How to write a research paper</span>
                             </div>
                             <div class="right-side">
@@ -436,7 +440,7 @@
                     <div class="dropdown-toggle" id="unit6-dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="dropdown-content">
                             <div class="left-side">
-                                <span>06</span>
+                                <span style="color: #001eae;font-weight: bold;">06</span>
                                 <span style="font-weight: bold;">UNIT 6: Running the essential trial</span>
                             </div>
                             <div class="right-side">
@@ -470,7 +474,7 @@
                     <div class="dropdown-toggle" id="unit7-dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="dropdown-content">
                             <div class="left-side">
-                                <span>07</span>
+                                <span style="color: #001eae;font-weight: bold;">07</span>
                                 <span style="font-weight: bold;">UNIT 7: Conclusion</span>
                             </div>
                             <div class="right-side">
@@ -504,8 +508,9 @@
                     <div class="dropdown-toggle" id="unit8-dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="dropdown-content">
                             <div class="left-side">
-                                <span>08</span>
-                                <span style="font-weight: bold;">UNIT 8: Picking the right journal and getting published</span>
+                                <span style="color: #001eae;font-weight: bold;">08</span>
+                                <span style="font-weight: bold;">UNIT 8: Picking the right journal and getting
+                                    published</span>
                             </div>
                             <div class="right-side">
                                 <span>5 attachments</span>
@@ -538,7 +543,7 @@
                     <div class="dropdown-toggle" id="unit9-dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="dropdown-content">
                             <div class="left-side">
-                                <span>09</span>
+                                <span style="color: #001eae;font-weight: bold;">09</span>
                                 <span style="font-weight: bold;">UNIT 9: Avoiding scientific misconduct</span>
                             </div>
                             <div class="right-side">
@@ -570,7 +575,7 @@
                     <div class="dropdown-toggle" id="unit10-dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="dropdown-content">
                             <div class="left-side">
-                                <span>10</span>
+                                <span style="color: #001eae;font-weight: bold;">10</span>
                                 <span style="font-weight: bold;">UNIT 10: Reviewing of good Publisher</span>
                             </div>
                             <div class="right-side">
@@ -595,7 +600,7 @@
                     <div class="dropdown-toggle" id="unit11-12-dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="dropdown-content">
                             <div class="left-side">
-                                <span>11</span>
+                                <span style="color: #001eae;font-weight: bold;">11</span>
                                 <span style="font-weight: bold;">UNIT 11 & 12: EXAM & PUBLICATION</span>
                             </div>
                             <div class="right-side">
@@ -702,7 +707,7 @@
 </section>
 
 <section class="review-section py-5">
-<h3 class="text-center">Add Review</h3>
+    <h3 class="text-center">Add Review</h3>
 
     <div class="container py-5">
 
@@ -788,7 +793,6 @@
 </section>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Load jQuery first -->
 
-
 <script>
     // Handle dropdown toggle
     document.querySelectorAll('.dropdown-toggle').forEach(function (toggle) {
@@ -816,9 +820,12 @@
 
             const toggle = this.closest('.custom-dropdown').querySelector('.dropdown-toggle');
             const text = this.textContent;
-            toggle.querySelector('.left-side span').textContent = text; // Update the toggle text
-            toggle.querySelector('.right-side span').textContent = ''; // Clear attachments info
-            this.closest('.menu').classList.remove('show'); // Close menu
+
+            // Update the toggle text
+
+
+            // Close menu
+            this.closest('.menu').classList.remove('show');
         });
     });
 
