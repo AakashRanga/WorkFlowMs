@@ -17,7 +17,7 @@
             throw new Exception($RequestMethod . ' Method Not Allowed', 405);
         }
 
-        $requiredFields = ['title', 'content', 'userid'];
+        $requiredFields = ['name', 'email', 'mobile', 'message'];
 
         $missingFields = [];
 
@@ -34,32 +34,34 @@
             throw new Exception('Missing required field(s): ' . $missingFieldsStr, 400);
         }
 
-        $platform = 'web';
+        // using raw json
+        $name = isset($json_data['name']) ? addslashes(trim($json_data['name'])) : null;
+        $email = isset($json_data['email']) ? addslashes(trim($json_data['email'])) : null;
+        $mobile = isset($json_data['mobile']) ? addslashes(trim($json_data['mobile'])) : null;
+        $message = isset($json_data['message']) ? addslashes(trim($json_data['message'])) : null;
+        $broucher = isset($json_data['broucher']) ? addslashes(trim($json_data['broucher'])) : null;
 
-        // using web and api raw json
-        $title = isset($json_data['title']) ? addslashes(trim($json_data['title'])) : null;
-        $content = isset($json_data['content']) ? addslashes(trim($json_data['content'])) : null;
-        $userid = isset($json_data['userid']) ? addslashes(trim($json_data['userid'])) : null;
-     
-        $InsertUserQuery = "INSERT INTO notification (title, content, addedon, userid) VALUES ('$title', '$content', NOW(), '$userid')";
+        $InsertUserQuery = "INSERT INTO contact (name, email, mobile, message, broucher, datetime) VALUES ('$name', '$email', '$mobile', '$message', '$broucher', NOW())";
         if (!mysqli_query($conn, $InsertUserQuery)) {
             throw new Exception('Error registering user: ' . mysqli_error($conn), 500);
         }
 
-        // Success response
         $Data = [
             'status' => 201,
-            'message' => 'Notification sent'
+            'message' => 'Success'
         ];
         header("HTTP/1.0 201 Created");
         echo json_encode($Data);
+        
     } catch (Exception $e) {
-        // Handle all errors in the catch block
+
         $Data = [
             'status' => $e->getCode() ?: 500,
             'message' => $e->getMessage()
         ];
         header("HTTP/1.0 " . ($e->getCode() ?: 500) . " Error");
         echo json_encode($Data);
+
     }
+
 ?>
