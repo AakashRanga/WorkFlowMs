@@ -123,9 +123,9 @@
         color: #001eae;
     }
 
-    .btn-danger{
-    position: absolute;
-    left: 70%;
+    .btn-danger {
+        position: absolute;
+        left: 70%;
     }
 </style>
 
@@ -151,7 +151,7 @@
                                 checked>
                         </span>
                         <span data-toggle="tooltip" title="One-time payment">One-time payment</span>
-                        <span style="font-size:10px">Life Time</span>
+                        <span style="font-size:10px">Till 365 days</span>
                         <span>₹30,000</span>
                         <strike><span>₹60,000</span></strike>
                     </div>
@@ -160,7 +160,7 @@
                             <input type="radio" id="option2" name="options" value="option2" onclick="updateButton()">
                         </span>
                         <span data-toggle="tooltip" title="Part-time payment">Part-time payment</span>
-                        <span style="font-size:10px">Life Time</span>
+                        <span style="font-size:10px">Till 365 days</span>
                         <span>₹15,000 X 2 months</span>
                         <span>Total: ₹30,000</span>
                     </div>
@@ -213,7 +213,7 @@
             <div class="col-lg-6 col-md-6">
                 <img src="images/broucher-contact.png" alt="" class="img-fluid">
             </div>
-            <div class="col-lg-6 col-md-6" style="background:#f0f0f0; padding: 20px;">
+            <div class="col-lg-6 col-md-6 get-broucher" style="background:#f0f0f0; padding: 20px;">
                 <h1 class="mb-4 text-center">Get Free Broucher</h1>
                 <form action="submit_registration.php" method="POST">
                     <div class="form-floating mb-3">
@@ -233,7 +233,10 @@
                             placeholder="Your message here"></textarea>
                         <label for="message">* Message</label>
                     </div>
-                    <button type="submit" class="btn btn-danger mt-3">Download Now</button>
+                    <div class="broucher-button">
+                        <button type="submit" class="btn btn-danger mt-3">Download Now</button>
+
+                    </div>
                 </form>
             </div>
         </div>
@@ -483,8 +486,13 @@
                         </div>
                     </div>
                     <div class="menu">
-                        <div class="item" data-value="1"><i class="fas fa-book"></i><span>Module 1:</span><span> Recap
-                                Key Concepts</span></div>
+                        <div class="item" data-value="1">
+                            <div>
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div><span>Module 1:</span><span> Recap
+                                    Key Concepts</span></div>
+                        </div>
                         <div class="item" data-value="2"><i class="fas fa-book"></i><span>Module 2:</span><span>
                                 Application of Skills</span></div>
                         <div class="item" data-value="3"><i class="fas fa-book"></i><span>Module 3:</span><span>
@@ -601,7 +609,7 @@
                         <div class="dropdown-content">
                             <div class="left-side">
                                 <span style="color: #001eae;font-weight: bold;">11</span>
-                                <span style="font-weight: bold;">UNIT 11 & 12: EXAM & PUBLICATION</span>
+                                <span style="font-weight: bold;">UNIT 11 : EXAM & PUBLICATION</span>
                             </div>
                             <div class="right-side">
                                 <span>1 attachment</span>

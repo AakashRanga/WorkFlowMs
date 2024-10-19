@@ -5,7 +5,7 @@
         font-family: Arial, sans-serif;
         background-color: #e9ecef;
     }
-
+   
 
     
 </style>
@@ -108,7 +108,7 @@
                         <label for="state">* State/Region</label>
                     </div>
 
-                    <button type="submit" class="btn btn-primary mt-3">Request a Trial</button>
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
                 </form>
             </div>
         </div>
