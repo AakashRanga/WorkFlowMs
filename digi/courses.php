@@ -1,5 +1,7 @@
 <?php include("digimed-navbar.php") ?>
 
+s
+
 <section class="digimed-courses">
     <div class="container">
         <div class="row">
@@ -20,11 +22,11 @@
                                 </p>
                             </div>
                             <!-- Content of the card -->
-                            <div class="course-amount"><strike>Rs.20,0000</strike>10,000</div> <span></span>
+                            <div class="course-amount"><strike>Rs.60,0000</strike>30,000</div> <span></span>
                             <div class="digi-course-pay">
                                 <span>
 
-                                    Available in part payment from ₹10,000/month
+                                    Available in part payment from ₹17,700/month
 
                                 </span>
                             </div>
