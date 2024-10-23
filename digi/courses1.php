@@ -127,8 +127,102 @@
         position: absolute;
         left: 70%;
     }
-</style>
 
+    .faq {
+        padding: 90px 0px;
+        background-color: #fff;
+    }
+
+    .faq h2 {
+        font-size: 16px;
+        font-family: 'Roobert', sans-serif;
+        font-weight: bold;
+    }
+
+    .faq p,
+    strong {
+        font-size: 14px;
+        font-family: 'Roobert', sans-serif;
+    }
+
+    strong {
+        color: #000000;
+    }
+
+    .faq ul li {
+        padding: 10px 0px;
+        font-size: 1.07rem !important;
+
+    }
+
+    .faq p {
+        font-size: 1.07rem !important;
+        color: #3f3a3a;
+        line-height: 2;
+    }
+
+    h1 {
+        font-size: 56px;
+        margin-bottom: 20px;
+        color: #000;
+    }
+
+    .faq b {
+        font-size: 20px;
+    }
+
+    .faq {
+        padding: 30px 0px;
+    }
+
+    .order-summary img {
+        width: 100px;
+    }
+
+    .orders {
+        display: flex;
+    }
+
+    .orders p {
+        width: 210px;
+        padding: 0px 16px;
+        margin-bottom: 0px;
+        color: #000000;
+    }
+
+    .order-detail p {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .order-summary button {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        border-radius: 0;
+    }
+
+    .user_billings {
+        display: flex;
+    }
+
+    .user_billings img {
+        width: 230px;
+    }
+    .user_billings h5{
+        font-size: 15px;
+    width: 236px;
+    padding: 0px 10px;
+    }
+    .user_billings p{
+        padding: 0px 10px;
+    }
+     .form-label{
+        color: #000000;
+        font-weight: bold;
+    }
+</style>
 <section class="courses-images">
     <div class="container">
         <div class="row py-5">
@@ -147,7 +241,7 @@
                 <form action="" method="post" class="form-container">
                     <div class="form-group">
                         <span>
-                            <input type="radio" id="option1" name="options" value="option1" onclick="updateButton()"
+                            <input type="radio" id="option1" name="options" value="30000" onclick="updateButton()"
                                 checked>
                         </span>
                         <span data-toggle="tooltip" title="One-time payment">One-time payment</span>
@@ -157,24 +251,105 @@
                     </div>
                     <div class="form-group">
                         <span>
-                            <input type="radio" id="option2" name="options" value="option2" onclick="updateButton()">
+                            <input type="radio" id="option2" name="options" value="15000" onclick="updateButton()">
                         </span>
                         <span data-toggle="tooltip" title="Part-time payment">Part-time payment</span>
                         <span style="font-size:10px">Till 365 days</span>
                         <span>₹15,000 X 2 months</span>
                         <span>Total: ₹30,000</span>
                     </div>
-
                 </form>
-                <button id="buyCourseButton" type="button" class="btn btn-primary" onclick="updateButton()">Buy
-                    Courses</button>
-                <span style="display:block;color:#007bff">Language:English</span>
-
+                <button id="buyCourseButton" type="button" class="btn btn-primary" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Buy
+                    Course</button>
+                <span style="display:block;color:#007bff">Language: English</span>
             </div>
-
         </div>
     </div>
 </section>
+
+<!-- Offcanvas Sidebar -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Order Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="order-summary" id="orderSummary">
+            <h5 class="order-details-title">Order Details</h5> <!-- New Header for Order Details -->
+            <div class="orders">
+                <div><img src="images/research-impact-strat.jpg" alt=""></div>
+                <div>
+                    <p>Diplomat in Research And Publication Strategy</p>
+                    <p id="coursePrice" style="color: #317ae7;font-size: 20px;font-weight: bold;font-family: emoji;">
+                        ₹30,000</p>
+                </div>
+            </div>
+            <br>
+            <div class="order-detail">
+                <p><strong>Course Price:</strong> <span id="coursePriceDetail">₹30,000</span></p>
+                <p><strong>GST (18%):</strong> <span id="gstAmount">₹5,400</span></p>
+                <p><strong>Internet Handling Fees:</strong> <span id="handlingFees">₹751.90</span></p>
+                <hr>
+                <p><strong>Total Payable Amount:</strong> <span id="totalAmount">₹36,151.90</span></p>
+                <p id="monthlyPayment" style="display: none;"><strong>You pay for 2 months:</strong> <span
+                        id="perMonthAmount">₹18,075.95 per month</span></p>
+            </div>
+            <button class="btn btn-primary" id="proceedBtn">Proceed</button>
+        </div>
+
+        <!-- Form for user details, initially hidden -->
+        <div class="user-details" id="userDetailsForm" style="display: none;">
+            <h5 class="billing-details-title">Billing Details</h5> <!-- New Header for Billing Details -->
+            <div class="user_billings">
+
+                <div> <img src="images/research-impact-strat.jpg" alt="Image Section" class="img-fluid">
+                </div>
+                <div>
+                    <h5 class="offcanvas-title">Diplomat in Research And Publication Strategy</h5>
+                    <p><span id="finalAmount">₹36,151.90</span></p>
+                    <p id="monthlyPayment" style="display: none;">
+                        <strong>You pay for 2 months:</strong> <span id="perMonthAmount">₹18,075.95 per month</span>
+                    </p>
+                </div>
+
+            </div>
+            <p>Please enter your basic details to proceed:</p>
+
+            <form id="detailsForm">
+    <div class="mb-3 form-floating">
+        <input type="text" class="form-control" id="userName" placeholder="Enter name" required>
+        <label for="userName" class="form-label">Name</label>
+        <div class="form-text">Please enter your name</div>
+    </div>
+    <div class="mb-3 form-floating">
+        <input type="email" class="form-control" id="userEmail" placeholder="Enter email" required>
+        <label for="userEmail" class="form-label">Email</label>
+        <div class="form-text">Please enter your email address</div>
+    </div>
+    <div class="mb-3 form-floating">
+        <input type="tel" class="form-control" id="userPhone" placeholder="Enter phone number" required>
+        <label for="userPhone" class="form-label">Phone number</label>
+        <div class="form-text">Please enter your phone number</div>
+    </div>
+    <div class="mb-3 form-floating">
+        <select class="form-select" id="userState" required>
+            <option value="" disabled selected>Select your state</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Karnataka">Karnataka</option>
+            <!-- Add more states as needed -->
+        </select>
+        <label for="userState" class="form-label">State</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+        </div>
+
+    </div>
+</div>
+
 
 <section class="courses-digimed">
     <div class="container">
@@ -242,6 +417,7 @@
         </div>
     </div>
 </section>
+
 
 <section class="ciriculam-section py-5">
     <div class="container">
@@ -714,6 +890,124 @@
     </div>
 </section>
 
+<section class="faq mt-3">
+    <div class="container py-5">
+        <h1 class="text-center">FAQs</h1>
+
+        <div class="row">
+            <!-- Question 1 -->
+            <div class="col-12 col-md-12">
+                <b>What is the structure of the course?</b>
+                <p>The course is self-paced, consisting of recorded video lectures. After each unit, participants will
+                    complete multiple-choice question (MCQ) assignments. At the end, participants need to submit a
+                    <strong>published research paper</strong> to obtain their certificate.
+                </p>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="col-12 col-md-12">
+                <b>What is the duration of the course?</b>
+                <p>The course duration is <strong>one year</strong>, allowing participants to progress at their own
+                    pace.
+
+                </p>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="col-12 col-md-12">
+                <b>What are the course modules?</b>
+                <ul>
+                    <li>
+                        Research Methodology and Ethics
+                    </li>
+                    <li>Research Design and Data Management
+                    </li>
+                    <li>Statistical Analysis
+                    </li>
+                    <li>Scientific Writing and Publication
+                    </li>
+                    <li>
+                        Research Integrity and Misconduct
+                    </li>
+                    <li>Advances in Research Methodologies
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="col-12 col-md-12">
+                <b>How is the course assessed?</b>
+                <p>Each unit concludes with a multiple-choice question (MCQ) assignment. To earn the certificate,
+                    participants must also submit a <strong>published research paper</strong> at the end of the course.
+                </p>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="col-12 col-md-12">
+                <b>What are the technical requirements to access the course?</b>
+                <p>Participants need a reliable internet connection and a device capable of streaming video content.
+                    Standard software for word processing and basic data analysis is recommended.
+                </p>
+            </div>
+
+
+
+            <div class="col-12 col-md-12">
+                <b>Is there any certification provided upon completion?</b>
+                <p>Yes, participants who complete the course and submit a published research paper will receive a
+                    globally recognized certification.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-12">
+                <b>How do I submit my published paper at the end of the course?</b>
+                <p>Upon completing your research and getting your paper published, you will upload it via the course
+                    portal. Detailed instructions for submission will be provided towards the end of the course.
+                </p>
+            </div>
+
+
+            <div class="col-12 col-md-12">
+                <b>What support is available during the course?</b>
+                <p>Participants can interact with faculty and peers through online discussion boards, webinars, and
+                    virtual networking events. Faculty members are available for consultations on assignments and course
+                    content.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-12">
+                <b>What support is available during the course?</b>
+                <p>Participants can interact with faculty and peers through online discussion boards, webinars, and
+                    virtual networking events. Faculty members are available for consultations on assignments and course
+                    content.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-12">
+                <b>What happens if I am unable to complete the course within a year?</b>
+                <p>If you are unable to complete the course within the year, you should contact the program
+                    administrators to explore potential options for extension or re-enrollment.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-12">
+                <b>Are there any prerequisites for the course?</b>
+                <p>While prior research experience or an academic background in a related field is beneficial, it is not
+                    a strict prerequisite for enrollment.
+                </p>
+            </div>
+
+            <div class="col-12 col-md-12">
+                <b>How do I enroll in the course?</b>
+                <p>Enrollment is done by filling out the application form, submitting the necessary documents, and
+                    paying the course fee. After these steps, you will receive login credentials to access the course
+                    material.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="review-section py-5">
     <h3 class="text-center">Add Review</h3>
 
@@ -845,29 +1139,81 @@
             });
         }
     });
+    //   update let totalAmount = 0; // Declare a global variable to store total amount
 
-    // Update button text based on selected radio button
     function updateButton() {
         const option1 = document.getElementById('option1');
         const option2 = document.getElementById('option2');
         const button = document.getElementById('buyCourseButton');
+        let coursePrice = 0;
+        let gstAmount = 0;
+        let handlingFees = 751.90;  // Total handling fees
 
         if (option1.checked) {
+            // One-time payment
             button.innerText = "Buy Course for ₹30,000";
+            coursePrice = 30000;  // Price for one-time payment
+            gstAmount = coursePrice * 0.18;  // GST for the full course
+            totalAmount = coursePrice + gstAmount + handlingFees;
+
+            // Update the prices in the offcanvas sidebar
+            document.getElementById('coursePrice').textContent = `₹${coursePrice.toLocaleString()}`;
+            document.getElementById('coursePriceDetail').textContent = `₹${coursePrice.toLocaleString()}`;
+            document.getElementById('gstAmount').textContent = `₹${gstAmount.toFixed(2)}`;
+            document.getElementById('handlingFees').textContent = `₹${handlingFees.toFixed(2)}`;
+            document.getElementById('totalAmount').textContent = `₹${totalAmount.toFixed(2)}`;
+            document.getElementById('monthlyPayment').style.display = 'none';  // Hide monthly payment info for one-time payment
+            document.getElementById('finalAmount').textContent = `₹${totalAmount.toFixed(2)}`; // Set final amount for one-time payment
+
         } else if (option2.checked) {
-            button.innerText = "Buy Course for ₹15,000"; // Change this if needed
+            // Part-time payment
+            button.innerText = "Buy Course for ₹15,000 ";
+            coursePrice = 15000;  // Price per month
+            gstAmount = (30000 * 0.18) / 2;  // Half the total GST (split into 2 payments)
+            handlingFees = handlingFees / 2;  // Half of the handling fees per month
+            totalAmount = coursePrice + gstAmount + handlingFees;
+
+            // Update the prices in the offcanvas sidebar
+            document.getElementById('coursePrice').textContent = `₹15,000 x 2 months`;
+            document.getElementById('coursePriceDetail').textContent = `₹30,000`;  // Total course price
+            document.getElementById('gstAmount').textContent = `₹${(gstAmount * 2).toFixed(2)}`;
+            document.getElementById('handlingFees').textContent = `₹${(handlingFees * 2).toFixed(2)}`;
+            document.getElementById('totalAmount').textContent = `₹36,151.90`; // Clear total amount
+            document.getElementById('monthlyPayment').style.display = 'flex';
+            document.getElementById('perMonthAmount').textContent = `₹${totalAmount.toFixed(2)} per month`;  // Per month amount
+            document.getElementById('finalAmount').textContent = ""; // Clear final amount for part-time payment
         }
     }
 
     // Set default selection and button text on page load
     window.onload = function () {
-        document.getElementById('option1').checked = true; // Set default to option 1
-        updateButton(); // Update button text accordingly
+        document.getElementById('option1').checked = true;  // Set default to option 1
+        updateButton();  // Update button text accordingly
     };
+
+    document.getElementById('proceedBtn').addEventListener('click', function () {
+        // Determine the payment amount based on selected option
+        let finalPaymentAmount;
+
+        if (document.getElementById('option2').checked) {
+            // If option 2 is selected, show the monthly payment amount
+            finalPaymentAmount = totalAmount; // This should be the per month amount
+            document.getElementById('finalAmount').textContent = `₹${finalPaymentAmount.toFixed(2)}`; // Display per month amount
+        } else {
+            // If option 1 is selected, show the total amount for one-time payment
+            finalPaymentAmount = totalAmount * 1; // Total amount for one-time payment
+            document.getElementById('finalAmount').textContent = `₹${finalPaymentAmount.toFixed(2)}`; // Display total amount
+        }
+
+        // Hide order summary and show user details form
+        document.getElementById('orderSummary').style.display = 'none';
+        document.getElementById('userDetailsForm').style.display = 'block';
+    });
 
     // Initialize Bootstrap tooltips
     $(function () {
         $('[data-toggle="tooltip"]').tooltip();
     });
+
 
 </script>
