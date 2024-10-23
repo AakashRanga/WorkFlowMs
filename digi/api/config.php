@@ -14,7 +14,6 @@ define("UPLOAD_URL",SITE_URL."/assets/uploads");
 
 define("PROFILE_UPLOAD_PATH",$_SERVER['DOCUMENT_ROOT']."/assets/uploads/profiles"); 
 
-
 define("PROFILE",UPLOAD_URL."/profiles/"); 
 define("COURSES",UPLOAD_URL."/courses/"); 
 
@@ -29,14 +28,10 @@ $db         = "vmago";
 // $password   = "Ldri~EZ{94D0";
 // $db         = "tunetutu_vmago";
 
-// Create connection
 $conn =  mysqli_connect($servername, $username, $password, $db);
 
-
-// Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-
 
 ?>
