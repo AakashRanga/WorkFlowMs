@@ -5,9 +5,6 @@
         font-family: Arial, sans-serif;
         background-color: #e9ecef;
     }
-   
-
-    
 </style>
 
 <section class="register-section">
@@ -22,14 +19,20 @@
 
             <div class="col-md-6">
                 <h1>Contact Us Here!!!</h1>
-                <form action="submit_registration.php" method="POST">
+                <form id="RealContactForm" method="POST">
+
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="collection" name="collection" required placeholder="">
-                        <label for="collection">* Selected Collection</label>
+                        <input type="text" class="form-control" id="full-name" name="full_name" required placeholder="">
+                        <label for="full-name">* Full Name</label>
+                    </div>
+
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="">
+                        <label for="email">* Email Address</label>
                     </div>
 
                     <div class="form-floating position-relative">
-                        <input type="text" class="form-control" id="subjects-input" readonly placeholder="Select Subjects"
+                        <input type="text" class="form-control" id="subjects-input" name="subject" readonly placeholder="Select Subjects"
                             onclick="toggleDropdown()" required />
                         <label>* Selected Subjects (Maximum of 3 subjects allowed)</label>
 
@@ -69,22 +72,17 @@
                     </div>
 
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="full-name" name="full_name" required placeholder="">
-                        <label for="full-name">* Full Name</label>
-                    </div>
-
-                    <div class="form-floating">
-                        <input type="email" class="form-control" id="email" name="email" required placeholder="">
-                        <label for="email">* Email Address</label>
-                    </div>
-
-                    <div class="form-floating">
                         <input type="text" class="form-control" id="organization" name="organization" required
                             placeholder="">
                         <label for="organization">* Organization Name</label>
                     </div>
 
                     <div class="form-floating">
+                        <input type="text" class="form-control" id="mobile-number" name="mobile_number" required placeholder="">
+                        <label for="mobile_number">* Mobile Number</label>
+                    </div>
+
+                    <!-- <div class="form-floating">
                         <select class="form-control" id="country" name="country" required placeholder="">
                             <option value="" disabled selected>Select a country</option>
                             <option value="USA">United States</option>
@@ -106,7 +104,7 @@
                             <option value="QC">Quebec</option>
                         </select>
                         <label for="state">* State/Region</label>
-                    </div>
+                    </div> -->
 
                     <button type="submit" class="btn btn-primary mt-3">Submit</button>
                 </form>
@@ -119,7 +117,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         const subjectCheckboxes = document.querySelectorAll('input[name="subjects"]');
         const subjectsInput = document.getElementById('subjects-input');
         const errorMessage = document.createElement('div');
@@ -127,7 +125,7 @@
         subjectsInput.parentNode.insertBefore(errorMessage, subjectsInput.nextSibling);
 
         subjectCheckboxes.forEach(checkbox => {
-            checkbox.addEventListener('change', function () {
+            checkbox.addEventListener('change', function() {
                 const selectedValues = Array.from(subjectCheckboxes)
                     .filter(checkbox => checkbox.checked)
                     .map(checkbox => checkbox.value);
