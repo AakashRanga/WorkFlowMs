@@ -1198,7 +1198,7 @@
         if (document.getElementById('option2').checked) {
             // If option 2 is selected, show the monthly payment amount
             finalPaymentAmount = totalAmount; // This should be the per month amount
-            document.getElementById('finalAmount').textContent = `₹${finalPaymentAmount.toFixed(2)}`; // Display per month amount
+            document.getElementById('finalAmount').textContent =`₹${finalPaymentAmount.toFixed(2)}`; // Display per month amount
         } else {
             // If option 1 is selected, show the total amount for one-time payment
             finalPaymentAmount = totalAmount * 1; // Total amount for one-time payment
