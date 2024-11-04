@@ -43,12 +43,22 @@
     @media (max-width:770px) {
         .repo-first .container{
             width: 92%;
+            align-items: center;
         }   
         .repo-row{
-            display: block;
+            /* display: block; */
             width: calc(100vw - 100px);
+            gap: 30px;
 
-        }     
+        }   
+        .issue-item{
+            border-right: none;
+        }  
+        .volume-info{
+            width: calc(100vw - 240px);
+            border-right: 1px solid #ccc;
+            height: calc(100vh - 240px);
+        }
     }
 
 </style>
@@ -57,7 +67,7 @@
     <div class="container">
         <div class="repo-row">
             <div class="volume-info">
-                <b>Volume 1</b><br>
+                <b>Unit 1</b><br>
                 <b>2024</b>
             </div>
             <div class="issues">
@@ -65,27 +75,18 @@
                     <div class="col-lg-3 issue-item">
                         <b>Issue 1</b>
                         <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
+                        <a href="repository.php"><i class="fa-regular fa-file"></i> </a>
                     </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 2</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 3</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
+                   
+                    
                 </div>
             </div>
+            
         </div>
-
         <hr>
-
         <div class="repo-row">
             <div class="volume-info">
-                <b>Volume 1</b><br>
+                <b>Unit 1</b><br>
                 <b>2024</b>
             </div>
             <div class="issues">
@@ -93,210 +94,13 @@
                     <div class="col-lg-3 issue-item">
                         <b>Issue 1</b>
                         <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
+                        <a href="repository.php"><i class="fa-regular fa-file"></i> </a>
                     </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 2</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 3</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 3</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
+                   
+                    
                 </div>
             </div>
+            
         </div>
-
-        <hr>
-
-
-        <div class="repo-row">
-            <div class="volume-info">
-                <b>Volume 1</b><br>
-                <b>2024</b>
-            </div>
-            <div class="issues">
-                <div class="row">
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 1</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 2</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 3</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <hr>
-
-        <div class="repo-row">
-            <div class="volume-info">
-                <b>Volume 1</b><br>
-                <b>2024</b>
-            </div>
-            <div class="issues">
-                <div class="row">
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 1</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 2</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 3</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 3</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="repo-row">
-            <div class="volume-info">
-                <b>Volume 1</b><br>
-                <b>2024</b>
-            </div>
-            <div class="issues">
-                <div class="row">
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 1</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 2</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 3</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 3</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-
-        <div class="repo-row">
-            <div class="volume-info">
-                <b>Volume 1</b><br>
-                <b>2024</b>
-            </div>
-            <div class="issues">
-                <div class="row">
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 1</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 2</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 3</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-
-        <div class="repo-row">
-            <div class="volume-info">
-                <b>Volume 1</b><br>
-                <b>2024</b>
-            </div>
-            <div class="issues">
-                <div class="row">
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 1</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 2</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 3</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <hr>
-
-
-        <div class="repo-row">
-            <div class="volume-info">
-                <b>Volume 1</b><br>
-                <b>2024</b>
-            </div>
-            <div class="issues">
-                <div class="row">
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 1</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 2</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                    <div class="col-lg-3 issue-item">
-                        <b>Issue 3</b>
-                        <b>Year 2024</b>
-                        <a href="repository.php"><i class="fa-solid fa-file"></i> </a>
-                    </div>
-                </div>
-            </div>
-        </div>
- 
-    </div>
+     </div>
 </section>
