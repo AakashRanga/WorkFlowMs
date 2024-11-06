@@ -1,0 +1,215 @@
+@media (max-width:1300px) {
+    .image-container img {
+        /* max-width: 100%; */
+        height: calc(100vh - 250px) !important;
+        position: absolute;
+        left: 70%;
+        width: 299px !important;
+        top: 15%;
+    }
+}
+
+
+@media (max-width:1025px) {
+    .navbar-nav .nav-item .nav-link {
+        width: 137px !important;
+        text-align: center;
+    }
+    .animated-welcome {
+        position: absolute;
+        color: #000000;
+        top: 24%;
+        left: 17%;
+        white-space: wrap;
+        animation: slideInLeft 2s ease forwards, floating 3s ease-in-out infinite;
+        font-size: 35px;
+    }
+    .text-content p {
+        width: 390px !important;
+    }
+
+    .image-container img{
+        width: calc(100vw - 763px) !important; 
+        height: calc(100vh - 271px) !important;
+    }
+
+    .text-content h2{
+        position: relative;
+        left: -9% !important;
+    }
+    .image-content img {
+        width: 344px;
+        height: 220px;
+        /* position: absolute; */
+        left: 9% !important;
+        position: relative;
+    }
+    .list-unstyled li{
+        font-size: 15px !important;
+    }
+    .banner .row {
+        padding: 85px 0px !important;
+    }
+}
+
+
+@media (max-width:991px) {
+    .navbar>.container{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+
+    .img-fluid {
+        height: auto;
+        max-width: fit-content;
+    }
+
+    .animated-welcome {
+        position: absolute;
+        color: #000000;
+        top: 24%;
+        left: 4%;
+        white-space: wrap;
+        animation: slideInLeft 2s ease forwards, floating 3s ease-in-out infinite;
+        font-size: 35px;
+    }
+    .navbar-nav .nav-item .nav-link {
+        width: 177px !important;
+        text-align: start;
+        color: #000000;
+    }
+    a#sign-in {
+        background: #fff;
+        border-radius: 40px;
+        color: #000000;
+    }
+    .navbar-nav{
+        padding: 20px 20px;
+    }
+    .carousel-caption {
+        position: static;
+        /* right: 15%; */
+        bottom: 1.25rem;
+        /* left: 15%; */
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        color: #fff;
+        text-align: center;
+    
+    }
+    
+    .navbar .container-fluid{
+        position: fixed;
+    }
+    
+    .navbar-nav {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 17px;
+    }
+
+    .left-column {
+        width: calc(100vw - 490px) !important;
+        background-color: #3572EF;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: right;
+    }
+
+    .banner .row {
+        padding: 100px 0px;
+        height: calc(100vh - 10px) !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .text-content p {
+        width: calc(100vw - 380px) !important;
+    }
+
+    .right-column {
+        background-color: #fff;
+        /* width: 75%; */
+        padding: 21px 13px;
+        display: flex;
+        width: calc(100vw - 321px) !important;
+    }
+    .image-container img{
+        display: none !important;
+    }
+
+    .image-content img{
+        left: 9% !important;
+    }
+
+    .text-content{
+        width: calc(100vw - 440px) !important;
+        
+
+    }
+
+    .text-content h2{
+        position: relative;
+    left: 9%;
+
+    }
+    .offset-2 {
+        margin-left:0;
+    }
+}
+
+
+@media (max-width:330px) {
+    .navbar>.container{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+
+    .animated-welcome {
+        position: absolute;
+        color: #000000;
+        top: 44%;
+        left: 4%;
+        white-space: wrap;
+        animation: slideInLeft 2s ease forwards, floating 3s ease-in-out infinite;
+        font-size: 15px;
+    }
+    
+.img-fluid {
+    height: auto;
+    max-width: fit-content;
+}
+
+.navbar-nav .nav-item .nav-link {
+    width: 177px !important;
+    text-align: start;
+}
+
+.carousel-caption {
+    position: static;
+    /* right: 15%; */
+    bottom: 1.25rem;
+    /* left: 15%; */
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+
+}
+
+.navbar .container-fluid{
+    position: fixed;
+}
+
+.navbar-nav {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 17px;
+}
+.offset-2 {
+    margin-left:0;
+}
+}
