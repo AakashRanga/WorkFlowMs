@@ -1,6 +1,5 @@
 <?php include("digimed-navbar.php") ?>
 
-s
 
 <section class="digimed-courses">
     <div class="container">
