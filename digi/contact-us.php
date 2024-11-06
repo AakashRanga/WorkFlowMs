@@ -31,7 +31,7 @@
                         <label for="email">* Email Address</label>
                     </div>
 
-                    <div class="form-floating position-relative">
+                    <!-- <div class="form-floating position-relative">
                         <input type="text" class="form-control" id="subjects-input" name="subject" readonly placeholder="Select Subjects"
                             onclick="toggleDropdown()" required />
                         <label>* Selected Subjects (Maximum of 3 subjects allowed)</label>
@@ -63,12 +63,17 @@
 
                         <p>Select up to 3 subjects.</p>
                         <div class="error-message"></div>
-                    </div>
+                    </div> -->
 
-                    <div class="form-floating">
+                    <!-- <div class="form-floating">
                         <input type="text" class="form-control" id="job-description" name="job_description" required
                             placeholder="">
                         <label for="job-description">* Job Description</label>
+                    </div> -->
+
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="mobile-number" name="mobile_number" required placeholder="">
+                        <label for="mobile_number">* Mobile Number</label>
                     </div>
 
                     <div class="form-floating">
@@ -77,10 +82,6 @@
                         <label for="organization">* Organization Name</label>
                     </div>
 
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="mobile-number" name="mobile_number" required placeholder="">
-                        <label for="mobile_number">* Mobile Number</label>
-                    </div>
 
                     <!-- <div class="form-floating">
                         <select class="form-control" id="country" name="country" required placeholder="">
@@ -93,18 +94,44 @@
                         </select>
                         <label for="country">* Country/Region</label>
                     </div>
-
+                    -->
                     <div class="form-floating">
                         <select class="form-control" id="state" name="state" required>
-                            <option value="" disabled selected>Select a state/region</option>
-                            <option value="CA">California</option>
-                            <option value="NY">New York</option>
-                            <option value="TX">Texas</option>
-                            <option value="ON">Ontario</option>
-                            <option value="QC">Quebec</option>
+                            <option value="" disabled selected>Select your state</option>
+                            <!-- States -->
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
                         </select>
                         <label for="state">* State/Region</label>
-                    </div> -->
+                    </div>
 
                     <button type="submit" class="btn btn-primary mt-3">Submit</button>
                 </form>
@@ -116,6 +143,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const subjectCheckboxes = document.querySelectorAll('input[name="subjects"]');

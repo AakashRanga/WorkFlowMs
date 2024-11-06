@@ -210,19 +210,23 @@
     .user_billings img {
         width: 230px;
     }
-    .user_billings h5{
+
+    .user_billings h5 {
         font-size: 15px;
-    width: 236px;
-    padding: 0px 10px;
-    }
-    .user_billings p{
+        width: 236px;
         padding: 0px 10px;
     }
-     .form-label{
+
+    .user_billings p {
+        padding: 0px 10px;
+    }
+
+    .form-label {
         color: #000000;
         font-weight: bold;
     }
 </style>
+
 <section class="courses-images">
     <div class="container">
         <div class="row py-5">
@@ -306,7 +310,7 @@
                 <div> <img src="images/research-impact-strat.jpg" alt="Image Section" class="img-fluid">
                 </div>
                 <div>
-                    <h5 class="offcanvas-title">Diplomat in Research And Publication Strategy</h5>
+                    <h5 class="offcanvas-title">Diplomat in Research Aakash And Publication Strategy</h5>
                     <p><span id="finalAmount">₹36,151.90</span></p>
                     <p id="monthlyPayment" style="display: none;">
                         <strong>You pay for 2 months:</strong> <span id="perMonthAmount">₹18,075.95 per month</span>
@@ -316,34 +320,61 @@
             </div>
             <p>Please enter your basic details to proceed:</p>
 
-            <form id="detailsForm">
-    <div class="mb-3 form-floating">
-        <input type="text" class="form-control" id="userName" placeholder="Enter name" required>
-        <label for="userName" class="form-label">Name</label>
-        <div class="form-text">Please enter your name</div>
-    </div>
-    <div class="mb-3 form-floating">
-        <input type="email" class="form-control" id="userEmail" placeholder="Enter email" required>
-        <label for="userEmail" class="form-label">Email</label>
-        <div class="form-text">Please enter your email address</div>
-    </div>
-    <div class="mb-3 form-floating">
-        <input type="tel" class="form-control" id="userPhone" placeholder="Enter phone number" required>
-        <label for="userPhone" class="form-label">Phone number</label>
-        <div class="form-text">Please enter your phone number</div>
-    </div>
-    <div class="mb-3 form-floating">
-        <select class="form-select" id="userState" required>
-            <option value="" disabled selected>Select your state</option>
-            <option value="Tamil Nadu">Tamil Nadu</option>
-            <option value="Kerala">Kerala</option>
-            <option value="Karnataka">Karnataka</option>
-            <!-- Add more states as needed -->
-        </select>
-        <label for="userState" class="form-label">State</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+            <form id="submitdetailsForm" method="POST">
+                <div class="mb-3 form-floating">
+                    <input type="text" class="form-control" id="userName" placeholder="Enter name" required>
+                    <label for="userName" class="form-label">Name</label>
+                    <div class="form-text">Please enter your name</div>
+                </div>
+                <div class="mb-3 form-floating">
+                    <input type="email" class="form-control" id="userEmail" placeholder="Enter email" required>
+                    <label for="userEmail" class="form-label">Email</label>
+                    <div class="form-text">Please enter your email address</div>
+                </div>
+                <div class="mb-3 form-floating">
+                    <input type="tel" class="form-control" id="userPhone" placeholder="Enter phone number" required>
+                    <label for="userPhone" class="form-label">Phone number</label>
+                    <div class="form-text">Please enter your phone number</div>
+                </div>
+                <div class="mb-3 form-floating">
+                    <select class="form-select" id="userState" required>
+                        <option value="" disabled selected>Select your state</option>
+                        <!-- States -->
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                    <label for="userState" class="form-label">State</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
 
         </div>
 
@@ -1093,16 +1124,17 @@
         </svg>
     </div>
 </section>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Load jQuery first -->
 
 <script>
     // Handle dropdown toggle
-    document.querySelectorAll('.dropdown-toggle').forEach(function (toggle) {
-        toggle.addEventListener('click', function () {
+    document.querySelectorAll('.dropdown-toggle').forEach(function(toggle) {
+        toggle.addEventListener('click', function() {
             const menu = this.nextElementSibling;
 
             // Close all other menus before opening the current one
-            document.querySelectorAll('.menu').forEach(function (otherMenu) {
+            document.querySelectorAll('.menu').forEach(function(otherMenu) {
                 if (otherMenu !== menu) {
                     otherMenu.classList.remove('show');
                 }
@@ -1114,8 +1146,8 @@
     });
 
     // Handle menu item selection
-    document.querySelectorAll('.menu .item').forEach(function (item) {
-        item.addEventListener('click', function () {
+    document.querySelectorAll('.menu .item').forEach(function(item) {
+        item.addEventListener('click', function() {
             const value = this.getAttribute('data-value');
             const input = this.closest('.custom-dropdown').querySelector('input[type="hidden"]');
             input.value = value;
@@ -1132,9 +1164,9 @@
     });
 
     // Close dropdown when clicking outside
-    document.addEventListener('click', function (event) {
+    document.addEventListener('click', function(event) {
         if (!event.target.closest('.custom-dropdown')) {
-            document.querySelectorAll('.menu').forEach(function (menu) {
+            document.querySelectorAll('.menu').forEach(function(menu) {
                 menu.classList.remove('show');
             });
         }
@@ -1147,13 +1179,13 @@
         const button = document.getElementById('buyCourseButton');
         let coursePrice = 0;
         let gstAmount = 0;
-        let handlingFees = 751.90;  // Total handling fees
+        let handlingFees = 751.90; // Total handling fees
 
         if (option1.checked) {
             // One-time payment
             button.innerText = "Buy Course for ₹30,000";
-            coursePrice = 30000;  // Price for one-time payment
-            gstAmount = coursePrice * 0.18;  // GST for the full course
+            coursePrice = 30000; // Price for one-time payment
+            gstAmount = coursePrice * 0.18; // GST for the full course
             totalAmount = coursePrice + gstAmount + handlingFees;
 
             // Update the prices in the offcanvas sidebar
@@ -1162,43 +1194,43 @@
             document.getElementById('gstAmount').textContent = `₹${gstAmount.toFixed(2)}`;
             document.getElementById('handlingFees').textContent = `₹${handlingFees.toFixed(2)}`;
             document.getElementById('totalAmount').textContent = `₹${totalAmount.toFixed(2)}`;
-            document.getElementById('monthlyPayment').style.display = 'none';  // Hide monthly payment info for one-time payment
+            document.getElementById('monthlyPayment').style.display = 'none'; // Hide monthly payment info for one-time payment
             document.getElementById('finalAmount').textContent = `₹${totalAmount.toFixed(2)}`; // Set final amount for one-time payment
 
         } else if (option2.checked) {
             // Part-time payment
             button.innerText = "Buy Course for ₹15,000 ";
-            coursePrice = 15000;  // Price per month
-            gstAmount = (30000 * 0.18) / 2;  // Half the total GST (split into 2 payments)
-            handlingFees = handlingFees / 2;  // Half of the handling fees per month
+            coursePrice = 15000; // Price per month
+            gstAmount = (30000 * 0.18) / 2; // Half the total GST (split into 2 payments)
+            handlingFees = handlingFees / 2; // Half of the handling fees per month
             totalAmount = coursePrice + gstAmount + handlingFees;
 
             // Update the prices in the offcanvas sidebar
             document.getElementById('coursePrice').textContent = `₹15,000 x 2 months`;
-            document.getElementById('coursePriceDetail').textContent = `₹30,000`;  // Total course price
+            document.getElementById('coursePriceDetail').textContent = `₹30,000`; // Total course price
             document.getElementById('gstAmount').textContent = `₹${(gstAmount * 2).toFixed(2)}`;
             document.getElementById('handlingFees').textContent = `₹${(handlingFees * 2).toFixed(2)}`;
             document.getElementById('totalAmount').textContent = `₹36,151.90`; // Clear total amount
             document.getElementById('monthlyPayment').style.display = 'flex';
-            document.getElementById('perMonthAmount').textContent = `₹${totalAmount.toFixed(2)} per month`;  // Per month amount
+            document.getElementById('perMonthAmount').textContent = `₹${totalAmount.toFixed(2)} per month`; // Per month amount
             document.getElementById('finalAmount').textContent = ""; // Clear final amount for part-time payment
         }
     }
 
     // Set default selection and button text on page load
-    window.onload = function () {
-        document.getElementById('option1').checked = true;  // Set default to option 1
-        updateButton();  // Update button text accordingly
+    window.onload = function() {
+        document.getElementById('option1').checked = true; // Set default to option 1
+        updateButton(); // Update button text accordingly
     };
 
-    document.getElementById('proceedBtn').addEventListener('click', function () {
+    document.getElementById('proceedBtn').addEventListener('click', function() {
         // Determine the payment amount based on selected option
         let finalPaymentAmount;
 
         if (document.getElementById('option2').checked) {
             // If option 2 is selected, show the monthly payment amount
             finalPaymentAmount = totalAmount; // This should be the per month amount
-            document.getElementById('finalAmount').textContent =`₹${finalPaymentAmount.toFixed(2)}`; // Display per month amount
+            document.getElementById('finalAmount').textContent = `₹${finalPaymentAmount.toFixed(2)}`; // Display per month amount
         } else {
             // If option 1 is selected, show the total amount for one-time payment
             finalPaymentAmount = totalAmount * 1; // Total amount for one-time payment
@@ -1211,9 +1243,99 @@
     });
 
     // Initialize Bootstrap tooltips
-    $(function () {
+    $(function() {
         $('[data-toggle="tooltip"]').tooltip();
     });
+</script>
+<!-- Reset Off Canvas when it close -->
+<script>
+    // Reset offcanvas content when it's closed
+    document.getElementById('offcanvasRight').addEventListener('hidden.bs.offcanvas', function() {
+        // Reset input fields in the user details form
+        document.getElementById('userName').value = '';
+        document.getElementById('userEmail').value = '';
+        document.getElementById('userPhone').value = '';
+        document.getElementById('userState').selectedIndex = 0;
 
+        // Reset course details and selection
+        document.getElementById('coursePrice').textContent = '₹30,000';
+        document.getElementById('coursePriceDetail').textContent = '₹30,000';
+        document.getElementById('gstAmount').textContent = '₹5,400';
+        document.getElementById('handlingFees').textContent = '₹751.90';
+        document.getElementById('totalAmount').textContent = '₹36,151.90';
+        document.getElementById('monthlyPayment').style.display = 'none';
 
+        // Reset option selection to default (e.g., option 1)
+        document.getElementById('option1').checked = true;
+        updateButton(); // Call the update function to refresh displayed prices
+
+        // Hide the user details form and show the order summary
+        document.getElementById('userDetailsForm').style.display = 'none';
+        document.getElementById('orderSummary').style.display = 'block';
+    });
+</script>
+
+<!-- Submit Payment form -->
+<script>
+    $(document).ready(function() {
+        $('#submitdetailsForm').on('submit', function(e) {
+            e.preventDefault(); // Prevent form from submitting normally
+
+            // Get data from the form
+            const userName = $('#userName').val().trim();
+            const userEmail = $('#userEmail').val().trim();
+            const userPhone = $('#userPhone').val().trim();
+            const userState = $('#userState').val();
+            const finalAmount = $('#finalAmount').text().replace('₹', '').trim(); // Remove currency symbol if present
+
+            // Validate that the final amount is a number
+            if (isNaN(finalAmount)) {
+                $('#responseMessage').text('Invalid amount format').addClass('text-danger');
+                return;
+            }
+
+            // Prepare data to be sent
+            const data = {
+                userName: userName,
+                userEmail: userEmail,
+                userPhone: userPhone,
+                userState: userState,
+                finalAmount: finalAmount
+            };
+
+            // Send AJAX request
+            $.ajax({
+                url: 'api/payment_form.php',
+                method: 'POST',
+                data: JSON.stringify(data),
+                contentType: 'application/json',
+                success: function(response) {
+                    if (response.status === 201) {
+                        alert('Form Submitted successful!');
+
+                    } else {
+                        alert('Something Went Wrong!');
+
+                    }
+                    $.ajax({
+                        url: 'sendEmail.php',
+                        type: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify(userData),
+                        success: function(emailResponse) {
+                            console.log('Email sent successfully');
+                        },
+                        error: function() {
+                            console.log('Email failed to send');
+                        }
+                    });
+                },
+                error: function(xhr) {
+                    // Error handling based on HTTP status code
+                    const errorMessage = xhr.responseJSON && xhr.responseJSON.message ? xhr.responseJSON.message : 'An unexpected error occurred';
+                    $('#responseMessage').text(errorMessage).addClass('text-danger');
+                }
+            });
+        });
+    });
 </script>
