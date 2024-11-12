@@ -421,9 +421,9 @@
             </div>
             <div class="col-lg-6 col-md-6 get-broucher" style="background:#f0f0f0; padding: 20px;">
                 <h1 class="mb-4 text-center">Get Free Broucher</h1>
-                <form action="submit_registration.php" method="POST">
+                <form id="BroucherForm" method="POST">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="full-name" name="full_name" required placeholder="">
+                        <input type="text" class="form-control" id="name" name="name" required placeholder="">
                         <label for="full-name">* Full Name</label>
                     </div>
                     <div class="form-floating mb-3">
@@ -441,7 +441,6 @@
                     </div>
                     <div class="broucher-button">
                         <button type="submit" class="btn btn-danger mt-3">Download Now</button>
-
                     </div>
                 </form>
             </div>
@@ -1125,7 +1124,8 @@
     </div>
 </section>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Load jQuery first -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 
 <script>
     // Handle dropdown toggle
@@ -1275,26 +1275,22 @@
     });
 </script>
 
-<!-- Submit Payment form -->
 <script>
     $(document).ready(function() {
         $('#submitdetailsForm').on('submit', function(e) {
-            e.preventDefault(); // Prevent form from submitting normally
+            e.preventDefault();
 
-            // Get data from the form
             const userName = $('#userName').val().trim();
             const userEmail = $('#userEmail').val().trim();
             const userPhone = $('#userPhone').val().trim();
             const userState = $('#userState').val();
-            const finalAmount = $('#finalAmount').text().replace('₹', '').trim(); // Remove currency symbol if present
+            const finalAmount = $('#finalAmount').text().replace('₹', '').trim();
 
-            // Validate that the final amount is a number
             if (isNaN(finalAmount)) {
                 $('#responseMessage').text('Invalid amount format').addClass('text-danger');
                 return;
             }
 
-            // Prepare data to be sent
             const data = {
                 userName: userName,
                 userEmail: userEmail,
@@ -1303,7 +1299,6 @@
                 finalAmount: finalAmount
             };
 
-            // Send AJAX request
             $.ajax({
                 url: 'api/payment_form.php',
                 method: 'POST',
@@ -1311,27 +1306,31 @@
                 contentType: 'application/json',
                 success: function(response) {
                     if (response.status === 201) {
-                        alert('Form Submitted successful!');
+                        alert('Form submitted successfully!'); 
+                        
+                        // Send email asynchronously
+                        $.ajax({
+                            url: 'email.php',
+                            method: 'POST',
+                            data: JSON.stringify(data),
+                            contentType: 'application/json',
+                            success: function(emailResponse) {
+                                console.log(emailResponse.message);
+                            },
+                            error: function() {
+                                console.log('Email failed to send');
+                            }
+                        });
 
+            
+                        setTimeout(function() {
+                            location.reload();
+                        }, 1000); // Adjust delay 1 sec
                     } else {
-                        alert('Something Went Wrong!');
-
+                        alert('Something went wrong!'); 
                     }
-                    $.ajax({
-                        url: 'sendEmail.php',
-                        type: 'POST',
-                        contentType: 'application/json',
-                        data: JSON.stringify(userData),
-                        success: function(emailResponse) {
-                            console.log('Email sent successfully');
-                        },
-                        error: function() {
-                            console.log('Email failed to send');
-                        }
-                    });
                 },
                 error: function(xhr) {
-                    // Error handling based on HTTP status code
                     const errorMessage = xhr.responseJSON && xhr.responseJSON.message ? xhr.responseJSON.message : 'An unexpected error occurred';
                     $('#responseMessage').text(errorMessage).addClass('text-danger');
                 }
@@ -1339,3 +1338,73 @@
         });
     });
 </script>
+
+<!-- broucher form script -->
+<script>
+    $('#BroucherForm').on('submit', function(e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        let formData = {
+            name: $('#name').val().trim(),
+            mobile: $('#mobile').val().trim(),
+            email: $('#email').val().trim(),
+            message: $('#message').val().trim(),
+            broucher: 'Normal Footer Contact'
+        };
+
+        // Frontend validation
+        if (formData.name === "" || formData.mobile === "" || formData.email === "" || formData.message === "") {
+            alert('All fields are required!');
+            return;
+        }
+
+        if (!validateEmail(formData.email)) {
+            alert('Please enter a valid email address!');
+            return;
+        }
+
+        $.ajax({
+            url: 'api/contact-form.php',
+            method: 'POST',
+            data: JSON.stringify(formData), // Send data as JSON
+            contentType: 'application/json',
+            success: function(response) {
+                if (response.status === 201) {
+                    alert("Thanks for getting in touch! We'll contact you soon.");
+
+                    // Trigger the brochure PDF download
+                    const brochureUrl = 'repo/DIRAPS.pdf'; // Update to actual path of the PDF file
+                    const link = document.createElement('a');
+                    link.href = brochureUrl;
+                    link.download = 'DIRAPS.pdf'; // Set desired download file name
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+
+                    location.reload();
+                } else {
+                    alert('Error: ' + response.message); // Display API-specific error message
+                }
+            },
+            error: function(xhr, status, error) {
+                try {
+                    let response = JSON.parse(xhr.responseText);
+                    if (response.message) {
+                        alert('Error: ' + response.message);
+                    } else {
+                        alert('An unexpected error occurred.');
+                    }
+                } catch (e) {
+                    alert('An error occurred: ' + error);
+                }
+            }
+        });
+    });
+
+    // Email validation function
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+</script>
+

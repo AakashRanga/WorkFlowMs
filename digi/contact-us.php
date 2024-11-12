@@ -22,7 +22,7 @@
                 <form id="RealContactForm" method="POST">
 
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="full-name" name="full_name" required placeholder="">
+                        <input type="text" class="form-control" id="full_name" name="full_name" required placeholder="">
                         <label for="full-name">* Full Name</label>
                     </div>
 
@@ -72,7 +72,7 @@
                     </div> -->
 
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="mobile-number" name="mobile_number" required placeholder="">
+                        <input type="text" class="form-control" id="mobile_number" name="mobile_number" required placeholder="">
                         <label for="mobile_number">* Mobile Number</label>
                     </div>
 
@@ -176,5 +176,66 @@
     function toggleDropdown() {
         const dropdownContent = document.querySelector('.dropdown-content');
         dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $('#RealContactForm').on('submit', function(e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        let formData = {
+            full_name: $('#full_name').val().trim(),
+            mobile_number: $('#mobile_number').val().trim(),
+            email: $('#email').val().trim(),
+            organization: $('#organization').val().trim(),
+            state: $('#state').val().trim(),
+            broucher: 'Real Contact'
+        };
+
+        // Frontend validation
+        if (formData.full_name === "" || formData.mobile_number === "" || formData.email === "" || formData.organization === "") {
+            alert('All fields are required!');
+            return;
+        }
+
+
+        if (!validateEmail(formData.email)) {
+            alert('Please enter a valid email address!');
+            return;
+        }
+
+        $.ajax({
+            url: 'api/contact-form2.php',
+            method: 'POST',
+            data: JSON.stringify(formData), // Send data as JSON
+            contentType: 'application/json',
+            success: function(response) {
+                if (response.status === 201) {
+                    alert("Thanks for getting in touch! We'll contact you soon.");
+                    window.location.href = "index.php"; // Redirect to login page on success
+                } else {
+                    alert('Error: ' + response.message); // Display API-specific error message
+                }
+            },
+            error: function(xhr, status, error) {
+                try {
+                    let response = JSON.parse(xhr.responseText);
+                    if (response.message) {
+                        alert('Error: ' + response.message);
+                    } else {
+                        alert('An unexpected error occurred.');
+                    }
+                } catch (e) {
+                    alert('An error occurred: ' + error);
+                }
+            }
+        });
+    });
+    // Email validation function
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
     }
 </script>

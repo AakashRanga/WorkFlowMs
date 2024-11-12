@@ -1,34 +1,51 @@
 <?php
+header('Access-Control-Allow-Origin: *');
+header('Content-Type: application/json');
+header("Access-Control-Allow-Methods: POST");
+header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method, Access-Control-Allow-Origin");
+
+require 'vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+$data = file_get_contents('php://input');
+$json_data = json_decode($data, true);
 
-$mail = new PHPMailer(true);
+if (isset($json_data['userName'], $json_data['userEmail'], $json_data['userPhone'], $json_data['userState'], $json_data['finalAmount'])) {
+    $userName = $json_data['userName'];
+    $userEmail = $json_data['userEmail'];
+    $userPhone = $json_data['userPhone'];
+    $userState = $json_data['userState'];
+    $finalAmount = $json_data['finalAmount'];
 
-try {
-    // Server settings
-    $mail->isSMTP();                                     // Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';              // Set the SMTP server
-    $mail->SMTPAuth   = true;                            // Enable SMTP authentication
-    $mail->Username   = 'akashranga27@gmail.com';        // SMTP username
-    $mail->Password   = 'vuvwtlnwxymwjtun';           // SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;  // Enable TLS encryption; 'PHPMailer::ENCRYPTION_SMTPS' for SSL
-    $mail->Port       = 587;                             // TCP port to connect to
+    $mail = new PHPMailer(true);
 
-    // Recipients
-    $mail->setFrom('akashranga27@gmail.com', 'Aakash Send Mail');
-    $mail->addAddress('clarencepraison32303@gmail.com', 'Vikas'); // Add a recipient
+    try {
+        $mail->isSMTP();
+        $mail->Host = 'host1.dnsinweb.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'developer@vmagsglobal.com';
+        $mail->Password = 'q{E(nD,xGDRT';
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
 
-    // Content
-    $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Thankyou For Your Response';
-    $mail->Body    = 'UserName: <b>Aakash</b><br> Email: <b>ak@gmail.com</b><br>';
-    $mail->AltBody = 'This is Testing Mail';
+        $mail->setFrom('developer@vmagsglobal.com', 'Dev Up');
+        $mail->addAddress('helpdesk@vmagsglobal.com', $userName);
 
-    $mail->send();
-    echo 'Message has been sent';
-} catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        $mail->isHTML(true);
+        $mail->Subject = 'New Lead Generated';
+        $mail->Body = "UserName: <b>$userName</b><br> Email: <b>$userEmail</b><br> Phone: <b>$userPhone</b><br> State: <b>$userState</b><br> Amount: <b>$finalAmount</b>";
+        $mail->AltBody = 'This is the plain text version of the email content';
+
+        $mail->send();
+
+        echo json_encode(['status' => 200, 'message' => 'Email sent successfully']);
+    } catch (Exception $e) {
+        echo json_encode(['status' => 500, 'message' => "Mailer Error: {$mail->ErrorInfo}"]);
+    }
+} else {
+    echo json_encode(['status' => 400, 'message' => 'Invalid data']);
 }
+
+?>
